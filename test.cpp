@@ -24,7 +24,7 @@ int main() {
                 cout << gameBoard->table[i + 1][j + 1]->position.first << " " << gameBoard->table[i + 1][j + 1]->position.second << endl;
         }
     }*/
-    Piece* myWinner = new Pawn(make_pair(2, 'e'), 1);
+    Piece* myWinner = gameBoard->table[2]['e'-'a'];
     char command[20], protover[20], N;
     while (true) {
         cin >> command;
@@ -49,7 +49,7 @@ int main() {
             cin>>command;
             cin>>command;
             cin>>command;
-            //Piece* myWinner = gameBoard->table[2]['e'-'a'];
+            //Piece* myWinner = 
             /*
             if(instanceof<Pawn>(myWinner)) { cout << "este" << endl;}
             else {cout << "nu este" << endl;}*/

@@ -10,35 +10,47 @@ recognized 'normal' (-1) as variant normal
 GameEnds(0, (null), 2)
 shuffleOpenings = 0
 StartChildProcess (dir=".") make run
-155 >first : xboard
+165 >first : xboard
 protover 2
-157 <first : ./test
-166 <first : feature sigint=0
-166 >first : accepted sigint
-166 <first : feature san=0
-166 >first : accepted san
-166 <first : feature myname="Capablanca"
-166 >first : accepted myname
-10157 >first : new
+168 <first : ./test
+170 <first : feature sigint=0
+170 >first : accepted sigint
+170 <first : feature san=0
+170 >first : accepted san
+170 <first : feature myname="Capablanca"
+170 >first : accepted myname
+10170 >first : new
 random
-10157 >first : level 40 5 0
-10157 >first : post
-10157 >first : hard
+10170 >first : level 40 5 0
+10170 >first : post
+10170 >first : hard
 nps: w=-1, b=-1
 nps: w=-1, b=-1
-13846 >first : time 30000
-13846 >first : otim 30000
+13271 >first : time 30000
+13271 >first : otim 30000
 book hit = (NULL)
-13846 >first : e2e4
-13849 <first : 2
-13849 <first : move e7e6
-15107 >first : time 29999
-15108 >first : otim 29874
+13271 >first : c2c4
+13274 <first : 2
+13274 <first : move d7d6
+14845 >first : time 29999
+14845 >first : otim 29842
 book hit = (NULL)
-15108 >first : e4e5
-15109 <first : 1
-15109 <first : move e6e5
+14845 >first : c4c5
+14848 <first : 1
+14848 <first : move d6d5
+16141 >first : time 29999
+16141 >first : otim 29713
+book hit = (NULL)
+16141 >first : d2d3
+16144 <first : 1
+16144 <first : move d5d4
+17124 >first : time 29999
+17124 >first : otim 29615
+book hit = (NULL)
+17124 >first : e2e4
+17126 <first : 1
+17126 <first : move d4d3
 GameEnds(29, xboard exit, 2)
-20117 >first : result * {xboard exit}
-20117 >first : force
-20117 >first : quit
+22493 >first : result * {xboard exit}
+22493 >first : force
+22493 >first : quit
