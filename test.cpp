@@ -39,23 +39,33 @@ int main() {
         }
         else if(strncmp(command, "new", 3)==0){
             gameBoard->init();
-            cin>>command;
-            cin>>command;
-            cin>>command;
-            cin>>command;
-            cin>>command;
-            cin>>command;
-            cin>>command;
-            cin>>command;
-            cin>>command;
-            cin>>command;
             //Piece* myWinner = 
             /*
             if(instanceof<Pawn>(myWinner)) { cout << "este" << endl;}
             else {cout << "nu este" << endl;}*/
         }
-        else if(strncmp(command, "accepted", strlen("accepted"))==0){
+        else if(strncmp(command, "accepted", strlen("accepted")) == 0){
             cin >> protover;
+        }
+        else if (strncmp(command, "random", 6) == 0) {
+            continue;
+        }
+        else if (strncmp(command, "level", 5) == 0) {
+            cin >> command;
+            cin >> command;
+            cin >> command;
+        }
+        else if (strncmp(command, "post", 4) == 0) {
+            continue;
+        }
+        else if (strncmp(command, "hard", 4) == 0) {
+            continue;
+        }
+        else if (strncmp(command, "time", 4) == 0) {
+            cin >> command;
+        }
+        else if (strncmp(command, "otim", 4) == 0) {
+            cin >> command;
         }
         else {
             //availablePos = myWinner->findPositions(gameBoard);
@@ -68,14 +78,10 @@ int main() {
             if(sz == 0)
                 cout<<"resign"<<endl;
             i = rand() % sz;
-            cout << "move " <<myWinner->position.second<< 9 - myWinner->position.first<<availablePos[i].second<<9 - availablePos[i].first<<endl;
-            gameBoard->table[myWinner->position.first][myWinner->position.second] == NULL;
+            cout << "move " << myWinner->position.second << 9 - myWinner->position.first << availablePos[i].second << 9 - availablePos[i].first << endl;
+            gameBoard->table[myWinner->position.first][myWinner->position.second - 'a'] = NULL;
             myWinner->position.first = availablePos[i].first;
             myWinner->position.second = availablePos[i].second;
-            cin>>command;
-            cin>>command;
-            cin>>command;
-            cin>>command;
         }
     }
     return 0;
