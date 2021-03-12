@@ -1,0 +1,44 @@
+locale = LC_CTYPE=en_US.UTF-8;LC_NUMERIC=ro_RO.UTF-8;LC_TIME=ro_RO.UTF-8;LC_COLLATE=en_US.UTF-8;LC_MONETARY=ro_RO.UTF-8;LC_MESSAGES=en_US.UTF-8;LC_PAPER=ro_RO.UTF-8;LC_NAME=ro_RO.UTF-8;LC_ADDRESS=ro_RO.UTF-8;LC_TELEPHONE=ro_RO.UTF-8;LC_MEASUREMENT=ro_RO.UTF-8;LC_IDENTIFICATION=ro_RO.UTF-8
+recognized 'normal' (-1) as variant normal
+recognized 'normal' (-1) as variant normal
+recognized 'normal' (-1) as variant normal
+shuffleOpenings = 0
+shuffleOpenings = 0
+Version: xboard 4.9.1 + make ()
+Reset(1, 0) from gameMode 0
+recognized 'normal' (-1) as variant normal
+GameEnds(0, (null), 2)
+shuffleOpenings = 0
+StartChildProcess (dir=".") make run
+155 >first : xboard
+protover 2
+157 <first : ./test
+166 <first : feature sigint=0
+166 >first : accepted sigint
+166 <first : feature san=0
+166 >first : accepted san
+166 <first : feature myname="Capablanca"
+166 >first : accepted myname
+10157 >first : new
+random
+10157 >first : level 40 5 0
+10157 >first : post
+10157 >first : hard
+nps: w=-1, b=-1
+nps: w=-1, b=-1
+13846 >first : time 30000
+13846 >first : otim 30000
+book hit = (NULL)
+13846 >first : e2e4
+13849 <first : 2
+13849 <first : move e7e6
+15107 >first : time 29999
+15108 >first : otim 29874
+book hit = (NULL)
+15108 >first : e4e5
+15109 <first : 1
+15109 <first : move e6e5
+GameEnds(29, xboard exit, 2)
+20117 >first : result * {xboard exit}
+20117 >first : force
+20117 >first : quit
