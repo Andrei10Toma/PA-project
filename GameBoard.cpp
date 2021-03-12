@@ -8,6 +8,6 @@
 
 void GameBoard::init() {
     for (int i = 0; i < 8; i++) {
-        this->table[2][i + 1] = new Pawn(make_pair(2, i + 1), 1);
+        this->table[2][i + 1] = new Pawn(make_pair(2, 'a' +  i ), 1);
     }
 }

@@ -32,7 +32,8 @@ int main() {
     gameBoard->init();
     for (int i = 0; i < 8; i++) {
         for (int j = 0; j < 8; j++) {
-            cout << gameBoard->table[i + 1][j + 1]->position.first << " " << gameBoard->table[i + 1][j + 1]->position.second << endl;
+            if(gameBoard->table[i + 1][j + 1] != NULL)
+                cout << gameBoard->table[i + 1][j + 1]->position.first << " " << gameBoard->table[i + 1][j + 1]->position.second << endl;
         }
     }
     char command[20];
