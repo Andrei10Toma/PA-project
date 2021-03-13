@@ -25,7 +25,7 @@ int main() {
         }
     }*/
     //Piece* myWinner = gameBoard->table[2]['e'-'a' + 1];
-    Piece* myWinner = gameBoard->table[1]['b' -'a'];
+    Piece* myWinner = gameBoard->table[1][1];
     char command[20], protover[20], N;
     while (true) {
         cin >> command;
