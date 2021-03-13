@@ -1,0 +1,12 @@
+xboard
+protover 2
+accepted sigint
+accepted san
+accepted myname
+new
+level 40 5 0
+post
+hard
+time 30000
+otim 30000
+c2c3

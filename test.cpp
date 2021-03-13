@@ -24,7 +24,8 @@ int main() {
                 cout << gameBoard->table[i + 1][j + 1]->position.first << " " << gameBoard->table[i + 1][j + 1]->position.second << endl;
         }
     }*/
-    Piece* myWinner = gameBoard->table[2]['e'-'a'];
+    //Piece* myWinner = gameBoard->table[2]['e'-'a' + 1];
+    Piece* myWinner = gameBoard->table[1]['b' -'a'];
     char command[20], protover[20], N;
     while (true) {
         cin >> command;
@@ -39,10 +40,6 @@ int main() {
         }
         else if(strncmp(command, "new", 3)==0){
             gameBoard->init();
-            //Piece* myWinner = 
-            /*
-            if(instanceof<Pawn>(myWinner)) { cout << "este" << endl;}
-            else {cout << "nu este" << endl;}*/
         }
         else if(strncmp(command, "accepted", strlen("accepted")) == 0){
             cin >> protover;
@@ -68,12 +65,11 @@ int main() {
             cin >> command;
         }
         else {
-            //availablePos = myWinner->findPositions(gameBoard);
-            //cout<<"cv1"<<endl;
+            cout<<"cv1"<<endl;
             availablePos = myWinner->findPositions(gameBoard);
-            //cout<<"cv2"<<endl;
+            cout<<"cv2"<<endl;
             sz = availablePos.size();
-            //cout<<"cv3"<<endl;
+            cout<<"cv3"<<endl;
             cout<<sz<<endl;
             if(sz == 0)
                 cout<<"resign"<<endl;
