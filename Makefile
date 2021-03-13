@@ -1,12 +1,13 @@
 CC=g++
 CFLAGS=-Wall -Wextra -std=c++17
+FILES= pieces/Piece.cpp GameBoard.cpp pieces/Pawn.cpp pieces/Knight.cpp test.cpp
 
-all: build run clean
+all: build run
 
 build:
-	$(CC) $(CFLAGS) test.cpp -o test
+	$(CC) $(CFLAGS) $(FILES) -o test
 clean:
-	rm test
+	rm -rf test *.debug
 run:
 	./test
 

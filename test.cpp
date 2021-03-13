@@ -4,43 +4,81 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include "GameBoard.hpp"
+#include "pieces/Piece.hpp"
+#include "pieces/Pawn.hpp"
 
 using namespace std;
-
-int main(){
-    char command[50];
-    while(1){
-        read(0, command, 50);
-        if(strncmp(command, "xboard", strlen("xboard"))) {
-            read(0, command, 50);
-            write(0, "feature sigint=0\n", 50);
-            write(0, "feature san=0\n", 50);
-            write(0, "feature myname=\"Capablanca\"\n", 50);
+template<typename Base, typename T>
+inline bool instanceof(const T*) {
+    return std::is_base_of<Base, T>::value;
+}
+int main() {
+    vector<pair<int, char>> availablePos;
+    GameBoard* gameBoard = new GameBoard();
+    int i, sz;
+    gameBoard->init();
+    /*for (int i = 0; i < 8; i++) {
+        for (int j = 0; j < 8; j++) {
+            if(gameBoard->table[i + 1][j + 1] != NULL)
+                cout << gameBoard->table[i + 1][j + 1]->position.first << " " << gameBoard->table[i + 1][j + 1]->position.second << endl;
         }
-        else {
-            // write(0, "move e2e4\n", 50);
+    }*/
+    //Piece* myWinner = gameBoard->table[2]['e'-'a' + 1];
+    Piece* myWinner = gameBoard->table[1]['b' -'a'];
+    char command[20], protover[20], N;
+    while (true) {
+        cin >> command;
+        if (strncmp(command, "xboard", strlen("xboard")) == 0) {
+            cin >> protover >> N;
+            cout << "feature sigint=0" << endl;
+            cout << "feature san=0" << endl;
+            cout << "feature myname=\"Capablanca\"" << endl;
+        }
+        else if (strncmp(command, "quit", strlen("quit")) == 0) {
             break;
         }
-    }
-}
-
-/*
-using namespace std;
-
-int main(){
-    char N[3];
-    cout.setf(ios::unitbuf);
-    cin.rdbuf()->setbuf(NULL, 0);
-    char command[50];
-    while(1){
-        cin >> command;
-        if(strcmp(command, "xboard")){
+        else if(strncmp(command, "new", 3)==0){
+            gameBoard->init();
+        }
+        else if(strncmp(command, "accepted", strlen("accepted")) == 0){
+            cin >> protover;
+        }
+        else if (strncmp(command, "random", 6) == 0) {
+            continue;
+        }
+        else if (strncmp(command, "level", 5) == 0) {
             cin >> command;
-            cin >> N;
-            cout<<"feature sigint=0"<<'\n';
-            cout<<"feature san=0"<<'\n';
-            cout<<"feature myname=\"Capablanca\""<<'\n';
+            cin >> command;
+            cin >> command;
+        }
+        else if (strncmp(command, "post", 4) == 0) {
+            continue;
+        }
+        else if (strncmp(command, "hard", 4) == 0) {
+            continue;
+        }
+        else if (strncmp(command, "time", 4) == 0) {
+            cin >> command;
+        }
+        else if (strncmp(command, "otim", 4) == 0) {
+            cin >> command;
+        }
+        else {
+            cout<<"cv1"<<endl;
+            availablePos = myWinner->findPositions(gameBoard);
+            cout<<"cv2"<<endl;
+            sz = availablePos.size();
+            cout<<"cv3"<<endl;
+            cout<<sz<<endl;
+            if(sz == 0)
+                cout<<"resign"<<endl;
+            i = rand() % sz;
+            cout << "move " << myWinner->position.second << 9 - myWinner->position.first << availablePos[i].second << 9 - availablePos[i].first << endl;
+            gameBoard->table[myWinner->position.first][myWinner->position.second - 'a'] = NULL;
+            myWinner->position.first = availablePos[i].first;
+            myWinner->position.second = availablePos[i].second;
         }
     }
+    return 0;
 }
-*/
