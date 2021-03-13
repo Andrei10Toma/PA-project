@@ -18,5 +18,4 @@ void GameBoard::init() {
     this->table[1][7] = new Knight(make_pair(1, 'g'), 1);
     this->table[8][1] = new Knight(make_pair(8, 'b'), 0);
     this->table[8][7] = new Knight(make_pair(8, 'g'), 0);
-
 }
