@@ -7,7 +7,8 @@ using namespace std;
 Knight::Knight(pair<int, char> pos, bool color) : Piece(pos, color) {
 }
 
-bool inTable(int x, char y, GameBoard * gameBoard){
+
+bool Piece::inTable(int x, char y, GameBoard * gameBoard){
     cout << x << ' ' << y << endl;
     if(x >= 9 || x <= 0 || y < 'a' || y > 'h')
         return false;
@@ -15,6 +16,7 @@ bool inTable(int x, char y, GameBoard * gameBoard){
         return false;
     return true;
 }
+
 
 vector<pair<int, char>> Knight::findPositions(GameBoard* gameBoard) {
     vector<pair<int, char>> possiblePositions;

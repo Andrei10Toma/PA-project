@@ -24,8 +24,8 @@ int main() {
                 cout << gameBoard->table[i + 1][j + 1]->position.first << " " << gameBoard->table[i + 1][j + 1]->position.second << endl;
         }
     }*/
-    //Piece* myWinner = gameBoard->table[2]['e'-'a' + 1];
-    Piece* myWinner = gameBoard->table[1][1];
+    Piece* myWinner = gameBoard->table[2]['e'-'a' + 1];
+    // Piece* myWinner = gameBoard->table[1][1];
     char command[20], protover[20], N;
     while (true) {
         cin >> command;

@@ -14,6 +14,7 @@ public:
     bool color;
     pair<int, char> position;
     Piece(pair<int, char> pos, bool color);
+    bool inTable(int x, char y, GameBoard * gameBoard);
     virtual vector<pair<int, char>> findPositions(GameBoard* gameBoard) = 0;
 };
 
