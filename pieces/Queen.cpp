@@ -75,8 +75,24 @@ vector<pair<int, char>> Queen::findPositions(GameBoard* gameBoard) {
                 break;
             }
         }
-        // check superior second diagonal
         // check inferior second diagonal
+        for (i = this->position.first + 1, j = this->position.second - 1; i <=8 && j >= 'a'; i++, j--) {
+            if (gameBoard->table[i][j - 'a' + 1] == NULL) {
+                possiblePositions.push_back(make_pair(i, j));
+            }
+            else {
+                break;
+            }
+        }
+        // check superior second diagonal
+        for (i = this->position.first - 1, j = this->position.second + 1; i >= 1 && j <= 'h'; i--, j++) {
+            if (gameBoard->table[i][j - 'a' + 1] == NULL) {
+                possiblePositions.push_back(make_pair(i, j));
+            }
+            else {
+                break;
+            }
+        }
     }
     return possiblePositions;
 }	
