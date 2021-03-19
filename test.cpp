@@ -64,6 +64,11 @@ int main() {
             cin >> command;
         }
         else {
+             //actualize opponent's pieces
+            Piece *aux =  gameBoard->table[9 - (command[1] - '0')][command[0] - 'a' + 1];
+            gameBoard->table[9 - (command[1] - '0')][command[0] - 'a' + 1] = NULL;
+            gameBoard->table[9 - (command[3] - '0')][command[2] - 'a' + 1] = aux;
+            
             if (testCounter < 2) {
                 // cout<<"cv1"<<endl;
                 availablePos = myWinner->findPositions(gameBoard);
@@ -106,6 +111,7 @@ int main() {
                 myQueen->position.second = availablePos[i].second;
                 testCounter++;
             }
+           
         }
     }
     return 0;

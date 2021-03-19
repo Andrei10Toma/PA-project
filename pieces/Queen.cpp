@@ -25,6 +25,11 @@ vector<pair<int, char>> Queen::findPositions(GameBoard* gameBoard) {
             if (gameBoard->table[i][this->position.second - 'a' + 1] == NULL) {
                 possiblePositions.push_back(make_pair(i, this->position.second));
             }
+            else if(gameBoard->table[i][this->position.second - 'a' + 1]->color != this->color)
+            {
+                possiblePositions.push_back(make_pair(i, this->position.second));
+                break;
+            }
             else {
                 break;
             }
@@ -33,6 +38,11 @@ vector<pair<int, char>> Queen::findPositions(GameBoard* gameBoard) {
         for (int i = this->position.first + 1; i <= 8; i++) {
             if (gameBoard->table[i][this->position.second - 'a' + 1] == NULL) {
                 possiblePositions.push_back(make_pair(i, this->position.second));
+            }
+            else if(gameBoard->table[i][this->position.second - 'a' + 1]->color != this->color)
+            {
+                possiblePositions.push_back(make_pair(i, this->position.second));
+                break;
             }
             else {
                 break;
@@ -43,6 +53,11 @@ vector<pair<int, char>> Queen::findPositions(GameBoard* gameBoard) {
             if (gameBoard->table[this->position.first][i - 'a' + 1] == NULL) {
                 possiblePositions.push_back(make_pair(this->position.first, i));
             }
+            else if(gameBoard->table[this->position.first][i - 'a' + 1]->color != this->color)
+            {
+                possiblePositions.push_back(make_pair(this->position.first, i));
+                break;
+            }
             else {
                 break;
             }
@@ -51,6 +66,11 @@ vector<pair<int, char>> Queen::findPositions(GameBoard* gameBoard) {
         for (int i = this->position.second - 1; i >= 'a'; i--) {
             if (gameBoard->table[this->position.first][i - 'a' + 1] == NULL) {
                 possiblePositions.push_back(make_pair(this->position.first, i));
+            }
+            else if(gameBoard->table[this->position.first][i - 'a' + 1]->color != this->color)
+            {
+                possiblePositions.push_back(make_pair(this->position.first, i));
+                break;
             }
             else {
                 break;
@@ -62,6 +82,11 @@ vector<pair<int, char>> Queen::findPositions(GameBoard* gameBoard) {
             if (gameBoard->table[i][j - 'a' + 1] == NULL) {
                 possiblePositions.push_back(make_pair(i, j));
             }
+            else if(gameBoard->table[i][j - 'a' + 1]->color != this->color)
+            {
+                possiblePositions.push_back(make_pair(i, j));
+                break;
+            }
             else {
                 break;
             }
@@ -70,6 +95,11 @@ vector<pair<int, char>> Queen::findPositions(GameBoard* gameBoard) {
         for (i = this->position.first + 1, j = this->position.second + 1; i <= 8 && j <= 'h'; i++, j++) {
             if (gameBoard->table[i][j - 'a' + 1] == NULL) {
                 possiblePositions.push_back(make_pair(i, j));
+            }
+            else if(gameBoard->table[i][j - 'a' + 1]->color != this->color)
+            {
+                possiblePositions.push_back(make_pair(i, j));
+                break;
             }
             else {
                 break;
@@ -80,6 +110,11 @@ vector<pair<int, char>> Queen::findPositions(GameBoard* gameBoard) {
             if (gameBoard->table[i][j - 'a' + 1] == NULL) {
                 possiblePositions.push_back(make_pair(i, j));
             }
+            else if(gameBoard->table[i][j - 'a' + 1]->color != this->color)
+            {
+               possiblePositions.push_back(make_pair(i, j));
+                break;
+            }
             else {
                 break;
             }
@@ -88,6 +123,11 @@ vector<pair<int, char>> Queen::findPositions(GameBoard* gameBoard) {
         for (i = this->position.first - 1, j = this->position.second + 1; i >= 1 && j <= 'h'; i--, j++) {
             if (gameBoard->table[i][j - 'a' + 1] == NULL) {
                 possiblePositions.push_back(make_pair(i, j));
+            }
+            else if(gameBoard->table[i][j - 'a' + 1]->color != this->color)
+            {
+                possiblePositions.push_back(make_pair(i, j));
+                break;
             }
             else {
                 break;
