@@ -14,6 +14,7 @@ class GameBoard {
 public:
     Piece* table[9][9];
     void init();
+    void showBoard();
 };
 
 

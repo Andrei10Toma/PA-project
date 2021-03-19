@@ -17,5 +17,4 @@ public:
     virtual vector<pair<int, char>> findPositions(GameBoard* gameBoard) = 0;
 };
 
-
 #endif //PA_PROJECT_PIECE_H
