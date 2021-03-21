@@ -10,69 +10,59 @@ recognized 'normal' (-1) as variant normal
 GameEnds(0, (null), 2)
 shuffleOpenings = 0
 StartChildProcess (dir=".") make run
-178 >first : xboard
+198 >first : xboard
 protover 2
-182 <first : ./test
-182 <first : feature sigint=0
-182 >first : accepted sigint
-182 <first : feature san=0
-182 >first : accepted san
-182 <first : feature myname="Capablanca"
-182 >first : accepted myname
-10179 >first : new
+201 <first : ./test
+201 <first : feature sigint=0
+201 >first : accepted sigint
+201 <first : feature san=0
+201 >first : accepted san
+201 <first : feature myname="Capablanca"
+201 >first : accepted myname
+10200 >first : new
 random
-10179 >first : level 40 5 0
-10179 >first : post
-10179 >first : hard
+10200 >first : level 40 5 0
+10200 >first : post
+10200 >first : hard
 nps: w=-1, b=-1
 nps: w=-1, b=-1
-14902 >first : time 30000
-14902 >first : otim 30000
+11787 >first : time 30000
+11788 >first : otim 30000
 book hit = (NULL)
-14902 >first : d2d4
-14903 <first : cv1
-14904 <first : cv2
-14904 <first : cv3
-14904 <first : 2
-14904 <first : move e7e6
-18411 >first : time 29999
-18411 >first : otim 29649
+11788 >first : d2d4
+11790 <first : cv1
+11790 <first : cv2
+11790 <first : cv3
+11790 <first : 2
+11790 <first : move e7e6
+14169 >first : time 29999
+14169 >first : otim 29762
 book hit = (NULL)
-18411 >first : f2f3
-18412 <first : cv1
-18412 <first : cv2
-18412 <first : cv3
-18412 <first : 1
-18412 <first : move e6e5
-21332 >first : time 29999
-21332 >first : otim 29357
+14169 >first : c2c3
+14172 <first : cv1
+14172 <first : cv2
+14172 <first : cv3
+14172 <first : 1
+14172 <first : move e6e5
+16578 >first : time 29999
+16578 >first : otim 29521
 book hit = (NULL)
-21332 >first : g2g3
-21334 <first : cv1
-21334 <first : cv2
-21334 <first : cv3
-21334 <first : 1
-21334 <first : move e5e4
-22826 >first : time 29999
-22826 >first : otim 29208
+16578 >first : c1e3
+16683 <first : cv1
+16683 <first : cv2
+16683 <first : cv3
+16683 <first : 1
+16683 <first : move e5e4
+18921 >first : time 29988
+18922 >first : otim 29297
 book hit = (NULL)
-22826 >first : f3f4
-22827 <first : cv1
-22827 <first : cv2
-22827 <first : cv3
-22827 <first : 1
-22827 <first : move e4e3
-23858 >first : time 29999
-23858 >first : otim 29105
-book hit = (NULL)
-23858 >first : g3g4
-23859 <first : cv1
-23859 <first : cv2
-23859 <first : cv3
-23859 <first : 2
-23859 <first : move e3f2
-ForwardInner(10), current 9, forward 9
+18922 >first : f2f3
+18922 <first : cv1
+18922 <first : cv2
+18922 <first : cv3
+18922 <first : 1
+18922 <first : move e4e3
 GameEnds(29, xboard exit, 2)
-37321 >first : result * {xboard exit}
-37321 >first : force
-37321 >first : quit
+56217 >first : result * {xboard exit}
+56217 >first : force
+56217 >first : quit

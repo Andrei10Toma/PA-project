@@ -23,10 +23,8 @@ vector<pair<int, char>> Knight::findPositions(GameBoard* gameBoard) {
     int vx[] = {1, 2, 2, 1, -1, -2, -2, -1};
     int vy[] = {-2, -1, 1, 2, 2, 1, -1, -2};
     int i;
-    if (this->color == 1) {
-        for(i = 0; i < 8; i++)
-            if(inTable(position.first + vx[i], position.second + vy[i], gameBoard))
-                possiblePositions.push_back(make_pair(position.first + vx[i], position.second + vy[i]));
-    }
+    for(i = 0; i < 8; i++)
+        if(inTable(position.first + vx[i], position.second + vy[i], gameBoard))
+            possiblePositions.push_back(make_pair(position.first + vx[i], position.second + vy[i]));
     return possiblePositions;
 }

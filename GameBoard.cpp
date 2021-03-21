@@ -7,6 +7,8 @@
 #include "pieces/Pawn.hpp"
 #include "pieces/Knight.hpp"
 #include "pieces/Rook.hpp"
+#include "pieces/Bishop.hpp"
+
 
 void GameBoard::init() {
     //PAWNS
@@ -25,6 +27,13 @@ void GameBoard::init() {
     this->table[1][8] = new Rook(make_pair(1, 'h'), 1);
     this->table[8][1] = new Rook(make_pair(8, 'a'), 0);
     this->table[8][8] = new Rook(make_pair(8, 'h'), 0);
+
+    //BISHOPS
+    this->table[1][3] = new Bishop(make_pair(1, 'c'), 1);
+    this->table[1][6] = new Bishop(make_pair(1, 'f'), 1);
+    this->table[8][3] = new Bishop(make_pair(8, 'c'), 0);
+    this->table[8][6] = new Bishop(make_pair(8, 'f'), 0);
+
 
 
 }
