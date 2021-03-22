@@ -11,12 +11,6 @@ vector<pair<pair<int, char>, Piece*>> Pawn::findPositions(GameBoard* gameBoard) 
     vector<pair<pair<int, char>, Piece*>> possiblePositions;
     if (this->color == 1) {
         if (this->position.first == 2) {
-            // if (gameBoard->table[4][position.second - 'a' + 1] == NULL) {
-                // possiblePositions.push_back(make_pair(make_pair(3, position.second), this));
-            // }
-            // if (gameBoard->table[3][position.second - 'a' + 1] == NULL && gameBoard->table[4][position.second - 'a' + 1] == NULL) {
-                // possiblePositions.push_back(make_pair(make_pair(4, position.second), this));
-            // }
             if (gameBoard->table[3][this->position.second - 'a' + 1] == NULL) {
                 possiblePositions.push_back(make_pair(make_pair(3, this->position.second), this));
             }

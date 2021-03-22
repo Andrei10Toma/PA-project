@@ -15,7 +15,7 @@ inline bool instanceof(const T*) {
     return std::is_base_of<Base, T>::value;
 }
 
-void remove(vector<Piece*> pieces, Piece* piece){
+void remove(vector<Piece*> &pieces, Piece* &piece){
     int i, sz = pieces.size();
     for(i = 0; i < sz; i++)
         if(pieces[i] == piece)
@@ -102,6 +102,7 @@ int main() {
             availablePos[i].second->position.first = availablePos[i].first.first;
             availablePos[i].second->position.second = availablePos[i].first.second;
             gameBoard->showBoard();
+            availablePos.clear();
         }
     }
     return 0;
