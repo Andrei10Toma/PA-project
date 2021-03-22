@@ -21,21 +21,10 @@ int main() {
     GameBoard* gameBoard = new GameBoard();
     int i, sz, testCounter = 0;
     gameBoard->init();
-<<<<<<< HEAD
-    /*for (int i = 0; i < 8; i++) {
-        for (int j = 0; j < 8; j++) {
-            if(gameBoard->table[i + 1][j + 1] != NULL)
-                cout << gameBoard->table[i + 1][j + 1]->position.first << " " << gameBoard->table[i + 1][j + 1]->position.second << endl;
-        }
-    }*/
-    //Piece* myWinner = gameBoard->table[2]['e'-'a' + 1];
-    Piece* myWinner = gameBoard->table[1]['b' -'a'];
-=======
     gameBoard->showBoard();
     // Piece* myWinner = gameBoard->table[1]['b' -'a'];
     Piece* myWinner = gameBoard->table[2]['d' - 'a' + 1];
     Piece* myQueen = gameBoard->table[1]['d' - 'a' + 1];
->>>>>>> 3780c133a1f115edba38f6c32ce1f8419e0eaba6
     char command[20], protover[20], N;
     while (true) {
         cin >> command;
