@@ -9,6 +9,7 @@
 #include "pieces/Queen.hpp"
 #include "pieces/Rook.hpp"
 #include "pieces/Bishop.hpp"
+#include "pieces/King.hpp"
 #include <iostream>
 
 void GameBoard::init(vector<Piece*> &white, vector<Piece*> &black) {
@@ -17,6 +18,11 @@ void GameBoard::init(vector<Piece*> &white, vector<Piece*> &black) {
         white.pop_back();
     while(black.size() > 0)
         black.pop_back();
+
+    // RESET
+    for (int i = 0; i < 8; i++) 
+        for(int j = 0; j < 8; j++)
+            this->table[i+1][j+1] = NULL;
     // PAWNS
     for (int i = 0; i < 8; i++) {
         this->table[2][i + 1] = new Pawn(make_pair(2, 'a' +  i ), 1);
@@ -61,9 +67,9 @@ void GameBoard::init(vector<Piece*> &white, vector<Piece*> &black) {
     white.push_back(this->table[8][6]);
 
     // KING
-    this->table[1][5] = new Pawn(make_pair(1, 'd'), 1);
+    this->table[1][5] = new King(make_pair(1, 'd'), 1);
     black.push_back(this->table[1][5]);
-    this->table[8][5] = new Pawn(make_pair(8, 'd'), 0);
+    this->table[8][5] = new King(make_pair(8, 'd'), 0);
     white.push_back(this->table[8][5]);
 }
 
