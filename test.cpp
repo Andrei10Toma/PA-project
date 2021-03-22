@@ -36,6 +36,8 @@ int main() {
     gameBoard->init(white, black);
     gameBoard->showBoard();
     char command[20], protover[20], N;
+    // mode = 1 bot plays mode = 0 watches (force)
+    int mode = 1;
     while (true) {
         cin >> command;
         if (strncmp(command, "xboard", strlen("xboard")) == 0) {
@@ -49,11 +51,53 @@ int main() {
         }
         else if(strncmp(command, "new", 3)==0){
             gameBoard->init(white, black);
+            mode = 1;
+        }
+        else if(strncmp(command, "force", 5) == 0){
+            mode = 0;
+        }
+        else if(strncmp(command, "go", 2) == 0){
+            cout<<"go!"<<endl;
+            mode = 1;
+            sz = black.size();
+            for(i = 0; i<sz; i++){
+                pos = black[i]->findPositions(gameBoard);
+                if (!pos.empty())
+                    availablePos.insert(availablePos.end(), pos.begin(), pos.end());
+            }
+            
+            sz = availablePos.size();
+            if(sz == 0) {
+                cout<<"resign"<<endl;
+                break;
+            }
+            i = rand() % sz;
+            
+            cout << "move " << availablePos[i].second->position.second << 9 - availablePos[i].second->position.first 
+            << availablePos[i].first.second << 9 - availablePos[i].first.first << endl;
+            
+            gameBoard->table[availablePos[i].second->position.first][availablePos[i].second->position.second - 'a' + 1] = NULL;
+            Piece *captured = gameBoard->table[availablePos[i].first.first][availablePos[i].first.second - 'a' + 1];
+            gameBoard->table[availablePos[i].first.first][availablePos[i].first.second - 'a' + 1] = availablePos[i].second;
+            
+            if(captured != NULL)
+                remove(white, captured);
+
+            availablePos[i].second->position.first = availablePos[i].first.first;
+            availablePos[i].second->position.second = availablePos[i].first.second;
+            availablePos.clear();
+            gameBoard->showBoard();
         }
         else if(strncmp(command, "accepted", strlen("accepted")) == 0){
             cin >> protover;
         }
         else if (strncmp(command, "random", 6) == 0) {
+            continue;
+        }
+        else if (strncmp(command, "white", 5) == 0) {
+            continue;
+        }
+        else if (strncmp(command, "black", 5) == 0) {
             continue;
         }
         else if (strncmp(command, "level", 5) == 0) {
@@ -74,6 +118,7 @@ int main() {
             cin >> command;
         }
         else {
+            if(mode == 1){
              //actualize opponent's pieces
             Piece *aux =  gameBoard->table[9 - (command[1] - '0')][command[0] - 'a' + 1];
             gameBoard->table[9 - (command[1] - '0')][command[0] - 'a' + 1] = NULL;
@@ -111,6 +156,21 @@ int main() {
             availablePos[i].second->position.second = availablePos[i].first.second;
             availablePos.clear();
             gameBoard->showBoard();
+            }
+            else{
+                Piece *aux =  gameBoard->table[9 - (command[1] - '0')][command[0] - 'a' + 1];
+                gameBoard->table[9 - (command[1] - '0')][command[0] - 'a' + 1] = NULL;
+                Piece *captured = gameBoard->table[9 - (command[3] - '0')][command[2] - 'a' + 1];
+                gameBoard->table[9 - (command[3] - '0')][command[2] - 'a' + 1] = aux;
+            
+                if(captured != NULL){
+                    if(captured->color == 1)
+                        remove(black, captured);
+                    else
+                        remove(white, captured);
+                }
+                gameBoard->showBoard();
+            }
         }
     }
     return 0;

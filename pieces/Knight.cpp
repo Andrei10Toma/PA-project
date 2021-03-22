@@ -8,7 +8,6 @@ Knight::Knight(pair<int, char> pos, bool color) : Piece(pos, color) {
 }
 
 bool inTable(int x, char y, GameBoard * gameBoard){
-    cout << x << ' ' << y << endl;
     if(x >= 9 || x <= 0 || y < 'a' || y > 'h')
         return false;
     if(gameBoard->table[x][y - 'a' + 1] != NULL && gameBoard->table[x][y - 'a' + 1]->color == 1)
