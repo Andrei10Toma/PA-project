@@ -1,6 +1,6 @@
 CC=g++
 CFLAGS=-Wall -Wextra -std=c++17
-FILES= pieces/Piece.cpp GameBoard.cpp pieces/Pawn.cpp pieces/Knight.cpp test.cpp pieces/Queen.cpp
+FILES= pieces/Piece.cpp GameBoard.cpp pieces/Pawn.cpp pieces/Knight.cpp test.cpp pieces/Queen.cpp pieces/Bishop.cpp pieces/Rook.cpp
 
 all: build run
 

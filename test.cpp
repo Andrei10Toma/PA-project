@@ -15,16 +15,24 @@ inline bool instanceof(const T*) {
     return std::is_base_of<Base, T>::value;
 }
 
+void remove(vector<Piece*> pieces, Piece* piece){
+    int i, sz = pieces.size();
+    for(i = 0; i < sz; i++)
+        if(pieces[i] == piece)
+            break;
+    pieces.erase(pieces.begin() + i);
+}
+
 int main() {
-    vector<pair<int, char>> availablePos;
+    vector<pair<pair<int, char>, Piece*>> availablePos;
+    vector<pair<pair<int, char>, Piece*>> pos;
+    vector<Piece*> white;
+    vector<Piece*> black;
     srand(time(NULL));
     GameBoard* gameBoard = new GameBoard();
-    int i, sz, testCounter = 0;
-    gameBoard->init();
+    int i, sz;
+    gameBoard->init(white, black);
     gameBoard->showBoard();
-    // Piece* myWinner = gameBoard->table[1]['b' -'a'];
-    Piece* myWinner = gameBoard->table[2]['d' - 'a' + 1];
-    Piece* myQueen = gameBoard->table[1]['d' - 'a' + 1];
     char command[20], protover[20], N;
     while (true) {
         cin >> command;
@@ -38,7 +46,7 @@ int main() {
             break;
         }
         else if(strncmp(command, "new", 3)==0){
-            gameBoard->init();
+            gameBoard->init(white, black);
         }
         else if(strncmp(command, "accepted", strlen("accepted")) == 0){
             cin >> protover;
@@ -67,51 +75,33 @@ int main() {
              //actualize opponent's pieces
             Piece *aux =  gameBoard->table[9 - (command[1] - '0')][command[0] - 'a' + 1];
             gameBoard->table[9 - (command[1] - '0')][command[0] - 'a' + 1] = NULL;
+            Piece *captured = gameBoard->table[9 - (command[3] - '0')][command[2] - 'a' + 1];
             gameBoard->table[9 - (command[3] - '0')][command[2] - 'a' + 1] = aux;
+            if(captured != NULL)
+                remove(black, captured);
             
-            if (testCounter < 2) {
-                // cout<<"cv1"<<endl;
-                availablePos = myWinner->findPositions(gameBoard);
-                // cout<<"cv2"<<endl;
-                sz = availablePos.size();
-                // cout<<"cv3"<<endl;
-                // cout<<sz<<endl;
-                if(sz == 0) {
-                    cout<<"resign"<<endl;
-                    break;
-                }
-                i = rand() % sz;
-                cout << "move " << myWinner->position.second << 9 - myWinner->position.first << availablePos[i].second << 9 - availablePos[i].first << endl;
-                gameBoard->table[myWinner->position.first][myWinner->position.second - 'a' + 1] = NULL;
-                gameBoard->table[availablePos[i].first][availablePos[i].second - 'a' + 1] = myWinner;
-                myWinner->position.first = availablePos[i].first;
-                myWinner->position.second = availablePos[i].second;
-                testCounter++;
-                gameBoard->showBoard();
+            sz = black.size();
+            for(i = 0; i<sz; i++){
+                pos = black[i]->findPositions(gameBoard);
+                availablePos.insert(availablePos.end(), pos.begin(), pos.end());
             }
-            else {
-                gameBoard->showBoard();
-                availablePos = myQueen->findPositions(gameBoard);
-                sz = availablePos.size();
-                for (i = 0; i < sz; i++) {
-                    cout << availablePos[i].first << " " << availablePos[i].second << endl;
-                }
-                // cout << "cv2" << endl;
-                // cout << myQueen->position.first << " " << myQueen->position.second << endl;
-                if (sz == 0) {
-                    cout << "resign" << endl;
-                    break;
-                }
-                // cout << "cv1 " << sz << endl;
-                i = rand() % sz;
-                cout << "move " << myQueen->position.second << 9 - myQueen->position.first << availablePos[i].second << 9 - availablePos[i].first << endl;
-                gameBoard->table[myQueen->position.first][myQueen->position.second - 'a' + 1] = NULL;
-                gameBoard->table[availablePos[i].first][availablePos[i].second - 'a' + 1] = myQueen;
-                myQueen->position.first = availablePos[i].first;
-                myQueen->position.second = availablePos[i].second;
-                testCounter++;
+            sz = availablePos.size();
+            if(sz == 0) {
+                cout<<"resign"<<endl;
+                break;
             }
-           
+            i = rand() % sz;
+            cout << availablePos[i].second->getName() << ' '<< availablePos[i].first.first << ' ' << availablePos[i].first.second << endl;
+            cout << "move " << availablePos[i].second->position.second << 9 - availablePos[i].second->position.first 
+            << availablePos[i].first.second << 9 - availablePos[i].first.first << endl;
+            gameBoard->table[availablePos[i].second->position.first][availablePos[i].second->position.second - 'a' + 1] = NULL;
+            captured = gameBoard->table[availablePos[i].first.first][availablePos[i].first.second - 'a' + 1] ;
+            gameBoard->table[availablePos[i].first.first][availablePos[i].first.second - 'a' + 1] = availablePos[i].second;
+            if(captured != NULL)
+                remove(white, captured);
+            availablePos[i].second->position.first = availablePos[i].first.first;
+            availablePos[i].second->position.second = availablePos[i].first.second;
+            gameBoard->showBoard();
         }
     }
     return 0;

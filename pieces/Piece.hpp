@@ -5,6 +5,7 @@
 #ifndef PA_PROJECT_PIECE_H
 #define PA_PROJECT_PIECE_H
 #include <vector>
+#include <string>
 
 using namespace std;
 
@@ -14,7 +15,8 @@ public:
     bool color;
     pair<int, char> position;
     Piece(pair<int, char> pos, bool color);
-    virtual vector<pair<int, char>> findPositions(GameBoard* gameBoard) = 0;
+    virtual vector<pair<pair<int, char>, Piece*>> findPositions(GameBoard* gameBoard) = 0;
+    virtual string getName() = 0;
 };
 
 #endif //PA_PROJECT_PIECE_H
