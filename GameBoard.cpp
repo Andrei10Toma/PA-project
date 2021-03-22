@@ -7,6 +7,8 @@
 #include "pieces/Pawn.hpp"
 #include "pieces/Knight.hpp"
 #include "pieces/Queen.hpp"
+#include "pieces/Rook.hpp"
+#include "pieces/Bishop.hpp"
 #include <iostream>
 
 void GameBoard::init() {
@@ -20,20 +22,29 @@ void GameBoard::init() {
     this->table[1][7] = new Knight(make_pair(1, 'g'), 1);
     this->table[8][2] = new Knight(make_pair(8, 'b'), 0);
     this->table[8][7] = new Knight(make_pair(8, 'g'), 0);
+
     // QUEENS
     this->table[1][4] = new Queen(make_pair(1, 'd'), 1);
     this->table[8][4] = new Queen(make_pair(8, 'd'), 0);
 
-    // FILL THE GAMEBOARD WITH PAWNS TO TEST THE QUEEN
-    this->table[1][5] = new Pawn(make_pair(1, 'e'), 1);
-    this->table[1][3] = new Pawn(make_pair(1, 'c'), 1);
+    // ROOKS
+    this->table[1][1] = new Rook(make_pair(1, 'a'), 1);
+    this->table[1][8] = new Rook(make_pair(1, 'h'), 1);
+    this->table[8][1] = new Rook(make_pair(8, 'a'), 0);
+    this->table[8][8] = new Rook(make_pair(8, 'h'), 0);
+
+    // BISHOPS
+    this->table[1][3] = new Bishop(make_pair(1, 'c'), 1);
+    this->table[1][6] = new Bishop(make_pair(1, 'f'), 1);
+    this->table[8][3] = new Bishop(make_pair(8, 'c'), 0);
+    this->table[8][6] = new Bishop(make_pair(1, 'g'), 0);
 }
 
 void GameBoard::showBoard() {
     for (int i = 0; i < 8; i++) {
         for (int j = 0; j < 8; j++) {
             if (this->table[i + 1][j + 1] != NULL) {
-                cout << this->table[i + 1][j + 1]->position.first << this->table[i + 1][j + 1]->position.second << '\t';
+                cout << this->table[i + 1][j + 1]->getName() << '\t';
             }
             else {
                 cout << "-\t";

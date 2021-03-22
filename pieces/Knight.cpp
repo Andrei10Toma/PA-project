@@ -28,3 +28,7 @@ vector<pair<int, char>> Knight::findPositions(GameBoard* gameBoard) {
     }
     return possiblePositions;
 }
+
+string Knight::getName() {
+    return "N";
+}

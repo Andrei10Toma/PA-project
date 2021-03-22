@@ -135,4 +135,8 @@ vector<pair<int, char>> Queen::findPositions(GameBoard* gameBoard) {
         }
     }
     return possiblePositions;
-}	
+}
+
+string Queen::getName() {
+    return "Q";
+} 

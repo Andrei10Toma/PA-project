@@ -32,3 +32,7 @@ vector<pair<int, char>> Pawn::findPositions(GameBoard* gameBoard) {
     }
     return possiblePositions;
 }
+
+string Pawn::getName() {
+    return "P";
+}

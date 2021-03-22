@@ -11,5 +11,7 @@ class Knight : public Piece
 	public:
 		vector<pair<int, char>> findPositions(GameBoard* gameBoard);
 		Knight(pair<int, char> pos, bool color);
+		string getName();
 };
+bool inTable(int x, char y, GameBoard * gameBoard);
 #endif
