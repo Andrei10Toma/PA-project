@@ -79,11 +79,11 @@ int main() {
             gameBoard->table[9 - (command[3] - '0')][command[2] - 'a' + 1] = aux;
             if(captured != NULL)
                 remove(black, captured);
-            
             sz = black.size();
             for(i = 0; i<sz; i++){
                 pos = black[i]->findPositions(gameBoard);
-                availablePos.insert(availablePos.end(), pos.begin(), pos.end());
+                if (!pos.empty())
+                    availablePos.insert(availablePos.end(), pos.begin(), pos.end());
             }
             sz = availablePos.size();
             if(sz == 0) {
@@ -95,7 +95,7 @@ int main() {
             cout << "move " << availablePos[i].second->position.second << 9 - availablePos[i].second->position.first 
             << availablePos[i].first.second << 9 - availablePos[i].first.first << endl;
             gameBoard->table[availablePos[i].second->position.first][availablePos[i].second->position.second - 'a' + 1] = NULL;
-            captured = gameBoard->table[availablePos[i].first.first][availablePos[i].first.second - 'a' + 1] ;
+            captured = gameBoard->table[availablePos[i].first.first][availablePos[i].first.second - 'a' + 1];
             gameBoard->table[availablePos[i].first.first][availablePos[i].first.second - 'a' + 1] = availablePos[i].second;
             if(captured != NULL)
                 remove(white, captured);
