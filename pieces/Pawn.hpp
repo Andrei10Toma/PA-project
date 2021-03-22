@@ -10,8 +10,8 @@ class Pawn : public Piece
 private:
 
 public:
-    vector<pair<int, char>> findPositions(GameBoard* gameBoard);
+    vector<pair<pair<int, char>, Piece*>> findPositions(GameBoard* gameBoard);
 	Pawn(pair<int, char> pos, bool color);
-    void promoteToQueen(GameBoard* gameBoard);
+    string getName();
 };
 #endif

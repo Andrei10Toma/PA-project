@@ -1,16 +1,17 @@
-#ifndef QUEEN_H
-#define QUEEN_H
+#ifndef KING_H
+#define KING_H
 #pragma once
 #include "Piece.hpp"
-#include <vector>
-	
-class Queen : public Piece
+
+using namespace std;
+class King : public Piece
 {
 	private:
 
 	public:
+		bool hasMoved;
 		vector<pair<pair<int, char>, Piece*>> findPositions(GameBoard* gameBoard);
-		Queen(pair<int, char> pos, bool color);
+		King(pair<int, char> pos, bool color);
 		string getName();
 };
 #endif

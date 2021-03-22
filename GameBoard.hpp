@@ -13,7 +13,7 @@ using namespace std;
 class GameBoard {
 public:
     Piece* table[9][9];
-    void init();
+    void init(vector<Piece*> &white, vector<Piece*> &black);
     void showBoard();
 };
 

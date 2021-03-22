@@ -8,49 +8,71 @@ using namespace std;
 Bishop::Bishop(pair<int, char> pos, bool color) : Piece(pos, color) {
 }
 
-bool inTableBishop(int x, char y, GameBoard * gameBoard){
-    cout << x << ' ' << y << endl;
-    if(x >= 9 || x <= 0 || y < 'a' || y > 'h')
-        return false;
-    if(gameBoard->table[x][y - 'a' + 1] != NULL && gameBoard->table[x][y - 'a' + 1]->color == 1)
-        return false;
-    return true;
-}
-vector<pair<int, char>>Bishop::findPositions(GameBoard *gameBoard) {
-    vector<pair<int, char>> possiblePositions;
-    int currentLine = this->position.first;
-    char currentColumn = this->position.second;
-    // right - up
-    int line = currentLine + 1;
-    char col = currentColumn + 1;
-    while(inTableBishop(line, col, gameBoard)) {
-        possiblePositions.push_back(make_pair(line, col - 'a' + 1));
-        line++;
-        col++;
-    }
-    // left - down
-    line = currentLine - 1;
-    col = currentColumn - 1;
-     while(inTableBishop(line, col, gameBoard)) {
-        possiblePositions.push_back(make_pair(line, col - 'a' + 1));
-        line --;
-        col--;
-    }
-    // left - up
-    line = currentLine + 1;
-    col = currentColumn - 1;
-    while(inTableBishop(line, col, gameBoard)) {
-        possiblePositions.push_back(make_pair(line, col - 'a' + 1));
-        line++;
-        col--;
-    }
-    // right - down
-    line = currentLine - 1;
-    col = currentColumn + 1;
-    while(inTableBishop(line, col, gameBoard)) {
-        possiblePositions.push_back(make_pair(line, col - 'a' + 1));
-        line--;
-        col++;
+vector<pair<pair<int, char>, Piece*>>Bishop::findPositions(GameBoard *gameBoard) {
+    vector<pair<pair<int, char>, Piece*>> possiblePositions;
+    
+    if ( this -> color == 1) {
+        // check superior main diagonal
+        int i; char j;
+        for (i = this->position.first - 1, j = this->position.second - 1; i >= 1 && j >= 'a'; i--, j--) {
+            if (gameBoard->table[i][j - 'a' + 1] == NULL) {
+                possiblePositions.push_back(make_pair(make_pair(i, j), this));
+            }
+            else if(gameBoard->table[i][j - 'a' + 1]->color != this->color)
+            {
+                possiblePositions.push_back(make_pair(make_pair(i, j), this));
+                break;
+            }
+            else {
+                break;
+            }
+        }
+        // check inferior main diagonal
+        for (i = this->position.first + 1, j = this->position.second + 1; i <= 8 && j <= 'h'; i++, j++) {
+            if (gameBoard->table[i][j - 'a' + 1] == NULL) {
+                possiblePositions.push_back(make_pair(make_pair(i, j), this));
+            }
+            else if(gameBoard->table[i][j - 'a' + 1]->color != this->color)
+            {
+                possiblePositions.push_back(make_pair(make_pair(i, j), this));
+                break;
+            }
+            else {
+                break;
+            }
+        }
+        // check inferior second diagonal
+        for (i = this->position.first + 1, j = this->position.second - 1; i <=8 && j >= 'a'; i++, j--) {
+            if (gameBoard->table[i][j - 'a' + 1] == NULL) {
+                possiblePositions.push_back(make_pair(make_pair(i, j), this));
+            }
+            else if(gameBoard->table[i][j - 'a' + 1]->color != this->color)
+            {
+               possiblePositions.push_back(make_pair(make_pair(i, j), this));
+                break;
+            }
+            else {
+                break;
+            }
+        }
+        // check superior second diagonal
+        for (i = this->position.first - 1, j = this->position.second + 1; i >= 1 && j <= 'h'; i--, j++) {
+            if (gameBoard->table[i][j - 'a' + 1] == NULL) {
+                possiblePositions.push_back(make_pair(make_pair(i, j), this));
+            }
+            else if(gameBoard->table[i][j - 'a' + 1]->color != this->color)
+            {
+                possiblePositions.push_back(make_pair(make_pair(i, j), this));
+                break;
+            }
+            else {
+                break;
+            }
+        }
     }
     return possiblePositions;
+}
+
+string Bishop::getName() {
+    return "B";
 }

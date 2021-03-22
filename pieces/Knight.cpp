@@ -8,7 +8,6 @@ Knight::Knight(pair<int, char> pos, bool color) : Piece(pos, color) {
 }
 
 bool inTable(int x, char y, GameBoard * gameBoard){
-    cout << x << ' ' << y << endl;
     if(x >= 9 || x <= 0 || y < 'a' || y > 'h')
         return false;
     if(gameBoard->table[x][y - 'a' + 1] != NULL && gameBoard->table[x][y - 'a' + 1]->color == 1)
@@ -16,13 +15,19 @@ bool inTable(int x, char y, GameBoard * gameBoard){
     return true;
 }
 
-vector<pair<int, char>> Knight::findPositions(GameBoard* gameBoard) {
-    vector<pair<int, char>> possiblePositions;
+vector<pair<pair<int, char>, Piece*>> Knight::findPositions(GameBoard* gameBoard) {
+    vector<pair<pair<int, char>, Piece*>> possiblePositions;
     int vx[] = {1, 2, 2, 1, -1, -2, -2, -1};
     int vy[] = {-2, -1, 1, 2, 2, 1, -1, -2};
     int i;
-    for(i = 0; i < 8; i++)
-        if(inTable(position.first + vx[i], position.second + vy[i], gameBoard))
-            possiblePositions.push_back(make_pair(position.first + vx[i], position.second + vy[i]));
+    if (this->color == 1) {
+        for(i = 0; i < 8; i++)
+            if(inTable(position.first + vx[i], position.second + vy[i], gameBoard))
+                possiblePositions.push_back(make_pair(make_pair(position.first + vx[i], position.second + vy[i]), this));
+    }
     return possiblePositions;
+}
+
+string Knight::getName() {
+    return "N";
 }
