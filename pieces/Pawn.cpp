@@ -1,10 +1,18 @@
 #include "Pawn.hpp"
 #include <vector>
 #include "../GameBoard.hpp"
+#include "Queen.hpp"
 #include <iostream>
 using namespace std;
 
 Pawn::Pawn(pair<int, char> pos, bool color) : Piece(pos, color) {
+}
+
+void Pawn::promoteToQueen(GameBoard* gameBoard) {
+    if (this->position.first == 8) {
+        gameBoard->table[8][position.second - 'a' + 1] = 
+            new Queen(make_pair(8, position.second), this->color);
+    }
 }
 
 vector<pair<int, char>> Pawn::findPositions(GameBoard* gameBoard) {
