@@ -144,10 +144,17 @@ int main() {
             
             cout << "move " << availablePos[i].second->position.second << 9 - availablePos[i].second->position.first 
             << availablePos[i].first.second << 9 - availablePos[i].first.first << endl;
-            
             gameBoard->table[availablePos[i].second->position.first][availablePos[i].second->position.second - 'a' + 1] = NULL;
             captured = gameBoard->table[availablePos[i].first.first][availablePos[i].first.second - 'a' + 1];
-            gameBoard->table[availablePos[i].first.first][availablePos[i].first.second - 'a' + 1] = availablePos[i].second;
+            
+            Piece *temp = availablePos[i].second;
+            int ok = 0;
+            if(availablePos[i].first.first == 8) {
+                if(temp->getName() == "P") 
+                    ok = ((Pawn*)temp)->promoteToQueen(gameBoard);
+            }
+            if (ok == 0)
+                gameBoard->table[availablePos[i].first.first][availablePos[i].first.second - 'a' + 1] = availablePos[i].second;
             
             if(captured != NULL)
                 remove(white, captured);
