@@ -10,42 +10,98 @@ recognized 'normal' (-1) as variant normal
 GameEnds(0, (null), 2)
 shuffleOpenings = 0
 StartChildProcess (dir=".") make run
-155 >first : xboard
+183 >first : xboard
 protover 2
-158 <first : ./test
-158 <first : R	N	B	Q	K	B	N	R	
-158 <first : P	P	P	P	P	P	P	P	
-158 <first : -	-	-	-	-	-	-	-	
-158 <first : -	-	-	-	-	-	-	-	
-158 <first : -	-	-	-	-	-	-	-	
-158 <first : -	-	-	-	-	-	-	-	
-158 <first : P	P	P	P	P	P	P	P	
-158 <first : R	N	B	Q	K	B	N	R	
-158 <first : feature sigint=0
-158 >first : accepted sigint
-158 <first : feature san=0
-158 >first : accepted san
-158 <first : feature myname="Capablanca"
-158 >first : accepted myname
-10159 >first : new
+187 <first : ./test
+187 <first : R	N	B	Q	K	B	N	R	
+187 <first : P	P	P	P	P	P	P	P	
+187 <first : -	-	-	-	-	-	-	-	
+187 <first : -	-	-	-	-	-	-	-	
+187 <first : -	-	-	-	-	-	-	-	
+187 <first : -	-	-	-	-	-	-	-	
+187 <first : P	P	P	P	P	P	P	P	
+187 <first : R	N	B	Q	K	B	N	R	
+187 <first : feature sigint=0
+187 >first : accepted sigint
+187 <first : feature san=0
+187 >first : accepted san
+187 <first : feature myname="Capablanca"
+187 >first : accepted myname
+10188 >first : new
 random
-10159 >first : level 40 5 0
-10159 >first : post
-10159 >first : hard
-16676 >first : black
-16676 >first : time 30000
-16676 >first : otim 30000
-16676 >first : white
+10188 >first : level 40 5 0
+10188 >first : post
+10188 >first : hard
+17952 >first : black
+17952 >first : time 30000
+17952 >first : otim 30000
+17952 >first : white
 book hit = (NULL)
-16676 >first : go
+17952 >first : go
 nps: w=-1, b=-1
-16679 <first : go!
-16679 <first : move c7c6
-16680 <first : R	N	B	Q	K	B	N	R	
-16680 <first : P	P	-	P	P	P	P	P	
-16680 <first : -	-	P	-	-	-	-	-	
-16680 <first : -	-	-	-	-	-	-	-	
-16680 <first : -	-	-	-	-	-	-	-	
-16680 <first : -	-	-	-	-	-	-	-	
-16680 <first : P	P	P	P	P	P	P	P	
-16680 <first : R	N	B	Q	K	B	N	R	
+17956 <first : go!
+17956 <first : move h2h4
+18031 <first : R	N	B	Q	K	B	N	R	
+18031 <first : P	P	P	P	P	P	P	P	
+18031 <first : -	-	-	-	-	-	-	-	
+18031 <first : -	-	-	-	-	-	-	-	
+18031 <first : -	-	-	-	-	-	-	P	
+18031 <first : -	-	-	-	-	-	-	-	
+18031 <first : P	P	P	P	P	P	P	-	
+18031 <first : R	N	B	Q	K	B	N	R	
+23727 >first : time 29999
+23727 >first : otim 29422
+book hit = (NULL)
+23727 >first : e7e6
+23731 <first : move a2a3
+23808 <first : R	N	B	Q	K	B	N	R	
+23808 <first : P	P	P	P	-	P	P	P	
+23808 <first : -	-	-	-	P	-	-	-	
+23808 <first : -	-	-	-	-	-	-	-	
+23808 <first : -	-	-	-	-	-	-	P	
+23808 <first : P	-	-	-	-	-	-	-	
+23808 <first : -	P	P	P	P	P	P	-	
+23808 <first : R	N	B	Q	K	B	N	R	
+25148 >first : time 29999
+25149 >first : otim 29281
+book hit = (NULL)
+25149 >first : d7d5
+25152 <first : move d2d3
+25227 <first : R	N	B	Q	K	B	N	R	
+25227 <first : P	P	P	-	-	P	P	P	
+25227 <first : -	-	-	-	P	-	-	-	
+25227 <first : -	-	-	P	-	-	-	-	
+25227 <first : -	-	-	-	-	-	-	P	
+25227 <first : P	-	-	P	-	-	-	-	
+25227 <first : -	P	P	-	P	P	P	-	
+25227 <first : R	N	B	Q	K	B	N	R	
+26208 >first : time 29998
+26209 >first : otim 29175
+book hit = (NULL)
+26209 >first : c7c5
+26215 <first : move c1h6
+26310 <first : R	N	B	Q	K	B	N	R	
+26310 <first : P	P	-	-	-	P	P	P	
+26310 <first : -	-	-	-	P	-	-	B	
+26310 <first : -	-	P	P	-	-	-	-	
+26310 <first : -	-	-	-	-	-	-	P	
+26310 <first : P	-	-	P	-	-	-	-	
+26310 <first : -	P	P	-	P	P	P	-	
+26310 <first : R	N	-	Q	K	B	N	R	
+28202 >first : time 29998
+28202 >first : otim 28976
+book hit = (NULL)
+28202 >first : g7g5
+28206 <first : move h6f4
+28208 <first : R	N	B	Q	K	B	N	R	
+28208 <first : P	P	-	-	-	P	-	P	
+28208 <first : -	-	-	-	P	-	-	-	
+28208 <first : -	-	P	P	-	-	P	-	
+28208 <first : -	-	-	-	-	B	-	P	
+28208 <first : P	-	-	P	-	-	-	-	
+28208 <first : -	P	P	-	P	P	P	-	
+28208 <first : R	N	-	Q	K	B	N	R	
+GameEnds(29, xboard exit, 2)
+179246 >first : result * {xboard exit}
+179246 >first : force
+179246 >first : quit
