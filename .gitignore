@@ -1,0 +1,4 @@
+.gitingore
+.vscode/
+test
+xboard.debug
