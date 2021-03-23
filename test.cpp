@@ -38,6 +38,8 @@ int main() {
     char command[20], protover[20], N;
     // mode = 1 bot plays mode = 0 watches (force)
     int mode = 1;
+    // color: 1->black, 0->white
+    int color = 1;
     while (true) {
         cin >> command;
         if (strncmp(command, "xboard", strlen("xboard")) == 0) {
@@ -95,9 +97,11 @@ int main() {
             continue;
         }
         else if (strncmp(command, "white", 5) == 0) {
+            color = 0;
             continue;
         }
         else if (strncmp(command, "black", 5) == 0) {
+            color = 1;
             continue;
         }
         else if (strncmp(command, "level", 5) == 0) {

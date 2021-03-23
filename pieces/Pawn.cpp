@@ -55,6 +55,9 @@ vector<pair<pair<int, char>, Piece*>> Pawn::findPositions(GameBoard* gameBoard) 
             }
         }
     }
+    // else {
+        
+    // }
     return possiblePositions;
 }
 
