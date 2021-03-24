@@ -10,569 +10,919 @@ recognized 'normal' (-1) as variant normal
 GameEnds(0, (null), 2)
 shuffleOpenings = 0
 StartChildProcess (dir=".") make run
-175 >first : xboard
+192 >first : xboard
 protover 2
-178 <first : ./test
-179 <first : R	N	B	Q	P	B	N	R	
-180 <first : P	P	P	P	P	P	P	P	
-180 <first : -	-	-	-	-	-	-	-	
-180 <first : -	-	-	-	-	-	-	-	
-180 <first : -	-	-	-	-	-	-	-	
-180 <first : -	-	-	-	-	-	-	-	
-180 <first : P	P	P	P	P	P	P	P	
-180 <first : R	N	B	Q	P	B	N	R	
-180 <first : feature sigint=0
-180 >first : accepted sigint
-180 <first : feature san=0
-180 >first : accepted san
-180 <first : feature myname="Capablanca"
-180 >first : accepted myname
-10178 >first : new
+194 <first : ./test
+196 <first : R	N	B	Q	K	B	N	R	
+196 <first : P	P	P	P	P	P	P	P	
+196 <first : -	-	-	-	-	-	-	-	
+196 <first : -	-	-	-	-	-	-	-	
+196 <first : -	-	-	-	-	-	-	-	
+196 <first : -	-	-	-	-	-	-	-	
+196 <first : P	P	P	P	P	P	P	P	
+196 <first : R	N	B	Q	K	B	N	R	
+196 <first : feature sigint=0
+196 >first : accepted sigint
+196 <first : feature san=0
+196 >first : accepted san
+196 <first : feature myname="Capablanca"
+196 >first : accepted myname
+10193 >first : new
 random
-10178 >first : level 40 5 0
-10178 >first : post
-10178 >first : hard
+10193 >first : level 40 5 0
+10193 >first : post
+10193 >first : hard
 nps: w=-1, b=-1
 nps: w=-1, b=-1
-14004 >first : time 30000
-14004 >first : otim 30000
+23946 >first : time 30000
+23946 >first : otim 30000
 book hit = (NULL)
-14004 >first : c2c3
-14005 <first : 2 `
-14005 <first : 3 a
-14005 <first : 3 c
-14005 <first : 2 d
-14005 <first : 0 d
-14005 <first : -1 c
-14005 <first : -1 a
-14005 <first : 0 `
-14005 <first : 2 e
-14005 <first : 3 f
-14005 <first : 3 h
-14005 <first : 2 i
-14005 <first : 0 i
-14005 <first : -1 h
-14005 <first : -1 f
-14005 <first : 0 e
-14005 <first : 16
-14005 <first : P 4 h
-14005 <first : move h7h5
-14082 <first : R	N	B	Q	P	B	N	R	
-14082 <first : P	P	P	P	P	P	P	-	
-14082 <first : -	-	-	-	-	-	-	-	
-14082 <first : -	-	-	-	-	-	-	P	
-14082 <first : -	-	-	-	-	-	-	-	
-14082 <first : -	-	P	-	-	-	-	-	
-14082 <first : P	P	-	P	P	P	P	P	
-14082 <first : R	N	B	Q	P	B	N	R	
-14995 >first : time 29999
-14995 >first : otim 29901
+23946 >first : e2e3
+23949 <first : P 2 a
+23949 <first : P 2 b
+23949 <first : P 2 c
+23949 <first : P 2 d
+23950 <first : P 2 e
+23950 <first : P 2 f
+23950 <first : P 2 g
+23950 <first : P 2 h
+23950 <first : N 1 b
+23950 <first : N 1 g
+23950 <first : Q 1 d
+23950 <first : R 1 a
+23950 <first : R 1 h
+23950 <first : B 1 c
+23950 <first : B 1 f
+23950 <first : K 1 d
+23950 <first : 16
+23950 <first : P 3 c
+23950 <first : move c7c6
+24030 <first : R	N	B	Q	K	B	N	R	
+24030 <first : P	P	-	P	P	P	P	P	
+24030 <first : -	-	P	-	-	-	-	-	
+24030 <first : -	-	-	-	-	-	-	-	
+24030 <first : -	-	-	-	-	-	-	-	
+24030 <first : -	-	-	-	P	-	-	-	
+24030 <first : P	P	P	P	-	P	P	P	
+24030 <first : R	N	B	Q	K	B	N	R	
+Reset(1, 1) from gameMode 2
+recognized 'normal' (-1) as variant normal
+GameEnds(0, (null), 2)
+25515 >first : force
+shuffleOpenings = 0
+25520 >first : new
+random
+25520 >first : level 40 5 0
+25520 >first : post
+25520 >first : hard
+27627 >first : black
+27627 >first : time 30000
+27627 >first : otim 30000
+27627 >first : white
 book hit = (NULL)
-14995 >first : c3c4
-14996 <first : 2 `
-14997 <first : 3 a
-14997 <first : 3 c
-14997 <first : 2 d
-14997 <first : 0 d
-14997 <first : -1 c
-14997 <first : -1 a
-14997 <first : 0 `
-14997 <first : 2 e
-14997 <first : 3 f
-14997 <first : 3 h
-14997 <first : 2 i
-14997 <first : 0 i
-14997 <first : -1 h
-14997 <first : -1 f
-14997 <first : 0 e
-14997 <first : 16
-14997 <first : P 4 g
-14997 <first : move g7g5
-15072 <first : R	N	B	Q	P	B	N	R	
-15072 <first : P	P	P	P	P	P	-	-	
-15072 <first : -	-	-	-	-	-	-	-	
-15072 <first : -	-	-	-	-	-	P	P	
-15072 <first : -	-	P	-	-	-	-	-	
-15072 <first : -	-	-	-	-	-	-	-	
-15072 <first : P	P	-	P	P	P	P	P	
-15072 <first : R	N	B	Q	P	B	N	R	
-15610 >first : time 29999
-15610 >first : otim 29839
+27627 >first : go
+nps: w=-1, b=-1
+27631 <first : go!
+27631 <first : 0
+27631 <first : move g2g4
+27706 <first : R	N	B	Q	K	B	N	R	
+27706 <first : P	P	P	P	P	P	P	P	
+27706 <first : -	-	-	-	-	-	-	-	
+27706 <first : -	-	-	-	-	-	-	-	
+27706 <first : -	-	-	-	-	-	P	-	
+27706 <first : -	-	-	-	-	-	-	-	
+27706 <first : P	P	P	P	P	P	-	P	
+27706 <first : R	N	B	Q	K	B	N	R	
+28536 >first : time 29999
+28536 >first : otim 29909
 book hit = (NULL)
-15610 >first : d1c2
-15612 <first : 2 `
-15612 <first : 3 a
-15612 <first : 3 c
-15612 <first : 2 d
-15612 <first : 0 d
-15612 <first : -1 c
-15612 <first : -1 a
-15612 <first : 0 `
-15612 <first : 2 e
-15612 <first : 3 f
-15612 <first : 3 h
-15612 <first : 2 i
-15612 <first : 0 i
-15612 <first : -1 h
-15612 <first : -1 f
-15612 <first : 0 e
-15612 <first : 16
-15612 <first : P 5 h
-15612 <first : move h5h4
-15691 <first : R	N	B	Q	P	B	N	R	
-15691 <first : P	P	P	P	P	P	-	-	
-15691 <first : -	-	-	-	-	-	-	-	
-15691 <first : -	-	-	-	-	-	P	-	
-15691 <first : -	-	P	-	-	-	-	P	
-15691 <first : -	-	-	-	-	-	-	-	
-15691 <first : P	P	Q	P	P	P	P	P	
-15691 <first : R	N	B	-	P	B	N	R	
-16099 >first : time 29999
-16099 >first : otim 29791
+28536 >first : e7e6
+28539 <first : P 7 a
+28539 <first : P 7 b
+28539 <first : P 7 c
+28539 <first : P 7 d
+28539 <first : P 7 e
+28539 <first : P 7 f
+28539 <first : P 5 g
+28539 <first : P 7 h
+28539 <first : N 8 b
+28539 <first : N 8 g
+28539 <first : Q 8 d
+28539 <first : R 8 a
+28539 <first : R 8 h
+28539 <first : B 8 c
+28539 <first : B 8 f
+28539 <first : K 8 d
+28539 <first : 16
+28539 <first : P 5 b
+28539 <first : move b2b4
+28619 <first : R	N	B	Q	K	B	N	R	
+28619 <first : P	P	P	P	-	P	P	P	
+28619 <first : -	-	-	-	P	-	-	-	
+28619 <first : -	-	-	-	-	-	-	-	
+28619 <first : -	P	-	-	-	-	P	-	
+28619 <first : -	-	-	-	-	-	-	-	
+28619 <first : P	-	P	P	P	P	-	P	
+28619 <first : R	N	B	Q	K	B	N	R	
+Reset(1, 1) from gameMode 1
+recognized 'normal' (-1) as variant normal
+GameEnds(0, (null), 2)
+30033 >first : force
+shuffleOpenings = 0
+30038 >first : new
+random
+30038 >first : level 40 5 0
+30038 >first : post
+30038 >first : hard
+32920 >first : force
+33920 >first : d2d4
+33923 <first : R	N	B	Q	K	B	N	R	
+33923 <first : P	P	P	P	P	P	P	P	
+33923 <first : -	-	-	-	-	-	-	-	
+33923 <first : -	-	-	-	-	-	-	-	
+33923 <first : -	-	-	P	-	-	-	-	
+33923 <first : -	-	-	-	-	-	-	-	
+33923 <first : P	P	P	-	P	P	P	P	
+33923 <first : R	N	B	Q	K	B	N	R	
+35088 >first : d7d5
+35091 <first : R	N	B	Q	K	B	N	R	
+35091 <first : P	P	P	-	P	P	P	P	
+35091 <first : -	-	-	-	-	-	-	-	
+35091 <first : -	-	-	P	-	-	-	-	
+35091 <first : -	-	-	P	-	-	-	-	
+35091 <first : -	-	-	-	-	-	-	-	
+35091 <first : P	P	P	-	P	P	P	P	
+35091 <first : R	N	B	Q	K	B	N	R	
+36368 >first : e2e4
+36371 <first : R	N	B	Q	K	B	N	R	
+36371 <first : P	P	P	-	P	P	P	P	
+36371 <first : -	-	-	-	-	-	-	-	
+36371 <first : -	-	-	P	-	-	-	-	
+36371 <first : -	-	-	P	P	-	-	-	
+36371 <first : -	-	-	-	-	-	-	-	
+36371 <first : P	P	P	-	-	P	P	P	
+36371 <first : R	N	B	Q	K	B	N	R	
+37216 >first : e7e5
+37220 <first : R	N	B	Q	K	B	N	R	
+37220 <first : P	P	P	-	-	P	P	P	
+37220 <first : -	-	-	-	-	-	-	-	
+37220 <first : -	-	-	P	P	-	-	-	
+37220 <first : -	-	-	P	P	-	-	-	
+37220 <first : -	-	-	-	-	-	-	-	
+37220 <first : P	P	P	-	-	P	P	P	
+37220 <first : R	N	B	Q	K	B	N	R	
+40880 >first : f1a6
+40884 <first : R	N	B	Q	K	B	N	R	
+40884 <first : P	P	P	-	-	P	P	P	
+40884 <first : B	-	-	-	-	-	-	-	
+40884 <first : -	-	-	P	P	-	-	-	
+40884 <first : -	-	-	P	P	-	-	-	
+40884 <first : -	-	-	-	-	-	-	-	
+40884 <first : P	P	P	-	-	P	P	P	
+40884 <first : R	N	B	Q	K	-	N	R	
+43864 >first : c7c6
+43871 <first : R	N	B	Q	K	B	N	R	
+43871 <first : P	P	-	-	-	P	P	P	
+43871 <first : B	-	P	-	-	-	-	-	
+43871 <first : -	-	-	P	P	-	-	-	
+43871 <first : -	-	-	P	P	-	-	-	
+43871 <first : -	-	-	-	-	-	-	-	
+43871 <first : P	P	P	-	-	P	P	P	
+43871 <first : R	N	B	Q	K	-	N	R	
+48224 >first : a6b7
+48227 <first : 1 P
+48227 <first : R	N	B	Q	K	B	N	R	
+48228 <first : P	B	-	-	-	P	P	P	
+48228 <first : -	-	P	-	-	-	-	-	
+48228 <first : -	-	-	P	P	-	-	-	
+48228 <first : -	-	-	P	P	-	-	-	
+48228 <first : -	-	-	-	-	-	-	-	
+48228 <first : P	P	P	-	-	P	P	P	
+48228 <first : R	N	B	Q	K	-	N	R	
+55273 >first : white
+55273 >first : time 30000
+55273 >first : otim 30000
+55273 >first : black
 book hit = (NULL)
-16099 >first : c2d1
-16103 <first : 2 `
-16103 <first : 3 a
-16103 <first : 3 c
-16103 <first : 2 d
-16103 <first : 0 d
-16103 <first : -1 c
-16103 <first : -1 a
-16103 <first : 0 `
-16103 <first : 2 e
-16103 <first : 3 f
-16103 <first : 3 h
-16103 <first : 2 i
-16103 <first : 0 i
-16103 <first : -1 h
-16103 <first : -1 f
-16103 <first : 0 e
-16103 <first : 16
-16103 <first : P 3 c
-16103 <first : move c7c6
-16178 <first : R	N	B	Q	P	B	N	R	
-16178 <first : P	P	-	P	P	P	-	-	
-16178 <first : -	-	P	-	-	-	-	-	
-16178 <first : -	-	-	-	-	-	P	-	
-16178 <first : -	-	P	-	-	-	-	P	
-16178 <first : -	-	-	-	-	-	-	-	
-16178 <first : P	P	-	P	P	P	P	P	
-16178 <first : R	N	B	Q	P	B	N	R	
-16507 >first : time 29999
-16507 >first : otim 29750
+55273 >first : go
+nps: w=-1, b=-1
+55274 <first : go!
+55274 <first : 1
+55274 <first : move d8c7
+55354 <first : R	N	B	-	K	B	N	R	
+55354 <first : P	B	Q	-	-	P	P	P	
+55354 <first : -	-	P	-	-	-	-	-	
+55354 <first : -	-	-	P	P	-	-	-	
+55354 <first : -	-	-	P	P	-	-	-	
+55354 <first : -	-	-	-	-	-	-	-	
+55354 <first : P	P	P	-	-	P	P	P	
+55354 <first : R	N	B	Q	K	-	N	R	
+56760 >first : time 30000
+56760 >first : otim 29851
 book hit = (NULL)
-16507 >first : d1c2
-16508 <first : 2 `
-16508 <first : 3 a
-16508 <first : 3 c
-16508 <first : 2 d
-16508 <first : 0 d
-16508 <first : -1 c
-16508 <first : -1 a
-16508 <first : 0 `
-16508 <first : 2 e
-16508 <first : 3 f
-16508 <first : 3 h
-16508 <first : 2 i
-16508 <first : 0 i
-16508 <first : -1 h
-16508 <first : -1 f
-16508 <first : 0 e
-16508 <first : 16
-16508 <first : P 5 g
-16508 <first : move g5g4
-16584 <first : R	N	B	Q	P	B	N	R	
-16584 <first : P	P	-	P	P	P	-	-	
-16584 <first : -	-	P	-	-	-	-	-	
-16584 <first : -	-	-	-	-	-	-	-	
-16584 <first : -	-	P	-	-	-	P	P	
-16584 <first : -	-	-	-	-	-	-	-	
-16584 <first : P	P	Q	P	P	P	P	P	
-16584 <first : R	N	B	-	P	B	N	R	
-17475 >first : time 29998
-17475 >first : otim 29654
+56761 >first : b7a8
+56764 <first : 1 R
+56764 <first : P 2 a
+56764 <first : P 3 c
+56764 <first : P 4 d
+56764 <first : P 4 e
+56764 <first : P 2 f
+56764 <first : P 2 g
+56764 <first : P 2 h
+56764 <first : N 1 b
+56764 <first : N 1 g
+56764 <first : Q 2 c
+56764 <first : R 1 h
+56764 <first : B 1 c
+56764 <first : B 1 f
+56764 <first : K 1 d
+56764 <first : 14
+56764 <first : N 3 a
+56764 <first : move b8a6
+56864 <first : B	-	B	-	K	B	N	R	
+56864 <first : P	-	Q	-	-	P	P	P	
+56864 <first : N	-	P	-	-	-	-	-	
+56864 <first : -	-	-	P	P	-	-	-	
+56864 <first : -	-	-	P	P	-	-	-	
+56864 <first : -	-	-	-	-	-	-	-	
+56864 <first : P	P	P	-	-	P	P	P	
+56864 <first : R	N	B	Q	K	-	N	R	
+58569 >first : time 29999
+58569 >first : otim 29671
 book hit = (NULL)
-17475 >first : c2e4
-17476 <first : 2 `
-17476 <first : 3 a
-17476 <first : 3 c
-17476 <first : 2 d
-17476 <first : 0 d
-17476 <first : -1 c
-17476 <first : -1 a
-17476 <first : 0 `
-17476 <first : 2 e
-17476 <first : 3 f
-17476 <first : 3 h
-17476 <first : 2 i
-17476 <first : 0 i
-17476 <first : -1 h
-17476 <first : -1 f
-17476 <first : 0 e
-17476 <first : 16
-17476 <first : R 4 h
-17476 <first : move h8h5
-17572 <first : R	N	B	Q	P	B	N	-	
-17572 <first : P	P	-	P	P	P	-	-	
-17572 <first : -	-	P	-	-	-	-	-	
-17572 <first : -	-	-	-	-	-	-	R	
-17572 <first : -	-	P	-	Q	-	P	P	
-17572 <first : -	-	-	-	-	-	-	-	
-17572 <first : P	P	-	P	P	P	P	P	
-17572 <first : R	N	B	-	P	B	N	R	
-18243 >first : time 29998
-18243 >first : otim 29577
+58569 >first : d1d3
+58572 <first : P 2 a
+58572 <first : P 3 c
+58572 <first : P 4 d
+58572 <first : P 4 e
+58572 <first : P 2 f
+58572 <first : P 2 g
+58572 <first : P 2 h
+58572 <first : N 3 a
+58572 <first : N 1 g
+58572 <first : Q 2 c
+58572 <first : R 1 h
+58572 <first : B 1 c
+58572 <first : B 1 f
+58572 <first : K 1 d
+58572 <first : 14
+58572 <first : B 5 b
+58572 <first : move f8b4
+58675 <first : B	-	B	-	K	-	N	R	
+58676 <first : P	-	Q	-	-	P	P	P	
+58676 <first : N	-	P	-	-	-	-	-	
+58676 <first : -	-	-	P	P	-	-	-	
+58676 <first : -	B	-	P	P	-	-	-	
+58676 <first : -	-	-	Q	-	-	-	-	
+58676 <first : P	P	P	-	-	P	P	P	
+58676 <first : R	N	B	-	K	-	N	R	
+61376 >first : time 29999
+61376 >first : otim 29390
 book hit = (NULL)
-18243 >first : e4g4
-18245 <first : 1 5 g
-18245 <first : 16 6
-18245 <first : 2 `
-18245 <first : 3 a
-18245 <first : 3 c
-18245 <first : 2 d
-18245 <first : 0 d
-18245 <first : -1 c
-18245 <first : -1 a
-18245 <first : 0 `
-18245 <first : 2 e
-18245 <first : 3 f
-18245 <first : 3 h
-18245 <first : 2 i
-18245 <first : 0 i
-18245 <first : -1 h
-18245 <first : -1 f
-18245 <first : 0 e
-18245 <first : 15
-18245 <first : R 4 a
-18245 <first : move h5a5
-18340 <first : R	N	B	Q	P	B	N	-	
-18340 <first : P	P	-	P	P	P	-	-	
-18340 <first : -	-	P	-	-	-	-	-	
-18340 <first : R	-	-	-	-	-	-	-	
-18340 <first : -	-	P	-	-	-	Q	P	
-18340 <first : -	-	-	-	-	-	-	-	
-18340 <first : P	P	-	P	P	P	P	P	
-18340 <first : R	N	B	-	P	B	N	R	
-19316 >first : time 29998
-19316 >first : otim 29470
+61376 >first : c2c3
+61379 <first : P 2 a
+61379 <first : P 3 c
+61379 <first : P 4 d
+61379 <first : P 4 e
+61379 <first : P 2 f
+61379 <first : P 2 g
+61379 <first : P 2 h
+61379 <first : N 3 a
+61379 <first : N 1 g
+61379 <first : Q 2 c
+61379 <first : R 1 h
+61379 <first : B 1 c
+61379 <first : B 5 b
+61379 <first : K 1 d
+61379 <first : 14
+61379 <first : B 4 f
+61379 <first : move c8f5
+61482 <first : B	-	-	-	K	-	N	R	
+61483 <first : P	-	Q	-	-	P	P	P	
+61483 <first : N	-	P	-	-	-	-	-	
+61483 <first : -	-	-	P	P	B	-	-	
+61483 <first : -	B	-	P	P	-	-	-	
+61483 <first : -	-	P	Q	-	-	-	-	
+61483 <first : P	P	-	-	-	P	P	P	
+61483 <first : R	N	B	-	K	-	N	R	
+62337 >first : time 29998
+62337 >first : otim 29294
 book hit = (NULL)
-19316 >first : g4h4
-19319 <first : 1 5 h
-19319 <first : 15 6
-19319 <first : 2 `
-19319 <first : 3 a
-19319 <first : 3 c
-19319 <first : 2 d
-19319 <first : 0 d
-19319 <first : -1 c
-19319 <first : -1 a
-19319 <first : 0 `
-19319 <first : 2 e
-19319 <first : 3 f
-19319 <first : 3 h
-19319 <first : 2 i
-19319 <first : 0 i
-19319 <first : -1 h
-19319 <first : -1 f
-19319 <first : 0 e
-19319 <first : 14
-19319 <first : N 3 f
-19320 <first : move g8f6
-19418 <first : R	N	B	Q	P	B	-	-	
-19418 <first : P	P	-	P	P	P	-	-	
-19418 <first : -	-	P	-	-	N	-	-	
-19418 <first : R	-	-	-	-	-	-	-	
-19418 <first : -	-	P	-	-	-	-	Q	
-19418 <first : -	-	-	-	-	-	-	-	
-19418 <first : P	P	-	P	P	P	P	P	
-19418 <first : R	N	B	-	P	B	N	R	
-20539 >first : time 29998
-20539 >first : otim 29348
+62337 >first : c3b4
+62340 <first : 1 B
+62340 <first : P 2 a
+62340 <first : P 3 c
+62340 <first : P 4 d
+62340 <first : P 4 e
+62341 <first : P 2 f
+62341 <first : P 2 g
+62341 <first : P 2 h
+62341 <first : N 3 a
+62341 <first : N 1 g
+62341 <first : Q 2 c
+62341 <first : R 1 h
+62341 <first : B 4 f
+62341 <first : K 1 d
+62341 <first : 13
+62341 <first : B 3 e
+62341 <first : move f5e6
+62419 <first : B	-	-	-	K	-	N	R	
+62419 <first : P	-	Q	-	-	P	P	P	
+62419 <first : N	-	P	-	B	-	-	-	
+62419 <first : -	-	-	P	P	-	-	-	
+62419 <first : -	P	-	P	P	-	-	-	
+62419 <first : -	-	-	Q	-	-	-	-	
+62419 <first : P	P	-	-	-	P	P	P	
+62419 <first : R	N	B	-	K	-	N	R	
+63472 >first : time 29998
+63472 >first : otim 29181
 book hit = (NULL)
-20539 >first : h4f6
-20541 <first : 1 3 f
-20541 <first : 14 7
-20541 <first : 2 `
-20541 <first : 3 a
-20541 <first : 3 c
-20541 <first : 2 d
-20541 <first : 0 d
-20541 <first : -1 c
-20541 <first : -1 a
-20541 <first : 0 `
-20541 <first : 13
-20541 <first : R 5 a
-20541 <first : move a5a4
-20617 <first : R	N	B	Q	P	B	-	-	
-20617 <first : P	P	-	P	P	P	-	-	
-20617 <first : -	-	P	-	-	Q	-	-	
-20617 <first : -	-	-	-	-	-	-	-	
-20617 <first : R	-	P	-	-	-	-	-	
-20617 <first : -	-	-	-	-	-	-	-	
-20617 <first : P	P	-	P	P	P	P	P	
-20617 <first : R	N	B	-	P	B	N	R	
-23595 >first : time 29997
-23595 >first : otim 29043
+63472 >first : d3a6
+63478 <first : 1 N
+63479 <first : P 2 a
+63479 <first : P 3 c
+63479 <first : P 4 d
+63479 <first : P 4 e
+63479 <first : P 2 f
+63479 <first : P 2 g
+63479 <first : P 2 h
+63479 <first : N 1 g
+63479 <first : Q 2 c
+63479 <first : R 1 h
+63479 <first : B 3 e
+63479 <first : K 1 d
+63479 <first : 12
+63479 <first : P 4 f
+63479 <first : move f7f5
+63563 <first : B	-	-	-	K	-	N	R	
+63563 <first : P	-	Q	-	-	-	P	P	
+63563 <first : Q	-	P	-	B	-	-	-	
+63563 <first : -	-	-	P	P	P	-	-	
+63563 <first : -	P	-	P	P	-	-	-	
+63563 <first : -	-	-	-	-	-	-	-	
+63563 <first : P	P	-	-	-	P	P	P	
+63563 <first : R	N	B	-	K	-	N	R	
+64224 >first : time 29997
+64225 >first : otim 29107
 book hit = (NULL)
-23595 >first : f6c6
-23598 <first : 1 3 c
-23598 <first : 13 2
-23598 <first : 2 `
-23598 <first : 3 a
-23598 <first : 3 c
-23598 <first : 2 d
-23598 <first : 0 d
-23598 <first : -1 c
-23598 <first : -1 a
-23598 <first : 0 `
-23598 <first : 12
-23598 <first : B 3 h
-23598 <first : move f8h6
-23693 <first : R	N	B	Q	P	-	-	-	
-23693 <first : P	P	-	P	P	P	-	-	
-23693 <first : -	-	Q	-	-	-	-	B	
-23693 <first : -	-	-	-	-	-	-	-	
-23693 <first : R	-	P	-	-	-	-	-	
-23693 <first : -	-	-	-	-	-	-	-	
-23693 <first : P	P	-	P	P	P	P	P	
-23693 <first : R	N	B	-	P	B	N	R	
-24675 >first : time 29997
-24676 >first : otim 28935
+64226 >first : a6a7
+64230 <first : 1 P
+64230 <first : P 3 c
+64230 <first : P 4 d
+64230 <first : P 4 e
+64230 <first : P 4 f
+64230 <first : P 2 g
+64230 <first : P 2 h
+64230 <first : N 1 g
+64230 <first : Q 2 c
+64230 <first : R 1 h
+64230 <first : B 3 e
+64230 <first : K 1 d
+64230 <first : 11
+64230 <first : Q 1 d
+64230 <first : move c7d8
+64311 <first : B	-	-	Q	K	-	N	R	
+64311 <first : Q	-	-	-	-	-	P	P	
+64311 <first : -	-	P	-	B	-	-	-	
+64311 <first : -	-	-	P	P	P	-	-	
+64311 <first : -	P	-	P	P	-	-	-	
+64311 <first : -	-	-	-	-	-	-	-	
+64311 <first : P	P	-	-	-	P	P	P	
+64311 <first : R	N	B	-	K	-	N	R	
+65704 >first : time 29997
+65704 >first : otim 28959
 book hit = (NULL)
-24676 >first : c6b7
-24679 <first : 1 2 b
-24679 <first : 12 1
-24679 <first : 2 `
-24679 <first : 3 a
-24679 <first : 3 c
-24679 <first : 2 d
-24679 <first : 0 d
-24679 <first : -1 c
-24679 <first : -1 a
-24679 <first : 0 `
-24679 <first : 11
-24680 <first : R 4 a
-24680 <first : move a4a5
-24755 <first : R	N	B	Q	P	-	-	-	
-24755 <first : P	Q	-	P	P	P	-	-	
-24755 <first : -	-	-	-	-	-	-	B	
-24755 <first : R	-	-	-	-	-	-	-	
-24755 <first : -	-	P	-	-	-	-	-	
-24755 <first : -	-	-	-	-	-	-	-	
-24756 <first : P	P	-	P	P	P	P	P	
-24756 <first : R	N	B	-	P	B	N	R	
-25851 >first : time 29996
-25852 >first : otim 28818
+65704 >first : a7g7
+65708 <first : 1 P
+65708 <first : P 3 c
+65708 <first : P 4 d
+65708 <first : P 4 e
+65708 <first : P 4 f
+65708 <first : P 2 h
+65708 <first : N 1 g
+65708 <first : Q 1 d
+65709 <first : R 1 h
+65709 <first : B 3 e
+65709 <first : K 1 d
+65709 <first : 10
+65709 <first : P 4 h
+65709 <first : move h7h5
+65790 <first : B	-	-	Q	K	-	N	R	
+65790 <first : -	-	-	-	-	-	Q	-	
+65790 <first : -	-	P	-	B	-	-	-	
+65790 <first : -	-	-	P	P	P	-	P	
+65790 <first : -	P	-	P	P	-	-	-	
+65790 <first : -	-	-	-	-	-	-	-	
+65790 <first : P	P	-	-	-	P	P	P	
+65790 <first : R	N	B	-	K	-	N	R	
+66656 >first : time 29996
+66656 >first : otim 28865
 book hit = (NULL)
-25852 >first : b7a7
-25856 <first : 1 2 a
-25856 <first : 11 0
-25856 <first : 2 `
-25856 <first : 3 a
-25856 <first : 3 c
-25856 <first : 2 d
-25856 <first : 0 d
-25856 <first : -1 c
-25856 <first : -1 a
-25856 <first : 0 `
-25856 <first : 10
-25856 <first : B 5 f
-25856 <first : move h6f4
-25955 <first : R	N	B	Q	P	-	-	-	
-25955 <first : Q	-	-	P	P	P	-	-	
-25955 <first : -	-	-	-	-	-	-	-	
-25955 <first : R	-	-	-	-	-	-	-	
-25955 <first : -	-	P	-	-	B	-	-	
-25955 <first : -	-	-	-	-	-	-	-	
-25955 <first : P	P	-	P	P	P	P	P	
-25955 <first : R	N	B	-	P	B	N	R	
-27266 >first : time 29996
-27266 >first : otim 28677
+66656 >first : g7h8
+66660 <first : 1 R
+66660 <first : P 3 c
+66660 <first : P 4 d
+66660 <first : P 4 e
+66660 <first : P 4 f
+66660 <first : P 4 h
+66660 <first : N 1 g
+66660 <first : Q 1 d
+66660 <first : B 3 e
+66660 <first : K 1 d
+66660 <first : 9
+66660 <first : P 5 d
+66660 <first : move e5d4
+66743 <first : 0 P
+66743 <first : B	-	-	Q	K	-	N	Q	
+66743 <first : -	-	-	-	-	-	-	-	
+66743 <first : -	-	P	-	B	-	-	-	
+66743 <first : -	-	-	P	-	P	-	P	
+66743 <first : -	P	-	P	P	-	-	-	
+66743 <first : -	-	-	-	-	-	-	-	
+66743 <first : P	P	-	-	-	P	P	P	
+66743 <first : R	N	B	-	K	-	N	R	
+67744 >first : time 29996
+67744 >first : otim 28756
 book hit = (NULL)
-27266 >first : a7a5
-27268 <first : 1 4 a
-27268 <first : 10 6
-27268 <first : 2 `
-27268 <first : 3 a
-27268 <first : 3 c
-27268 <first : 2 d
-27268 <first : 0 d
-27268 <first : -1 c
-27268 <first : -1 a
-27268 <first : 0 `
-27268 <first : 9
-27268 <first : P 4 e
-27268 <first : move e7e5
-27342 <first : R	N	B	Q	P	-	-	-	
-27342 <first : -	-	-	P	-	P	-	-	
-27342 <first : -	-	-	-	-	-	-	-	
-27342 <first : Q	-	-	-	P	-	-	-	
-27342 <first : -	-	P	-	-	B	-	-	
-27342 <first : -	-	-	-	-	-	-	-	
-27342 <first : P	P	-	P	P	P	P	P	
-27342 <first : R	N	B	-	P	B	N	R	
-28275 >first : time 29996
-28275 >first : otim 28576
+67744 >first : h8h5
+67748 <first : 1 P
+67748 <first : P 3 c
+67748 <first : P 4 d
+67748 <first : P 5 d
+67748 <first : P 4 f
+67748 <first : N 1 g
+67748 <first : Q 1 d
+67748 <first : B 3 e
+67748 <first : K 1 d
+67748 <first : 8
+67748 <first : N 3 f
+67748 <first : move g8f6
+67750 <first : B	-	-	Q	K	-	-	-	
+67750 <first : -	-	-	-	-	-	-	-	
+67750 <first : -	-	P	-	B	N	-	-	
+67750 <first : -	-	-	P	-	P	-	Q	
+67750 <first : -	P	-	P	P	-	-	-	
+67750 <first : -	-	-	-	-	-	-	-	
+67750 <first : P	P	-	-	-	P	P	P	
+67750 <first : R	N	B	-	K	-	N	R	
+Reset(1, 1) from gameMode 2
+recognized 'normal' (-1) as variant normal
+GameEnds(0, (null), 2)
+72777 >first : force
+shuffleOpenings = 0
+72782 >first : new
+random
+72782 >first : level 40 5 0
+72782 >first : post
+72782 >first : hard
+76153 >first : force
+76960 >first : e2e3
+76963 <first : R	N	B	Q	K	B	N	R	
+76963 <first : P	P	P	P	P	P	P	P	
+76963 <first : -	-	-	-	-	-	-	-	
+76963 <first : -	-	-	-	-	-	-	-	
+76963 <first : -	-	-	-	-	-	-	-	
+76963 <first : -	-	-	-	P	-	-	-	
+76963 <first : P	P	P	P	-	P	P	P	
+76963 <first : R	N	B	Q	K	B	N	R	
+77632 >first : e7e5
+77635 <first : R	N	B	Q	K	B	N	R	
+77636 <first : P	P	P	P	-	P	P	P	
+77636 <first : -	-	-	-	-	-	-	-	
+77636 <first : -	-	-	-	P	-	-	-	
+77636 <first : -	-	-	-	-	-	-	-	
+77636 <first : -	-	-	-	P	-	-	-	
+77636 <first : P	P	P	P	-	P	P	P	
+77636 <first : R	N	B	Q	K	B	N	R	
+78888 >first : f2f4
+78891 <first : R	N	B	Q	K	B	N	R	
+78891 <first : P	P	P	P	-	P	P	P	
+78891 <first : -	-	-	-	-	-	-	-	
+78891 <first : -	-	-	-	P	-	-	-	
+78891 <first : -	-	-	-	-	P	-	-	
+78891 <first : -	-	-	-	P	-	-	-	
+78891 <first : P	P	P	P	-	-	P	P	
+78891 <first : R	N	B	Q	K	B	N	R	
+79968 >first : d7d6
+79972 <first : R	N	B	Q	K	B	N	R	
+79972 <first : P	P	P	-	-	P	P	P	
+79972 <first : -	-	-	P	-	-	-	-	
+79972 <first : -	-	-	-	P	-	-	-	
+79972 <first : -	-	-	-	-	P	-	-	
+79972 <first : -	-	-	-	P	-	-	-	
+79972 <first : P	P	P	P	-	-	P	P	
+79972 <first : R	N	B	Q	K	B	N	R	
+85809 >first : black
+85809 >first : time 30000
+85809 >first : otim 30000
+85809 >first : white
 book hit = (NULL)
-28275 >first : a5a8
-28278 <first : 1 1 a
-28278 <first : 9 5
-28278 <first : 2 `
-28278 <first : 3 a
-28278 <first : 3 c
-28278 <first : 2 d
-28278 <first : 0 d
-28278 <first : -1 c
-28278 <first : -1 a
-28278 <first : 0 `
-28278 <first : 8
-28278 <first : B 4 g
-28278 <first : move f4g5
-28352 <first : Q	N	B	Q	P	-	-	-	
-28352 <first : -	-	-	P	-	P	-	-	
-28352 <first : -	-	-	-	-	-	-	-	
-28352 <first : -	-	-	-	P	-	B	-	
-28352 <first : -	-	P	-	-	-	-	-	
-28352 <first : -	-	-	-	-	-	-	-	
-28352 <first : P	P	-	P	P	P	P	P	
-28353 <first : R	N	B	-	P	B	N	R	
-29243 >first : time 29995
-29243 >first : otim 28480
+85809 >first : go
+nps: w=-1, b=-1
+85813 <first : go!
+85813 <first : 0
+85813 <first : move b1c3
+85915 <first : R	N	B	Q	K	B	N	R	
+85915 <first : P	P	P	-	-	P	P	P	
+85915 <first : -	-	-	P	-	-	-	-	
+85915 <first : -	-	-	-	P	-	-	-	
+85915 <first : -	-	-	-	-	P	-	-	
+85915 <first : -	-	N	-	P	-	-	-	
+85915 <first : P	P	P	P	-	-	P	P	
+85915 <first : R	-	B	Q	K	B	N	R	
+87648 >first : time 29999
+87648 >first : otim 29816
 book hit = (NULL)
-29243 >first : a8b8
-29246 <first : 1 1 b
-29246 <first : 8 3
-29246 <first : 7
-29246 <first : Q 3 b
-29246 <first : move d8b6
-29345 <first : -	Q	B	-	P	-	-	-	
-29345 <first : -	-	-	P	-	P	-	-	
-29345 <first : -	Q	-	-	-	-	-	-	
-29345 <first : -	-	-	-	P	-	B	-	
-29345 <first : -	-	P	-	-	-	-	-	
-29345 <first : -	-	-	-	-	-	-	-	
-29345 <first : P	P	-	P	P	P	P	P	
-29345 <first : R	N	B	-	P	B	N	R	
-30355 >first : time 29995
-30355 >first : otim 28369
+87648 >first : c8f5
+87652 <first : P 7 a
+87652 <first : P 7 b
+87652 <first : P 7 c
+87652 <first : P 7 d
+87652 <first : P 6 e
+87652 <first : P 5 f
+87652 <first : P 7 g
+87652 <first : P 7 h
+87652 <first : N 6 c
+87652 <first : N 8 g
+87652 <first : Q 8 d
+87652 <first : R 8 a
+87652 <first : R 8 h
+87652 <first : B 8 c
+87652 <first : B 8 f
+87652 <first : K 8 d
+87652 <first : 16
+87652 <first : P 5 d
+87652 <first : move d2d4
+87734 <first : R	N	-	Q	K	B	N	R	
+87734 <first : P	P	P	-	-	P	P	P	
+87734 <first : -	-	-	P	-	-	-	-	
+87734 <first : -	-	-	-	P	B	-	-	
+87734 <first : -	-	-	P	-	P	-	-	
+87734 <first : -	-	N	-	P	-	-	-	
+87734 <first : P	P	P	-	-	-	P	P	
+87734 <first : R	-	B	Q	K	B	N	R	
+88497 >first : time 29999
+88497 >first : otim 29732
 book hit = (NULL)
-30355 >first : b8b6
-30359 <first : 1 3 b
-30359 <first : 7 3
-30359 <first : 6
-30359 <first : B 3 a
-30359 <first : move c8a6
-30456 <first : -	-	-	-	P	-	-	-	
-30456 <first : -	-	-	P	-	P	-	-	
-30456 <first : B	Q	-	-	-	-	-	-	
-30456 <first : -	-	-	-	P	-	B	-	
-30456 <first : -	-	P	-	-	-	-	-	
-30456 <first : -	-	-	-	-	-	-	-	
-30456 <first : P	P	-	P	P	P	P	P	
-30456 <first : R	N	B	-	P	B	N	R	
-31147 >first : time 29995
-31147 >first : otim 28290
+88497 >first : f5c2
+88501 <first : 0 P
+88501 <first : P 7 a
+88501 <first : P 7 b
+88501 <first : P 5 d
+88501 <first : P 6 e
+88501 <first : P 5 f
+88501 <first : P 7 g
+88501 <first : P 7 h
+88501 <first : N 6 c
+88501 <first : N 8 g
+88501 <first : Q 8 d
+88501 <first : R 8 a
+88501 <first : R 8 h
+88501 <first : B 8 c
+88501 <first : B 8 f
+88501 <first : K 8 d
+88501 <first : 15
+88501 <first : Q 7 c
+88501 <first : move d1c2
+88582 <first : 1 B
+88582 <first : R	N	-	Q	K	B	N	R	
+88582 <first : P	P	P	-	-	P	P	P	
+88582 <first : -	-	-	P	-	-	-	-	
+88582 <first : -	-	-	-	P	-	-	-	
+88582 <first : -	-	-	P	-	P	-	-	
+88582 <first : -	-	N	-	P	-	-	-	
+88582 <first : P	P	Q	-	-	-	P	P	
+88582 <first : R	-	B	-	K	B	N	R	
+92224 >first : time 29998
+92225 >first : otim 29359
 book hit = (NULL)
-31147 >first : b6a6
-31151 <first : 1 3 a
-31151 <first : 6 3
-31151 <first : 5
-31151 <first : B 7 d
-31151 <first : move g5d2
-31246 <first : 0 7 d
-31246 <first : 16 3
-31246 <first : -	-	-	-	P	-	-	-	
-31246 <first : -	-	-	P	-	P	-	-	
-31246 <first : Q	-	-	-	-	-	-	-	
-31246 <first : -	-	-	-	P	-	-	-	
-31246 <first : -	-	P	-	-	-	-	-	
-31246 <first : -	-	-	-	-	-	-	-	
-31246 <first : P	P	-	B	P	P	P	P	
-31246 <first : R	N	B	-	P	B	N	R	
-34058 >first : time 29994
-34058 >first : otim 27999
+92225 >first : d8g5
+92230 <first : P 7 a
+92230 <first : P 7 b
+92230 <first : P 5 d
+92230 <first : P 6 e
+92230 <first : P 5 f
+92230 <first : P 7 g
+92230 <first : P 7 h
+92230 <first : N 6 c
+92230 <first : N 8 g
+92230 <first : Q 7 c
+92230 <first : R 8 a
+92230 <first : R 8 h
+92230 <first : B 8 c
+92230 <first : B 8 f
+92230 <first : K 8 d
+92230 <first : 15
+92230 <first : P 4 d
+92230 <first : move d4d5
+92307 <first : R	N	-	-	K	B	N	R	
+92307 <first : P	P	P	-	-	P	P	P	
+92307 <first : -	-	-	P	-	-	-	-	
+92307 <first : -	-	-	P	P	-	Q	-	
+92307 <first : -	-	-	-	-	P	-	-	
+92307 <first : -	-	N	-	P	-	-	-	
+92307 <first : P	P	Q	-	-	-	P	P	
+92307 <first : R	-	B	-	K	B	N	R	
+93000 >first : time 29998
+93001 >first : otim 29282
 book hit = (NULL)
-34058 >first : e1d2
-34060 <first : 1 7 d
-34060 <first : 5 3
-34060 <first : 4
-34060 <first : P 5 e
-34060 <first : move e5e4
-34135 <first : -	-	-	-	P	-	-	-	
-34135 <first : -	-	-	P	-	P	-	-	
-34135 <first : Q	-	-	-	-	-	-	-	
-34135 <first : -	-	-	-	-	-	-	-	
-34135 <first : -	-	P	-	P	-	-	-	
-34135 <first : -	-	-	-	-	-	-	-	
-34135 <first : P	P	-	P	P	P	P	P	
-34135 <first : R	N	B	-	-	B	N	R	
-39235 >first : time 29994
-39235 >first : otim 27482
+93001 >first : g5g2
+93004 <first : 0 P
+93004 <first : P 7 a
+93004 <first : P 7 b
+93004 <first : P 4 d
+93004 <first : P 6 e
+93004 <first : P 5 f
+93004 <first : P 7 h
+93004 <first : N 6 c
+93004 <first : N 8 g
+93004 <first : Q 7 c
+93004 <first : R 8 a
+93004 <first : R 8 h
+93004 <first : B 8 c
+93004 <first : B 8 f
+93004 <first : K 8 d
+93004 <first : 14
+93004 <first : Q 6 b
+93004 <first : move c2b3
+93084 <first : R	N	-	-	K	B	N	R	
+93084 <first : P	P	P	-	-	P	P	P	
+93084 <first : -	-	-	P	-	-	-	-	
+93084 <first : -	-	-	P	P	-	-	-	
+93084 <first : -	-	-	-	-	P	-	-	
+93084 <first : -	Q	N	-	P	-	-	-	
+93084 <first : P	P	-	-	-	-	Q	P	
+93084 <first : R	-	B	-	K	B	N	R	
+93544 >first : time 29997
+93544 >first : otim 29228
 book hit = (NULL)
-39235 >first : a6c6
-39240 <first : 4
-39240 <first : P 3 f
-39240 <first : move f7f6
-39320 <first : -	-	-	-	P	-	-	-	
-39320 <first : -	-	-	P	-	-	-	-	
-39320 <first : -	-	Q	-	-	P	-	-	
-39320 <first : -	-	-	-	-	-	-	-	
-39320 <first : -	-	P	-	P	-	-	-	
-39320 <first : -	-	-	-	-	-	-	-	
-39320 <first : P	P	-	P	P	P	P	P	
-39320 <first : R	N	B	-	-	B	N	R	
-41507 >first : time 29994
-41507 >first : otim 27255
+93544 >first : g2h1
+93548 <first : 0 R
+93548 <first : P 7 a
+93548 <first : P 7 b
+93548 <first : P 4 d
+93548 <first : P 6 e
+93548 <first : P 5 f
+93548 <first : P 7 h
+93548 <first : N 6 c
+93548 <first : N 8 g
+93548 <first : Q 6 b
+93548 <first : R 8 a
+93548 <first : B 8 c
+93548 <first : B 8 f
+93549 <first : K 8 d
+93549 <first : 13
+93549 <first : N 6 h
+93549 <first : move g1h3
+93648 <first : R	N	-	-	K	B	N	R	
+93648 <first : P	P	P	-	-	P	P	P	
+93648 <first : -	-	-	P	-	-	-	-	
+93648 <first : -	-	-	P	P	-	-	-	
+93648 <first : -	-	-	-	-	P	-	-	
+93648 <first : -	Q	N	-	P	-	-	N	
+93648 <first : P	P	-	-	-	-	-	P	
+93648 <first : R	-	B	-	K	B	-	Q	
+94384 >first : time 29997
+94384 >first : otim 29145
 book hit = (NULL)
-41507 >first : c6f6
-41510 <first : 1 3 f
-41510 <first : 4 2
-41510 <first : 3
-41510 <first : P 6 e
-41510 <first : move e4e3
-41589 <first : -	-	-	-	P	-	-	-	
-41589 <first : -	-	-	P	-	-	-	-	
-41589 <first : -	-	-	-	-	Q	-	-	
-41589 <first : -	-	-	-	-	-	-	-	
-41589 <first : -	-	P	-	-	-	-	-	
-41590 <first : -	-	-	-	P	-	-	-	
-41590 <first : P	P	-	P	P	P	P	P	
-41590 <first : R	N	B	-	-	B	N	R	
-43491 >first : time 29993
-43492 >first : otim 27057
+94385 >first : h1h2
+94389 <first : 0 P
+94389 <first : P 7 a
+94389 <first : P 7 b
+94389 <first : P 4 d
+94389 <first : P 6 e
+94389 <first : P 5 f
+94389 <first : N 6 c
+94389 <first : N 6 h
+94389 <first : Q 6 b
+94389 <first : R 8 a
+94389 <first : B 8 c
+94389 <first : B 8 f
+94389 <first : K 8 d
+94389 <first : 12
+94389 <first : P 5 a
+94389 <first : move a2a4
+94468 <first : R	N	-	-	K	B	N	R	
+94468 <first : P	P	P	-	-	P	P	P	
+94468 <first : -	-	-	P	-	-	-	-	
+94468 <first : -	-	-	P	P	-	-	-	
+94468 <first : P	-	-	-	-	P	-	-	
+94468 <first : -	Q	N	-	P	-	-	N	
+94468 <first : -	P	-	-	-	-	-	Q	
+94468 <first : R	-	B	-	K	B	-	-	
+95528 >first : time 29996
+95528 >first : otim 29031
 book hit = (NULL)
-43492 >first : f2e3
-43495 <first : 1 6 e
-43495 <first : 3 1
-43495 <first : 2
-43495 <first : P 4 d
-43495 <first : move d7d5
-43576 <first : -	-	-	-	P	-	-	-	
-43576 <first : -	-	-	-	-	-	-	-	
-43576 <first : -	-	-	-	-	Q	-	-	
-43576 <first : -	-	-	P	-	-	-	-	
-43576 <first : -	-	P	-	-	-	-	-	
-43576 <first : -	-	-	-	P	-	-	-	
-43576 <first : P	P	-	P	P	-	P	P	
-43576 <first : R	N	B	-	-	B	N	R	
-44675 >first : time 29993
-44675 >first : otim 26939
+95528 >first : h2h3
+95532 <first : 0 N
+95532 <first : P 5 a
+95532 <first : P 7 b
+95532 <first : P 4 d
+95532 <first : P 6 e
+95532 <first : P 5 f
+95532 <first : N 6 c
+95532 <first : Q 6 b
+95532 <first : R 8 a
+95532 <first : B 8 c
+95532 <first : B 8 f
+95532 <first : K 8 d
+95532 <first : 11
+95532 <first : Q 3 b
+95532 <first : move b3b6
+95630 <first : R	N	-	-	K	B	N	R	
+95630 <first : P	P	P	-	-	P	P	P	
+95630 <first : -	Q	-	P	-	-	-	-	
+95630 <first : -	-	-	P	P	-	-	-	
+95630 <first : P	-	-	-	-	P	-	-	
+95630 <first : -	-	N	-	P	-	-	Q	
+95630 <first : -	P	-	-	-	-	-	-	
+95630 <first : R	-	B	-	K	B	-	-	
+99648 >first : time 29996
+99648 >first : otim 28619
 book hit = (NULL)
-44675 >first : c4d5
-44676 <first : 1 4 d
-44676 <first : 2 0
-44676 <first : 1
-44676 <first : P 2 d
-44676 <first : move d8d7
-44677 <first : -	-	-	-	P	-	-	-	
-44677 <first : -	-	-	P	-	-	-	-	
-44677 <first : -	-	-	-	-	Q	-	-	
-44677 <first : -	-	-	P	-	-	-	-	
-44677 <first : -	-	-	-	-	-	-	-	
-44677 <first : -	-	-	-	P	-	-	-	
-44677 <first : P	P	-	P	P	-	P	P	
-44677 <first : R	N	B	-	-	B	N	R	
+99648 >first : a7b6
+99649 <first : 0 Q
+99649 <first : P 5 a
+99649 <first : P 7 b
+99649 <first : P 4 d
+99649 <first : P 6 e
+99649 <first : P 5 f
+99649 <first : N 6 c
+99649 <first : R 8 a
+99649 <first : B 8 c
+99650 <first : B 8 f
+99650 <first : K 8 d
+99650 <first : 10
+99650 <first : N 8 b
+99650 <first : move c3b1
+99747 <first : R	N	-	-	K	B	N	R	
+99747 <first : -	P	P	-	-	P	P	P	
+99747 <first : -	P	-	P	-	-	-	-	
+99747 <first : -	-	-	P	P	-	-	-	
+99747 <first : P	-	-	-	-	P	-	-	
+99747 <first : -	-	-	-	P	-	-	Q	
+99747 <first : -	P	-	-	-	-	-	-	
+99747 <first : R	N	B	-	K	B	-	-	
+102224 >first : time 29996
+102224 >first : otim 28362
+book hit = (NULL)
+102224 >first : h3f5
+102230 <first : P 5 a
+102230 <first : P 7 b
+102230 <first : P 4 d
+102230 <first : P 6 e
+102230 <first : P 5 f
+102230 <first : N 8 b
+102230 <first : R 8 a
+102230 <first : B 8 c
+102230 <first : B 8 f
+102230 <first : K 8 d
+102230 <first : 10
+102230 <first : B 7 d
+102230 <first : move c1d2
+102310 <first : R	N	-	-	K	B	N	R	
+102310 <first : -	P	P	-	-	P	P	P	
+102310 <first : -	P	-	P	-	-	-	-	
+102310 <first : -	-	-	P	P	Q	-	-	
+102310 <first : P	-	-	-	-	P	-	-	
+102310 <first : -	-	-	-	P	-	-	-	
+102310 <first : -	P	-	B	-	-	-	-	
+102310 <first : R	N	-	-	K	B	-	-	
+108128 >first : time 29995
+108128 >first : otim 27772
+book hit = (NULL)
+108129 >first : f5d3
+108134 <first : P 5 a
+108134 <first : P 7 b
+108134 <first : P 4 d
+108134 <first : P 6 e
+108134 <first : P 5 f
+108134 <first : N 8 b
+108134 <first : R 8 a
+108134 <first : B 7 d
+108134 <first : B 8 f
+108134 <first : K 8 d
+108134 <first : 10
+108134 <first : P 4 e
+108134 <first : move f4e5
+108215 <first : 1 P
+108215 <first : R	N	-	-	K	B	N	R	
+108215 <first : -	P	P	-	-	P	P	P	
+108215 <first : -	P	-	P	-	-	-	-	
+108215 <first : -	-	-	P	P	-	-	-	
+108215 <first : P	-	-	-	-	-	-	-	
+108215 <first : -	-	-	Q	P	-	-	-	
+108215 <first : -	P	-	B	-	-	-	-	
+108215 <first : R	N	-	-	K	B	-	-	
+110736 >first : time 29994
+110736 >first : otim 27512
+book hit = (NULL)
+110736 >first : d3b3
+110740 <first : P 5 a
+110740 <first : P 7 b
+110740 <first : P 4 d
+110740 <first : P 6 e
+110740 <first : P 4 e
+110740 <first : N 8 b
+110741 <first : R 8 a
+110741 <first : B 7 d
+110741 <first : B 8 f
+110741 <first : K 8 d
+110741 <first : 10
+110741 <first : P 4 a
+110741 <first : move a4a5
+110822 <first : R	N	-	-	K	B	N	R	
+110822 <first : -	P	P	-	-	P	P	P	
+110823 <first : -	P	-	P	-	-	-	-	
+110823 <first : P	-	-	P	P	-	-	-	
+110823 <first : -	-	-	-	-	-	-	-	
+110823 <first : -	Q	-	-	P	-	-	-	
+110823 <first : -	P	-	B	-	-	-	-	
+110823 <first : R	N	-	-	K	B	-	-	
+111417 >first : time 29994
+111417 >first : otim 27445
+book hit = (NULL)
+111417 >first : b3b2
+111423 <first : 0 P
+111423 <first : P 4 a
+111423 <first : P 4 d
+111423 <first : P 6 e
+111423 <first : P 4 e
+111423 <first : N 8 b
+111423 <first : R 8 a
+111423 <first : B 7 d
+111423 <first : B 8 f
+111423 <first : K 8 d
+111423 <first : 9
+111423 <first : P 3 d
+111423 <first : move e5d6
+111504 <first : 1 P
+111504 <first : R	N	-	-	K	B	N	R	
+111504 <first : -	P	P	-	-	P	P	P	
+111504 <first : -	P	-	P	-	-	-	-	
+111504 <first : P	-	-	P	-	-	-	-	
+111505 <first : -	-	-	-	-	-	-	-	
+111505 <first : -	-	-	-	P	-	-	-	
+111505 <first : -	Q	-	B	-	-	-	-	
+111505 <first : R	N	-	-	K	B	-	-	
+112432 >first : time 29993
+112432 >first : otim 27344
+book hit = (NULL)
+112433 >first : b2a1
+112436 <first : 0 R
+112436 <first : P 4 a
+112436 <first : P 4 d
+112436 <first : P 6 e
+112436 <first : P 3 d
+112436 <first : N 8 b
+112436 <first : B 7 d
+112436 <first : B 8 f
+112436 <first : K 8 d
+112436 <first : 8
+112436 <first : B 5 b
+112436 <first : move d2b4
+112538 <first : R	N	-	-	K	B	N	R	
+112539 <first : -	P	P	-	-	P	P	P	
+112539 <first : -	P	-	P	-	-	-	-	
+112539 <first : P	-	-	P	-	-	-	-	
+112539 <first : -	B	-	-	-	-	-	-	
+112539 <first : -	-	-	-	P	-	-	-	
+112539 <first : -	-	-	-	-	-	-	-	
+112539 <first : Q	N	-	-	K	B	-	-	
+114424 >first : time 29993
+114424 >first : otim 27145
+book hit = (NULL)
+114424 >first : a1a5
+114428 <first : 0 P
+114429 <first : P 4 d
+114429 <first : P 6 e
+114429 <first : P 3 d
+114429 <first : N 8 b
+114429 <first : B 5 b
+114429 <first : B 8 f
+114429 <first : K 8 d
+114429 <first : 7
+114429 <first : B 4 c
+114429 <first : move b4c5
+114430 <first : R	N	-	-	K	B	N	R	
+114430 <first : -	P	P	-	-	P	P	P	
+114430 <first : -	P	-	P	-	-	-	-	
+114430 <first : Q	-	B	P	-	-	-	-	
+114430 <first : -	-	-	-	-	-	-	-	
+114430 <first : -	-	-	-	P	-	-	-	
+114430 <first : -	-	-	-	-	-	-	-	
+114430 <first : -	N	-	-	K	B	-	-	
+Reset(1, 1) from gameMode 1
+recognized 'normal' (-1) as variant normal
+GameEnds(0, (null), 2)
+117961 >first : force
+shuffleOpenings = 0
+117965 >first : new
+random
+117965 >first : level 40 5 0
+117965 >first : post
+117965 >first : hard
 GameEnds(29, xboard exit, 2)
-129109 >first : result * {xboard exit}
-129109 >first : force
-129109 >first : quit
+118867 >first : result * {xboard exit}
+118868 >first : force
+118868 >first : quit

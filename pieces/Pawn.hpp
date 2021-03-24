@@ -12,6 +12,7 @@ private:
 public:
     vector<pair<pair<int, char>, Piece*>> findPositions(GameBoard* gameBoard);
 	Pawn(pair<int, char> pos, bool color);
+    int promoteToQueen(GameBoard* gameBoard);
     string getName();
 };
 #endif

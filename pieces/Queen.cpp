@@ -19,7 +19,7 @@ bool inTableQueen(int x, char y, GameBoard* gameBoard) {
 
 vector<pair<pair<int, char>, Piece*>> Queen::findPositions(GameBoard* gameBoard) {
     vector<pair<pair<int, char>, Piece*>> possiblePositions;
-    if (this -> color == 1) {
+    
         // check upper line
         for (int i = this->position.first - 1; i >= 1; i--) {
             if (gameBoard->table[i][this->position.second - 'a' + 1] == NULL) {
@@ -133,7 +133,7 @@ vector<pair<pair<int, char>, Piece*>> Queen::findPositions(GameBoard* gameBoard)
                 break;
             }
         }
-    }
+    
     return possiblePositions;
 }
 

@@ -54,7 +54,7 @@ void GameBoard::init(vector<Piece*> &white, vector<Piece*> &black) {
     this->table[8][1] = new Rook(make_pair(8, 'a'), 0);
     this->table[8][8] = new Rook(make_pair(8, 'h'), 0);
     white.push_back(this->table[8][1]);
-    white.push_back(this->table[8][4]);
+    white.push_back(this->table[8][8]);
 
     // BISHOPS
     this->table[1][3] = new Bishop(make_pair(1, 'c'), 1);
@@ -62,11 +62,11 @@ void GameBoard::init(vector<Piece*> &white, vector<Piece*> &black) {
     black.push_back(this->table[1][3]);
     black.push_back(this->table[1][6]);
     this->table[8][3] = new Bishop(make_pair(8, 'c'), 0);
-    this->table[8][6] = new Bishop(make_pair(1, 'g'), 0);
+    this->table[8][6] = new Bishop(make_pair(8, 'f'), 0);
     white.push_back(this->table[8][3]);
     white.push_back(this->table[8][6]);
 
-    // KING
+    // KINGS
     this->table[1][5] = new King(make_pair(1, 'd'), 1);
     black.push_back(this->table[1][5]);
     this->table[8][5] = new King(make_pair(8, 'd'), 0);

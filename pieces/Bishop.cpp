@@ -11,7 +11,7 @@ Bishop::Bishop(pair<int, char> pos, bool color) : Piece(pos, color) {
 vector<pair<pair<int, char>, Piece*>>Bishop::findPositions(GameBoard *gameBoard) {
     vector<pair<pair<int, char>, Piece*>> possiblePositions;
     
-    if ( this -> color == 1) {
+    
         // check superior main diagonal
         int i; char j;
         for (i = this->position.first - 1, j = this->position.second - 1; i >= 1 && j >= 'a'; i--, j--) {
@@ -69,7 +69,7 @@ vector<pair<pair<int, char>, Piece*>>Bishop::findPositions(GameBoard *gameBoard)
                 break;
             }
         }
-    }
+    
     return possiblePositions;
 }
 

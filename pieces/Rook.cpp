@@ -11,7 +11,7 @@ vector<pair<pair<int, char>, Piece*>> Rook::findPositions(GameBoard* gameBoard) 
     vector<pair<pair<int, char>, Piece*>> possiblePositions;
     int currentLine = this->position.first;
     char currentColumn = this->position.second;
-    if (this->color == 1) {
+    
         int line;
         if(currentLine < 8) {
             for (line = currentLine + 1; line < 9; line++) {
@@ -62,7 +62,6 @@ vector<pair<pair<int, char>, Piece*>> Rook::findPositions(GameBoard* gameBoard) 
                 else break;
             }
         }   
-    }
     return possiblePositions;
 }
 
