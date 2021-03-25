@@ -1,7 +1,3 @@
-//
-// Created by andrei on 11.03.2021.
-//
-
 #include "GameBoard.hpp"
 #include "pieces/Piece.hpp"
 #include "pieces/Pawn.hpp"
