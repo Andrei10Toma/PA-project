@@ -1,0 +1,85 @@
+PA 3 CHECK CHESS PROJECT
+TEAM CAPABLANCA: Andrei Toma, Alexandru Ilie, Silvia Dragan
+
+
+-Compilation instructions:
+To compile, we give the command 'make build' in terminal, then we used "xboard -fcp 
+"make run" -debug" for testing and debugging.
+
+-Project structure:
+
+Class Piece:
+	We have implemented the class Piece. The attributes of a piece are: color(black/
+	white) and position(a pair for int, char, ex: e4).
+	Besides a constructor that initializez the piece's color and initial pozsition,
+	the piece class has two virtual methods: findPositions and getName. The following
+	classes extend the piece class and implement the said virtual methods:
+
+	PAWN: if the pawn is in the initial position, we put in the positions vector two
+	new positions: one row forward and two rows forward, if the path to these 
+	positions is clear. Otherwise, the possible positions are: one row forward,
+	and in diagonals if there is an opponent's piece there to capture. The pawn DOES 
+	NOT MOVE over other pieces.
+		The pawn can also be promoted to queen if it reaches the last row of the
+	table. The method promote to queen removes the pawn from the table and puts a new
+	queen in its place. 
+
+	KNIGHT: implements findPositions method according to a knight's moves.
+
+	ROOK: implements findPositions method according to a rook's moves.
+
+	BISHOP: implements findPositions method according to a bishop's moves.
+
+	QUEEN: implements findPositions method according to a queen's moves.
+
+	KING: implements findPositions method according to a king's moves.
+
+Class GameBoard:
+	A GameBoard object has as atribute the chess table: a 9x9 matrix of pieces. 
+	The mothod init resets the table then puts the pieces on the table in the initial
+	order while also initializing the two vectors received as parameters: a vector of 
+	white's pieces and a vector of black's pieces.
+	Method showboard displays the chess table.
+
+In main:
+	Important variables:
+		-availablePos -> vector that stores all available positoins
+		-theChosenOnes -> the pawns that are chosen to move (one for each color, 0
+		for white; 1 for black).
+
+Commands read from stdin:
+	xboard: read protover and N from sdin, write "feature sigint=0", "feature san=0",
+	"feature myname=\"Capablanca\"" to stdout; 
+
+	new: Initialise the gameboard and the chose pawns for each color.
+
+	force: Set the mode to 0.
+
+	go: Call the computeNextMove function (explained below). If it returns -1 there are
+	no available positions for the piece to move, so we resign. Change the mode to 1.
+
+	quit: interrupt the program.
+
+	move: If we are in mode 1, call function updateOpponentPieces(explained below) to 
+	update the gameboard according to the moves the opponent made. Calculate the next 
+	move/resign. If we are in mode 0, just update the opponent's pieces 
+
+
+Helper functions:
+
+computeNextMove:
+	Calculates the pawn's possible move choices by calling the findPositions function.
+	If there are no positions available or the pawn is NULL we resign. From the 
+	positions vector we chose one randomly and write it to stdout and check if we 
+	captured an opponent's piece. Delete the piece we captured. If we reached
+	the last row, call promoteToQueen function to promote the pawn to a queen.
+	Update the gameboard.
+
+updateOpponentPieces
+	Update the gameboard by moving the opponent's piece to the given position. If the 
+	opponent capured a piece, remove it from the list. If the opponent's pawn reached
+	the last row promote it to queen.
+
+- Members responsibilities:
+Each team member implemented 2 of the piece-extending classes. We colaborated on the
+main method and implementing the commands.
