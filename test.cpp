@@ -10,95 +10,124 @@
 
 using namespace std;
 
-template<typename Base, typename T>
-inline bool instanceof(const T*) {
-    return std::is_base_of<Base, T>::value;
-}
-
 void remove(vector<Piece*> &pieces, Piece* piece){
     int i, sz = pieces.size();
-
     for(i = 0; i < sz; i++)
         if(pieces[i] == piece)
             break;
-    cout << piece->color << ' ' << piece->getName() << endl;
     pieces.erase(pieces.begin() + i);
+}
+
+void updateOpponentPieces(GameBoard* gameBoard, string command, vector<Piece*> pieces[], int color, vector<Piece*>& theChosenOnes) {
+    Piece *aux =  gameBoard->table[9 - (command[1] - '0')][command[0] - 'a' + 1];
+    gameBoard->table[9 - (command[1] - '0')][command[0] - 'a' + 1] = NULL;
+    Piece *captured = gameBoard->table[9 - (command[3] - '0')][command[2] - 'a' + 1];
+    gameBoard->table[9 - (command[3] - '0')][command[2] - 'a' + 1] = aux;
+    aux->position.first = 9 - (command[3] - '0');
+    aux->position.second = command[2];
+
+    if(captured != NULL) {
+        for (int i = 0; i < 2; i++) {
+            if (captured == theChosenOnes[i])
+                theChosenOnes[i] = NULL;
+        }
+        remove(pieces[captured->color], captured);
+    }
+    Piece *temp = gameBoard->table[9 - (command[3] - '0')][command[2] - 'a' + 1];
+
+    if (temp->position.first == 7 * color + 1) {
+        if (temp->getName().compare("P") == 0) {
+            ((Pawn *)temp)->promoteToQueen(gameBoard, pieces[color], theChosenOnes[color]);
+        }
+    }
+}
+
+int computeNextMove(GameBoard *gameBoard, vector<Piece*> pieces[], int color, Piece* &theChosenOne) {
+    int sz = pieces[color].size(), i, ok = 0;
+    vector<pair<pair<int, char>, Piece*>> availablePos;
+    vector<pair<pair<int, char>, Piece*>> pos;
+    Piece *captured, *temp;
+    
+    if (theChosenOne == NULL) {
+        return -1;
+    }
+    availablePos = theChosenOne->findPositions(gameBoard);
+    
+    sz = availablePos.size();
+    if(sz == 0) {
+        return -1;
+    }
+
+    i = rand() % sz;
+    cout << "move " << availablePos[i].second->position.second << 9 - availablePos[i].second->position.first 
+    << availablePos[i].first.second << 9 - availablePos[i].first.first << endl;
+    gameBoard->table[availablePos[i].second->position.first][availablePos[i].second->position.second - 'a' + 1] = NULL;
+    captured = gameBoard->table[availablePos[i].first.first][availablePos[i].first.second - 'a' + 1];
+    if(captured != NULL)
+        remove(pieces[1-color], captured);
+    availablePos[i].second->position.first = availablePos[i].first.first;
+    availablePos[i].second->position.second = availablePos[i].first.second;
+    temp = availablePos[i].second;
+    if(availablePos[i].first.first == 7 * color + 1) {
+        if(temp->getName().compare("P") == 0)
+            ok = ((Pawn*)temp)->promoteToQueen(gameBoard, pieces[color], theChosenOne);
+    }
+    if (ok == 0)
+        gameBoard->table[availablePos[i].first.first][availablePos[i].first.second - 'a' + 1] = availablePos[i].second;
+    availablePos.clear();
+    return 1;
 }
 
 int main() {
     vector<pair<pair<int, char>, Piece*>> availablePos;
     vector<pair<pair<int, char>, Piece*>> pos;
-    // pieces[1] -> black's pieces, pieces[0] -> white's pieces
-    vector<Piece*> pieces[2];
-    srand(time(NULL));
+    // pieces[0] -> white's pieces; pieces[1] -> black's pieces
+    // theChosenOnes[0] -> white pawn; theChosenOne[1] -> black pawn
+    vector<Piece*> pieces[2], theChosenOnes;
     GameBoard* gameBoard = new GameBoard();
-    unsigned int i, sz, j;
-    gameBoard->init(pieces[0], pieces[1]);
-    gameBoard->showBoard();
     char command[20], protover[20], N;
-    // mode = 1 bot plays mode = 0 watches (force)
+    // mode: 1 -> bot plays, 0 -> force
     int mode = 1;
-    // color: 1->black, 0->white
-    int color;
+    // color: 1 -> black, 0 -> white
+    int color = 0;
+
+    srand(time(NULL));
+    
     while (true) {
         cin >> command;
-        if (strncmp(command, "xboard", strlen("xboard")) == 0) {
+        if (strncmp(command, "xboard", 6) == 0) {
             cin >> protover >> N;
             cout << "feature sigint=0" << endl;
             cout << "feature san=0" << endl;
             cout << "feature myname=\"Capablanca\"" << endl;
         }
-        else if (strncmp(command, "quit", strlen("quit")) == 0) {
+        else if (strncmp(command, "quit", 4) == 0) {
             break;
         }
-        else if(strncmp(command, "new", 3)==0){
+        else if (strncmp(command, "result", 6) == 0) {
+            cin >> protover;
+            cin >> protover;
+            cin >> protover;
+        }
+        else if(strncmp(command, "new", 3)==0) {
+            theChosenOnes.clear();
             gameBoard->init(pieces[0], pieces[1]);
+            theChosenOnes.push_back(gameBoard->table[7][2]);
+            theChosenOnes.push_back(gameBoard->table[2][2]);
             mode = 1;
             color = 0;
+            gameBoard->showBoard();
         }
         else if(strncmp(command, "force", 5) == 0){
             mode = 0;
         }
         else if(strncmp(command, "go", 2) == 0) {
-            cout<<"go!"<<endl;
-            
-            Piece *aux =  gameBoard->table[9 - (command[1] - '0')][command[0] - 'a' + 1];
-            gameBoard->table[9 - (command[1] - '0')][command[0] - 'a' + 1] = NULL;
-            Piece *captured = gameBoard->table[9 - (command[3] - '0')][command[2] - 'a' + 1];
-            gameBoard->table[9 - (command[3] - '0')][command[2] - 'a' + 1] = aux;
-            if(captured != NULL)
-                remove(pieces[color], captured);
-            cout<<color<<endl;
-            mode = 1;
-            sz = pieces[color].size();
-            for(i = 0; i<sz; i++){
-                pos = pieces[color][i]->findPositions(gameBoard);
-                if (!pos.empty())
-                    availablePos.insert(availablePos.end(), pos.begin(), pos.end());
+            if (computeNextMove(gameBoard, pieces, color, theChosenOnes[color]) == -1) {
+                cout << "resign" << endl;
             }
-            
-            sz = availablePos.size();
-            if(sz == 0) {
-                cout<<"resign"<<endl;
-                break;
-            }
-            i = rand() % sz;
-            
-            cout << "move " << availablePos[i].second->position.second << 9 - availablePos[i].second->position.first 
-            << availablePos[i].first.second << 9 - availablePos[i].first.first << endl;
-            
-            gameBoard->table[availablePos[i].second->position.first][availablePos[i].second->position.second - 'a' + 1] = NULL;
-            captured = gameBoard->table[availablePos[i].first.first][availablePos[i].first.second - 'a' + 1];
-            gameBoard->table[availablePos[i].first.first][availablePos[i].first.second - 'a' + 1] = availablePos[i].second;
-            
-            if(captured != NULL)
-                remove(pieces[1-color], captured);
-
-            availablePos[i].second->position.first = availablePos[i].first.first;
-            availablePos[i].second->position.second = availablePos[i].first.second;
-            availablePos.clear();
-            gameBoard->showBoard();
             color = 1 - color;
+            mode = 1;
+            gameBoard->showBoard();
         }
         else if(strncmp(command, "accepted", strlen("accepted")) == 0){
             cin >> protover;
@@ -107,11 +136,9 @@ int main() {
             continue;
         }
         else if (strncmp(command, "white", 5) == 0) {
-            //color = 0;
             continue;
         }
         else if (strncmp(command, "black", 5) == 0) {
-            //color = 1;
             continue;
         }
         else if (strncmp(command, "level", 5) == 0) {
@@ -134,119 +161,17 @@ int main() {
         else {
             if(mode == 1) {
                 color = 1 - color;
-                //actualize opponent's pieces
-                Piece *aux =  gameBoard->table[9 - (command[1] - '0')][command[0] - 'a' + 1];
-                gameBoard->table[9 - (command[1] - '0')][command[0] - 'a' + 1] = NULL;
-                Piece *captured = gameBoard->table[9 - (command[3] - '0')][command[2] - 'a' + 1];
-                gameBoard->table[9 - (command[3] - '0')][command[2] - 'a' + 1] = aux;
-                cout << "da1" << endl;
-                aux->position.first = 9 - (command[3] - '0');
-                aux->position.second = command[2];
-                cout << "da2" << endl;
-
-                if(captured != NULL)
-                    remove(pieces[color], captured);
-                sz = pieces[color].size();
-            
-                //debugging
-                /*for(i = 0; i<sz; i++)
-                    cout<< pieces[color][i]->getName() << ' ' << pieces[color][i]->position.first << ' '<<pieces[color][i]->position.second << endl;
-                cout<< sz << endl;*/
-                
-                for(i = 0; i < sz; i++){
-                    pos = pieces[color][i]->findPositions(gameBoard);
-                    if (!pos.empty())
-                        availablePos.insert(availablePos.end(), pos.begin(), pos.end());
+                updateOpponentPieces(gameBoard, command, pieces, color, theChosenOnes);
+                if (computeNextMove(gameBoard, pieces, color, theChosenOnes[color]) == -1) {
+                    cout << "resign" << endl;
                 }
-                
-                sz = availablePos.size();
-                if(sz == 0) {
-                    cout<<"resign"<<endl;
-                    break;
-                }
-                i = rand() % sz;
-                cout << availablePos[i].second->getName() << ' ' << availablePos[i].first.first << ' ' << availablePos[i].first.second << endl;
-                cout << "move " << availablePos[i].second->position.second << 9 - availablePos[i].second->position.first 
-                << availablePos[i].first.second << 9 - availablePos[i].first.first << endl;
-                gameBoard->table[availablePos[i].second->position.first][availablePos[i].second->position.second - 'a' + 1] = NULL;
-                // gameBoard->table[availablePos[i].first.first][availablePos[i].first.second - 'a' + 1] = availablePos[i].second;
-                captured = gameBoard->table[availablePos[i].first.first][availablePos[i].first.second - 'a' + 1];
-                if(captured != NULL)
-                    remove(pieces[1-color], captured);
-                //TODO: check the segmentation fault
-                // Piece *temp = availablePos[i].second;
-                // int ok = 0;
-                // if(availablePos[i].first.first == 8) {
-                    // if(temp->getName().compare("P") == 0)
-                        // ok = ((Pawn*)temp)->promoteToQueen(gameBoard, pieces[color]);
-                // }
-                // debug for promote
-                // if (ok == 0)
-                    // gameBoard->table[availablePos[i].first.first][availablePos[i].first.second - 'a' + 1] = availablePos[i].second;
-                
-                // if(captured != NULL)
-                    // remove(pieces[1-color], captured);
-
-                availablePos[i].second->position.first = availablePos[i].first.first;
-                availablePos[i].second->position.second = availablePos[i].first.second;
-                Piece *temp = availablePos[i].second;
-                int ok = 0;
-                if(availablePos[i].first.first == 7 * color + 1) {
-                    if(temp->getName().compare("P") == 0)
-                        ok = ((Pawn*)temp)->promoteToQueen(gameBoard, pieces[color]);
-                }
-                if (ok == 0)
-                    gameBoard->table[availablePos[i].first.first][availablePos[i].first.second - 'a' + 1] = availablePos[i].second;
-                availablePos.clear();
-                cout << "WP: ";
-                for (j = 0; j < pieces[0].size(); j++) {
-                    cout << pieces[0][j]->getName() << " ";
-                }
-                cout << endl;
-                cout << "BP: ";
-                for (j = 0; j < pieces[1].size(); j++) {
-                    cout << pieces[1][j]->getName() << " ";
-                }
-                cout << endl;
                 color = 1 - color;
                 gameBoard->showBoard();
+
             }
             else {
-                int ok;
-                Piece *aux =  gameBoard->table[9 - (command[1] - '0')][command[0] - 'a' + 1];
-                gameBoard->table[9 - (command[1] - '0')][command[0] - 'a' + 1] = NULL;
-                Piece *captured = gameBoard->table[9 - (command[3] - '0')][command[2] - 'a' + 1];
-                gameBoard->table[9 - (command[3] - '0')][command[2] - 'a' + 1] = aux;
-                aux->position.first = 9 - (command[3] - '0');
-                aux->position.second = command[2];
-                if(captured != NULL) {
-                    if(captured->color == 1)
-                        remove(pieces[1], captured);
-                    else
-                        remove(pieces[0], captured);
-                }
-                Piece *temp = gameBoard->table[9 - (command[3] - '0')][command[2] - 'a' + 1];
-
-                // cout << "color = " << color << endl;
-                if (temp->position.first == 7 * color + 1) {
-                    if (temp->getName().compare("P") == 0) {
-                        ok = ((Pawn *)temp)->promoteToQueen(gameBoard, pieces[color]);
-                    }
-                }
-                // color = 1 - color;
-                // debug for promote
-                cout << "WP: ";
-                for (j = 0; j < pieces[0].size(); j++) {
-                    cout << pieces[0][j]->getName() << " ";
-                }
-                cout << endl;
-                cout << "BP: ";
-                for (j = 0; j < pieces[1].size(); j++) {
-                    cout << pieces[1][j]->getName() << " ";
-                }
-                cout << endl;
+                updateOpponentPieces(gameBoard, command, pieces, color, theChosenOnes);
                 color = 1 - color;
-
                 gameBoard->showBoard();
             }
         }
