@@ -10,7 +10,8 @@ King::King(pair<int, char> pos, bool color) : Piece(pos, color) {
 
 vector<pair<pair<int, char>, Piece*>> King::findPositions(GameBoard* gameBoard) {
     vector<pair<pair<int, char>, Piece*>> possiblePositions;
-    
+    // for the warning
+    gameBoard->table[1][1] = gameBoard->table[1][1];
     return possiblePositions;
 }
 

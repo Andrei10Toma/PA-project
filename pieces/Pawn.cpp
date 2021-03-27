@@ -8,9 +8,8 @@ using namespace std;
 Pawn::Pawn(pair<int, char> pos, bool color) : Piece(pos, color) {
 }
 
-int Pawn::promoteToQueen(GameBoard* gameBoard, vector<Piece*>& pieces) {
+int Pawn::promoteToQueen(GameBoard* gameBoard, vector<Piece*>& pieces, Piece* &theChosenOne) {
     unsigned int i;
-    cout << "Am intrat in promote to Queen cu piesa " << getName() << endl; 
     for (i = 0; i < pieces.size(); i++) {
         if (this == pieces[i]) {
             break;
@@ -19,6 +18,8 @@ int Pawn::promoteToQueen(GameBoard* gameBoard, vector<Piece*>& pieces) {
     pieces.erase(pieces.begin() + i);
     gameBoard->table[7 * color + 1][position.second - 'a' + 1] = new Queen(make_pair(7 * color + 1, position.second), color);
     pieces.push_back(gameBoard->table[7 * color + 1][position.second - 'a' + 1]);
+    if (this == theChosenOne)
+        theChosenOne = NULL;
     return 1;
 }
 
@@ -65,7 +66,7 @@ vector<pair<pair<int, char>, Piece*>> Pawn::findPositions(GameBoard* gameBoard) 
             }
         }
         else {
-            if (position.first + 1 < 9) {
+            if (position.first - 1 > 0) {
                 if (position.second - 'a' + 1 < 9) {
                     if (gameBoard->table[position.first - 1][position.second - 'a' + 1] == NULL) {
                         possiblePositions.push_back(make_pair(make_pair(position.first - 1, position.second), this));
