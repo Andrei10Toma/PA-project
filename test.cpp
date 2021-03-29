@@ -15,7 +15,8 @@ void remove(vector<Piece*> &pieces, Piece* piece){
     for(i = 0; i < sz; i++)
         if(pieces[i] == piece)
             break;
-    pieces.erase(pieces.begin() + i);
+    if(i != sz)
+        pieces.erase(pieces.begin() + i);
 }
 
 void updateOpponentPieces(GameBoard* gameBoard, string command, vector<Piece*> pieces[], int color, vector<Piece*>& theChosenOnes) {
@@ -61,17 +62,22 @@ int computeNextMove(GameBoard *gameBoard, vector<Piece*> pieces[], int color, Pi
     i = rand() % sz;
     cout << "move " << availablePos[i].second->position.second << 9 - availablePos[i].second->position.first 
     << availablePos[i].first.second << 9 - availablePos[i].first.first << endl;
+
     gameBoard->table[availablePos[i].second->position.first][availablePos[i].second->position.second - 'a' + 1] = NULL;
     captured = gameBoard->table[availablePos[i].first.first][availablePos[i].first.second - 'a' + 1];
+
     if(captured != NULL)
         remove(pieces[1-color], captured);
+
     availablePos[i].second->position.first = availablePos[i].first.first;
     availablePos[i].second->position.second = availablePos[i].first.second;
+
     temp = availablePos[i].second;
     if(availablePos[i].first.first == 7 * color + 1) {
         if(temp->getName().compare("P") == 0)
             ok = ((Pawn*)temp)->promoteToQueen(gameBoard, pieces[color], theChosenOne);
     }
+
     if (ok == 0)
         gameBoard->table[availablePos[i].first.first][availablePos[i].first.second - 'a' + 1] = availablePos[i].second;
     availablePos.clear();
@@ -132,30 +138,17 @@ int main() {
         else if(strncmp(command, "accepted", strlen("accepted")) == 0){
             cin >> protover;
         }
-        else if (strncmp(command, "random", 6) == 0) {
-            continue;
-        }
-        else if (strncmp(command, "white", 5) == 0) {
-            continue;
-        }
-        else if (strncmp(command, "black", 5) == 0) {
-            continue;
-        }
         else if (strncmp(command, "level", 5) == 0) {
             cin >> command;
             cin >> command;
             cin >> command;
         }
-        else if (strncmp(command, "post", 4) == 0) {
+        else if (strncmp(command, "post", 4) == 0 || strncmp(command, "hard", 4) == 0 
+                || strncmp(command, "computer", 8) == 0 || strncmp(command, "black", 5) == 0
+                || strncmp(command, "white", 5) == 0 || strncmp(command, "random", 6) == 0) {
             continue;
         }
-        else if (strncmp(command, "hard", 4) == 0) {
-            continue;
-        }
-        else if (strncmp(command, "time", 4) == 0) {
-            cin >> command;
-        }
-        else if (strncmp(command, "otim", 4) == 0) {
+        else if (strncmp(command, "time", 4) == 0 || strncmp(command, "otim", 4) == 0) {
             cin >> command;
         }
         else {
