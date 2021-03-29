@@ -15,11 +15,13 @@ void remove(vector<Piece*> &pieces, Piece* piece){
     for(i = 0; i < sz; i++)
         if(pieces[i] == piece)
             break;
+    //Remove piece if found
     if(i != sz)
         pieces.erase(pieces.begin() + i);
 }
 
 void updateOpponentPieces(GameBoard* gameBoard, string command, vector<Piece*> pieces[], int color, vector<Piece*>& theChosenOnes) {
+    // Actualize table
     Piece *aux =  gameBoard->table[9 - (command[1] - '0')][command[0] - 'a' + 1];
     gameBoard->table[9 - (command[1] - '0')][command[0] - 'a' + 1] = NULL;
     Piece *captured = gameBoard->table[9 - (command[3] - '0')][command[2] - 'a' + 1];
@@ -27,6 +29,7 @@ void updateOpponentPieces(GameBoard* gameBoard, string command, vector<Piece*> p
     aux->position.first = 9 - (command[3] - '0');
     aux->position.second = command[2];
 
+    // Remove pawn if captured
     if(captured != NULL) {
         for (int i = 0; i < 2; i++) {
             if (captured == theChosenOnes[i])
@@ -36,6 +39,7 @@ void updateOpponentPieces(GameBoard* gameBoard, string command, vector<Piece*> p
     }
     Piece *temp = gameBoard->table[9 - (command[3] - '0')][command[2] - 'a' + 1];
 
+    // Promote
     if (temp->position.first == 7 * color + 1) {
         if (temp->getName().compare("P") == 0) {
             ((Pawn *)temp)->promoteToQueen(gameBoard, pieces[color], theChosenOnes[color]);
@@ -55,23 +59,28 @@ int computeNextMove(GameBoard *gameBoard, vector<Piece*> pieces[], int color, Pi
     availablePos = theChosenOne->findPositions(gameBoard);
     
     sz = availablePos.size();
+    // No moves => resign
     if(sz == 0) {
         return -1;
     }
 
+    // Print the move
     i = rand() % sz;
     cout << "move " << availablePos[i].second->position.second << 9 - availablePos[i].second->position.first 
     << availablePos[i].first.second << 9 - availablePos[i].first.first << endl;
 
+    // Actualize position on table
     gameBoard->table[availablePos[i].second->position.first][availablePos[i].second->position.second - 'a' + 1] = NULL;
     captured = gameBoard->table[availablePos[i].first.first][availablePos[i].first.second - 'a' + 1];
 
     if(captured != NULL)
         remove(pieces[1-color], captured);
 
+    // Actualize moved piece position
     availablePos[i].second->position.first = availablePos[i].first.first;
     availablePos[i].second->position.second = availablePos[i].first.second;
 
+    // Promote
     temp = availablePos[i].second;
     if(availablePos[i].first.first == 7 * color + 1) {
         if(temp->getName().compare("P") == 0)
