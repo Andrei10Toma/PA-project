@@ -67,9 +67,9 @@ void GameBoard::init(vector<Piece*> &white, vector<Piece*> &black) {
     white.push_back(this->table[8][6]);
 
     // KINGS
-    this->table[1][5] = new King(make_pair(1, 'd'), 1);
+    this->table[1][5] = new King(make_pair(1, 'e'), 1);
     black.push_back(this->table[1][5]);
-    this->table[8][5] = new King(make_pair(8, 'd'), 0);
+    this->table[8][5] = new King(make_pair(8, 'e'), 0);
     white.push_back(this->table[8][5]);
 }
 
