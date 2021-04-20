@@ -2,6 +2,7 @@
 #define KING_H
 #pragma once
 #include "Piece.hpp"
+#include "Knight.hpp"
 
 using namespace std;
 class King : public Piece

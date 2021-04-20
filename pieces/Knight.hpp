@@ -13,5 +13,5 @@ class Knight : public Piece
 		Knight(pair<int, char> pos, bool color);
 		string getName();
 };
-bool inTable(int x, char y, GameBoard * gameBoard);
+bool inTable(int x, char y, GameBoard * gameBoard, Piece *piece);
 #endif

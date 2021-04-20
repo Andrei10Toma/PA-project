@@ -9,7 +9,7 @@
 #include "pieces/Pawn.hpp"
 
 using namespace std;
-
+vector<pair<pair<int, char>, Piece*>> computePositions(GameBoard *gameBoard, vector<Piece*> pieces[], int color);
 void remove(vector<Piece*> &pieces, Piece* piece){
     int i, sz = pieces.size();
     for(i = 0; i < sz; i++)
@@ -46,6 +46,60 @@ void updateOpponentPieces(GameBoard* gameBoard, string command, vector<Piece*> p
         }
     }
 }
+void removeMove(Piece *piece, pair<int, char> move, GameBoard *gameBoard, vector<Piece*> pieces[], int color, Piece *&captured){
+    gameBoard->table[move.first][move.second - 'a' + 1] = captured;
+    gameBoard->table[piece->position.first][piece->position.second - 'a' + 1] = piece;
+    if(captured != NULL)
+        pieces[1 - color].push_back(captured);
+}
+
+int tryMove(Piece *piece, pair<int, char> move, GameBoard *gameBoard, vector<Piece*> pieces[], int color, Piece *&captured){
+    gameBoard->table[piece->position.first][piece->position.second - 'a' + 1] = NULL;
+    captured = gameBoard->table[move.first][move.second - 'a' + 1];
+    gameBoard->table[move.first][move.second - 'a' + 1] = piece;
+
+    if(captured != NULL)
+        remove(pieces[color], captured);
+
+    //cout << "got here try move" << endl;
+    vector<pair<pair<int, char>, Piece*>> moves;
+    vector<pair<pair<int, char>, Piece*>> aux;
+    int sz = pieces[color].size(), i;
+    //a.insert(a.end(), b.begin(), b.end());
+    for(i = 0; i < sz; i++){
+        aux = pieces[color][i]->findPositions(gameBoard);
+        moves.insert(moves.begin(), aux.begin(), aux.end());
+    }
+
+    int ok = 1;
+    for(i = 0; i < sz && ok; i++){
+        Piece *p = gameBoard->table[moves[i].first.first][moves[i].first.second - 'a' + 1];
+        if(p != NULL && p->color == 1 - color && p->getName().compare("K") == 0)
+            ok = 0;
+    }
+
+    return ok;
+}
+
+vector<pair<pair<int, char>, Piece*>> computePositions(GameBoard *gameBoard, vector<Piece*> pieces[], int color){
+    vector<pair<pair<int, char>, Piece*>> moves;
+    vector<pair<pair<int, char>, Piece*>> goodMoves;
+    Piece *captured;
+    int sz = pieces[color].size(), sz2, i, j;
+    for(i = 0; i < sz; i++){
+        moves = pieces[color][i]->findPositions(gameBoard);
+        //cout << "got here comp pos" << endl;
+        sz2 = moves.size();
+        for(j = 0; j < sz2; j++){
+            if(tryMove(pieces[color][i], moves[j].first, gameBoard, pieces, 1 - color, captured))
+                goodMoves.push_back(moves[j]);
+            removeMove(pieces[color][i], moves[j].first, gameBoard, pieces, 1 - color, captured);
+            cout << "ARATA TABLA!" << endl;
+            gameBoard->showBoard();
+        }
+    }
+    return goodMoves;
+}
 
 int computeNextMove(GameBoard *gameBoard, vector<Piece*> pieces[], int color, Piece* &theChosenOne) {
     int sz = pieces[color].size(), i, ok = 0;
@@ -56,7 +110,7 @@ int computeNextMove(GameBoard *gameBoard, vector<Piece*> pieces[], int color, Pi
     if (theChosenOne == NULL) {
         return -1;
     }
-    availablePos = theChosenOne->findPositions(gameBoard);
+    availablePos = computePositions(gameBoard, pieces, color);
     
     sz = availablePos.size();
     // No moves => resign

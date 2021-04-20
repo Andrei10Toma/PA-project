@@ -1,4 +1,4 @@
-#include "King.hpp"  
+#include "King.hpp"
 #include <vector>
 #include "../GameBoard.hpp"
 #include <iostream>
@@ -10,8 +10,17 @@ King::King(pair<int, char> pos, bool color) : Piece(pos, color) {
 
 vector<pair<pair<int, char>, Piece*>> King::findPositions(GameBoard* gameBoard) {
     vector<pair<pair<int, char>, Piece*>> possiblePositions;
-    // for the warning
-    gameBoard->table[1][1] = gameBoard->table[1][1];
+    int vx[] = {0, 0, -1, -1, -1, 1, 1, 1};
+    int vy[] = {-1, 1, -1, 0, 1, -1, 0, 1};
+    int i;
+    for (i = 0; i < 8; i++) {
+        if (inTable(this->position.first + vx[i], 
+            this->position.second + vy[i], gameBoard, this)) {
+                possiblePositions.push_back(make_pair(
+                        make_pair(this->position.first + vx[i], 
+                        this->position.second + vy[i]), this));
+        }
+    }
     return possiblePositions;
 }
 
