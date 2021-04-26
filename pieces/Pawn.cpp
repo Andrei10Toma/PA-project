@@ -31,6 +31,18 @@ vector<pair<pair<int, char>, Piece*>> Pawn::findPositions(GameBoard* gameBoard) 
             if (gameBoard->table[3][this->position.second - 'a' + 1] == NULL && gameBoard->table[4][this->position.second - 'a' + 1] == NULL) {
                 possiblePositions.push_back(make_pair(make_pair(4, this->position.second), this));
             }
+            if (position.second - 'a' > 0) {
+                if (gameBoard->table[position.first + 1][position.second - 'a' ] != NULL) {
+                    if (gameBoard->table[position.first + 1][position.second - 'a' ]->color != this->color)
+                        possiblePositions.push_back(make_pair(make_pair(position.first + 1, position.second - 1), this));
+                }
+            }
+            if (position.second - 'a' + 2 < 9) {
+                if (gameBoard->table[position.first + 1][position.second - 'a' + 2 ] != NULL) {
+                    if (gameBoard->table[position.first + 1][position.second - 'a' + 2 ]->color != this->color)
+                        possiblePositions.push_back(make_pair(make_pair(position.first + 1, position.second + 1), this));
+                }
+            }
         }
         else {
             if (position.first + 1 < 9) {
@@ -61,6 +73,18 @@ vector<pair<pair<int, char>, Piece*>> Pawn::findPositions(GameBoard* gameBoard) 
             }
             if (gameBoard->table[6][this->position.second - 'a' + 1] == NULL && gameBoard->table[5][this->position.second - 'a' + 1] == NULL) {
                 possiblePositions.push_back(make_pair(make_pair(5, this->position.second), this));
+            }
+            if (position.second - 'a' > 0) {
+                if (gameBoard->table[position.first - 1][position.second - 'a' ] != NULL) {
+                    if (gameBoard->table[position.first - 1][position.second - 'a' ]->color != this->color)
+                        possiblePositions.push_back(make_pair(make_pair(position.first - 1, position.second - 1), this));
+                }
+            }
+            if (position.second - 'a' + 2 < 9) {
+                if (gameBoard->table[position.first - 1][position.second - 'a' + 2 ] != NULL) {
+                    if (gameBoard->table[position.first - 1][position.second - 'a' + 2 ]->color != this->color)
+                        possiblePositions.push_back(make_pair(make_pair(position.first - 1, position.second + 1), this));
+                }
             }
         }
         else {
