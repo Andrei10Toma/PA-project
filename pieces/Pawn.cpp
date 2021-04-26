@@ -3,12 +3,15 @@
 #include "../GameBoard.hpp"
 #include "Queen.hpp"
 #include <iostream>
+#include "Knight.hpp"
+#include "Rook.hpp"
+#include "Bishop.hpp"
 using namespace std;
 
 Pawn::Pawn(pair<int, char> pos, bool color) : Piece(pos, color) {
 }
 
-int Pawn::promoteToQueen(GameBoard* gameBoard, vector<Piece*>& pieces) {
+int Pawn::promote(GameBoard* gameBoard, vector<Piece*>& pieces, char promotionPiece) {
     unsigned int i;
     for (i = 0; i < pieces.size(); i++) {
         if (this == pieces[i]) {
@@ -16,7 +19,22 @@ int Pawn::promoteToQueen(GameBoard* gameBoard, vector<Piece*>& pieces) {
         }
     }
     pieces.erase(pieces.begin() + i);
-    gameBoard->table[7 * color + 1][position.second - 'a' + 1] = new Queen(make_pair(7 * color + 1, position.second), color);
+    switch (promotionPiece) {
+        case 'n':
+            gameBoard->table[7 * color + 1][position.second - 'a' + 1] = new Knight(make_pair(7 * color + 1, position.second), color);
+            break;
+        case 'q':
+            gameBoard->table[7 * color + 1][position.second - 'a' + 1] = new Queen(make_pair(7 * color + 1, position.second), color);
+            break;
+        case 'r':
+            gameBoard->table[7 * color + 1][position.second - 'a' + 1] = new Rook(make_pair(7 * color + 1, position.second), color);
+            break;
+        case 'b':
+            gameBoard->table[7 * color + 1][position.second - 'a' + 1] = new Bishop(make_pair(7 * color + 1, position.second), color);
+            break;
+        default:
+            break;
+    }
     pieces.push_back(gameBoard->table[7 * color + 1][position.second - 'a' + 1]);
     return 1;
 }
