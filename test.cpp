@@ -285,6 +285,7 @@ int main() {
     while (true) {
         //sleep(1);
         cin >> command;
+	cout << "Comanda : " << command << endl;
         if (strncmp(command, "xboard", 6) == 0) {
             cin >> protover >> N;
             cout << "feature sigint=0" << endl;
@@ -295,9 +296,10 @@ int main() {
             break;
         }
         else if (strncmp(command, "result", 6) == 0) {
-            cin >> protover;
-            cin >> protover;
-            cin >> protover;
+	    cin >> protover;
+            while(strncmp(protover, "force", 5) != 0)
+		cin >> protover;
+	    mode = 0;
         }
         else if(strncmp(command, "new", 3)==0) {
             theChosenOnes.clear();
