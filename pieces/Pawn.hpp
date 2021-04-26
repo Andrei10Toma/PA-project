@@ -10,6 +10,7 @@ class Pawn : public Piece
 private:
 
 public:
+    bool moved_two;
     vector<pair<pair<int, char>, Piece*>> findPositions(GameBoard* gameBoard);
 	Pawn(pair<int, char> pos, bool color);
     int promote(GameBoard* gameBoard, vector<Piece*>& pieces,
