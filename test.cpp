@@ -119,11 +119,11 @@ vector<pair<pair<int, char>, Piece*>> computePositions(GameBoard *gameBoard, vec
     vector<pair<pair<int, char>, Piece*>> goodMoves;
     Piece *captured;
     int sz = pieces[color].size(), sz2, i, j;
-    for(i = 0; i < sz; i++){
+    for(i = 0; i < sz; i++) {
         moves = pieces[color][i]->findPositions(gameBoard);
         //cout << "got here comp pos" << endl;
         sz2 = moves.size();
-        for(j = 0; j < sz2; j++){
+        for(j = 0; j < sz2; j++) {
             if(tryMove(pieces[color][i], moves[j].first, gameBoard, pieces, 1 - color, captured))
                 goodMoves.push_back(moves[j]);
             removeMove(pieces[color][i], moves[j].first, gameBoard, pieces, 1 - color, captured);
@@ -133,7 +133,7 @@ vector<pair<pair<int, char>, Piece*>> computePositions(GameBoard *gameBoard, vec
 }
 
 void updateOpponentPieces(GameBoard* gameBoard, string command, vector<Piece*> pieces[], int color) {
-    // Actualize table
+    // Update table
     Piece *aux =  gameBoard->table[9 - (command[1] - '0')][command[0] - 'a' + 1];
     Piece *piece = aux;
     if(piece->getName().compare("K") == 0)
@@ -170,7 +170,7 @@ void updateOpponentPieces(GameBoard* gameBoard, string command, vector<Piece*> p
     // Promote
     if (temp->position.first == 7 * (1 - color) + 1) {
         if (temp->getName().compare("P") == 0) {
-            ((Pawn *)temp)->promoteToQueen(gameBoard, pieces[1 - color]);
+            ((Pawn *)temp)->promote(gameBoard, pieces[1 - color], command[4]); 
         }
     }
 }
@@ -180,6 +180,8 @@ int computeNextMove(GameBoard *gameBoard, vector<Piece*> pieces[], int color) {
     vector<pair<pair<int, char>, Piece*>> availablePos;
     vector<pair<pair<int, char>, Piece*>> pos;
     Piece *captured, *temp;
+    vector<char> possiblePromotes = {'q', 'r', 'b', 'n'};
+    char chosenPromotion = 'q';
     
     availablePos = computePositions(gameBoard, pieces, color);
     
@@ -209,14 +211,14 @@ int computeNextMove(GameBoard *gameBoard, vector<Piece*> pieces[], int color) {
         i = rand() % sz;
     else
         i = move;
-
-    if(color == 0)
-        cout << "white" << endl;
-    else 
-        cout << "black" << endl;
-
-    cout << "move " << availablePos[i].second->position.second << 9 - availablePos[i].second->position.first 
-    << availablePos[i].first.second << 9 - availablePos[i].first.first << endl;
+    if (availablePos[i].first.first == 7 * color + 1 && availablePos[i].second->getName().compare("P") == 0) {
+        chosenPromotion = possiblePromotes[rand() % 4];
+        cout << "move " << availablePos[i].second->position.second << 9 - availablePos[i].second->position.first 
+        << availablePos[i].first.second << 9 - availablePos[i].first.first << chosenPromotion << endl;
+    } else {
+        cout << "move " << availablePos[i].second->position.second << 9 - availablePos[i].second->position.first 
+        << availablePos[i].first.second << 9 - availablePos[i].first.first << endl;
+    }
 
     // Actualize position on table
     if(availablePos[i].second->getName().compare("K") == 0){
@@ -257,7 +259,7 @@ int computeNextMove(GameBoard *gameBoard, vector<Piece*> pieces[], int color) {
     temp = availablePos[i].second;
     if(availablePos[i].first.first == 7 * color + 1) {
         if(temp->getName().compare("P") == 0)
-            ok = ((Pawn*)temp)->promoteToQueen(gameBoard, pieces[color]);
+            ok = ((Pawn*)temp)->promote(gameBoard, pieces[color], chosenPromotion);
     }
 
     if (ok == 0)
@@ -344,7 +346,7 @@ int main() {
                 gameBoard->showBoard();
             }
             else {
-                updateOpponentPieces(gameBoard, command, pieces, color);
+                updateOpponentPieces(gameBoard, command, pieces, 1 - color);
                 color = 1 - color;
                 gameBoard->showBoard();
             }
