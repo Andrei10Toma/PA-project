@@ -132,7 +132,7 @@ vector<pair<pair<int, char>, Piece*>> computePositions(GameBoard *gameBoard, vec
     return goodMoves;
 }
 
-void updateOpponentPieces(GameBoard* gameBoard, string command, vector<Piece*> pieces[], int color) {
+void updateOpponentPieces(GameBoard* gameBoard, string command, vector<Piece*> pieces[], int color, Piece *&pieceEP) {
     // Update table
     Piece *aux =  gameBoard->table[9 - (command[1] - '0')][command[0] - 'a' + 1];
     Piece *piece = aux;
@@ -157,6 +157,8 @@ void updateOpponentPieces(GameBoard* gameBoard, string command, vector<Piece*> p
     }
     // En passant
     if(piece->getName().compare("P") == 0 && abs(command[3] - command[1]) == 2) {
+        cout << "dadadad" << endl;
+        pieceEP = piece;
         ((Pawn *)piece)->moved_two = true;
     }
     gameBoard->table[9 - (command[1] - '0')][command[0] - 'a' + 1] = NULL;
@@ -194,19 +196,28 @@ int computeNextMove(GameBoard *gameBoard, vector<Piece*> pieces[], int color) {
     if(sz == 0) {
         return -1;
     }
-    int move = -1, castle = 0;
+    int move = -1, castle = 0, enPassant = 0;
     for(i = 0; i < sz; i++){
         // castle
         if(availablePos[i].second->getName().compare("K") == 0){
             if(availablePos[i].second->position.second - availablePos[i].first.second == 2){
                 move = i;
                 castle = 2;
+                enPassant = 0;
                 break;
             }
             if(availablePos[i].second->position.second - availablePos[i].first.second == -2){
                 move = i;
                 castle = 1;
+                enPassant = 0;
                 break;
+            }
+        }
+        if (availablePos[i].second->getName().compare("P") == 0) {
+            if (availablePos[i].second->position.second != availablePos[i].first.second 
+            && gameBoard->table[availablePos[i].first.first][availablePos[i].first.second - 'a' + 1] == NULL) {
+                enPassant = 1;
+                move = i;
             }
         }
     }
@@ -231,12 +242,16 @@ int computeNextMove(GameBoard *gameBoard, vector<Piece*> pieces[], int color) {
     if(availablePos[i].second->getName().compare("R") == 0){
         ((Rook *)availablePos[i].second)->hasMoved = true;
     }
-
     gameBoard->table[availablePos[i].second->position.first][availablePos[i].second->position.second - 'a' + 1] = NULL;
-    captured = gameBoard->table[availablePos[i].first.first][availablePos[i].first.second - 'a' + 1];
+    if (enPassant != 1) {
+        captured = gameBoard->table[availablePos[i].first.first][availablePos[i].first.second - 'a' + 1];
+    } else {
+        captured = gameBoard->table[availablePos[i].second->position.first][availablePos[i].first.second - 'a' + 1];
+        gameBoard->table[availablePos[i].second->position.first][availablePos[i].first.second - 'a' + 1] = NULL;
+    }
 
     if(captured != NULL)
-        remove(pieces[1-color], captured);
+        remove(pieces[1 - color], captured);
 
     if(castle == 1){
         Piece *piece = availablePos[i].second;
@@ -276,7 +291,8 @@ int main() {
     vector<pair<pair<int, char>, Piece*>> availablePos;
     vector<pair<pair<int, char>, Piece*>> pos;
     // pieces[0] -> white's pieces; pieces[1] -> black's pieces
-    vector<Piece*> pieces[2], theChosenOnes;
+    vector<Piece*> pieces[2];
+    Piece *pieceEP = NULL;
     GameBoard* gameBoard = new GameBoard();
     char command[20], protover[20], N;
     // mode: 1 -> bot plays, 0 -> force
@@ -289,7 +305,7 @@ int main() {
     while (true) {
         //sleep(1);
         cin >> command;
-	cout << "Comanda : " << command << endl;
+	// cout << "Comanda : " << command << endl;
         if (strncmp(command, "xboard", 6) == 0) {
             cin >> protover >> N;
             cout << "feature sigint=0" << endl;
@@ -306,10 +322,7 @@ int main() {
 	    mode = 0;
         }
         else if(strncmp(command, "new", 3)==0) {
-            theChosenOnes.clear();
             gameBoard->init(pieces[0], pieces[1]);
-            theChosenOnes.push_back(gameBoard->table[7][2]);
-            theChosenOnes.push_back(gameBoard->table[2][2]);
             mode = 1;
             color = 0;
             gameBoard->showBoard();
@@ -322,6 +335,10 @@ int main() {
                 cout << "resign" << endl;
             }
             color = 1 - color;
+            if (pieceEP != NULL) {
+                ((Pawn *)pieceEP)->moved_two = false;
+                pieceEP = NULL;
+            }
             mode = 1;
             gameBoard->showBoard();
         }
@@ -344,15 +361,23 @@ int main() {
         else {
             if(mode == 1) {
                 color = 1 - color;
-                updateOpponentPieces(gameBoard, command, pieces, color);
+                updateOpponentPieces(gameBoard, command, pieces, color, pieceEP);
                 if (computeNextMove(gameBoard, pieces, color) == -1) {
                     cout << "resign" << endl;
+                }
+                if (pieceEP != NULL) {
+                    ((Pawn *)pieceEP)->moved_two = false;
+                    pieceEP = NULL;
                 }
                 color = 1 - color;
                 gameBoard->showBoard();
             }
             else {
-                updateOpponentPieces(gameBoard, command, pieces, 1 - color);
+                if (pieceEP != NULL) {
+                    ((Pawn *)pieceEP)->moved_two = false;
+                    pieceEP = NULL;
+                }
+                updateOpponentPieces(gameBoard, command, pieces, 1 - color, pieceEP);
                 color = 1 - color;
                 gameBoard->showBoard();
             }

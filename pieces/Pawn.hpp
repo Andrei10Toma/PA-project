@@ -11,6 +11,7 @@ private:
 
 public:
     bool moved_two;
+    int moveNumber;
     vector<pair<pair<int, char>, Piece*>> findPositions(GameBoard* gameBoard);
 	Pawn(pair<int, char> pos, bool color);
     int promote(GameBoard* gameBoard, vector<Piece*>& pieces,
