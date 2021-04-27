@@ -155,6 +155,10 @@ void updateOpponentPieces(GameBoard* gameBoard, string command, vector<Piece*> p
         gameBoard->table[piece->position.first][1] = NULL;
         rook->position.second = piece->position.second - 1;
     }
+    // En passant
+    if(piece->getName().compare("P") == 0 && abs(command[3] - command[1]) == 2) {
+        ((Pawn *)piece)->moved_two = true;
+    }
     gameBoard->table[9 - (command[1] - '0')][command[0] - 'a' + 1] = NULL;
     Piece *captured = gameBoard->table[9 - (command[3] - '0')][command[2] - 'a' + 1];
     gameBoard->table[9 - (command[3] - '0')][command[2] - 'a' + 1] = aux;
