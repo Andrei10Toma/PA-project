@@ -27,20 +27,20 @@ void remove(vector<Piece*> &pieces, Piece* piece){
 void removeMove(Piece *piece, pair<int, char> move, GameBoard *gameBoard, vector<Piece*> pieces[], int color, Piece *&captured){
     //Castle king side
     if(piece->getName().compare("K") == 0 && move.second - piece->position.second == 2){
-        cout << "CASTLE" << endl;
         Rook *rook = (Rook *)gameBoard->table[piece->position.first][piece->position.second - 'a' + 2];
         gameBoard->table[piece->position.first][piece->position.second - 'a' + 2] = NULL;
         gameBoard->table[piece->position.first][8] = rook;
     }
     //Castle queen side
     if(piece->getName().compare("K") == 0 && move.second - piece->position.second == -2){
-        cout << "CASTLE" << endl;
         Rook *rook = (Rook *)gameBoard->table[piece->position.first][piece->position.second - 'a'];
         gameBoard->table[piece->position.first][piece->position.second - 'a'] = NULL;
         gameBoard->table[piece->position.first][1] = rook;
     }
-
-    gameBoard->table[move.first][move.second - 'a' + 1] = captured;
+    if(captured != NULL)
+        gameBoard->table[captured->position.first][captured->position.second - 'a' + 1] = captured;
+    else
+        gameBoard->table[move.first][move.second - 'a' + 1] = captured;
     gameBoard->table[piece->position.first][piece->position.second - 'a' + 1] = piece;
     if(captured != NULL)
         pieces[color].push_back(captured);
@@ -62,8 +62,15 @@ int tryMove(Piece *piece, pair<int, char> move, GameBoard *gameBoard, vector<Pie
         gameBoard->table[piece->position.first][piece->position.second -'a'] = rook;
         gameBoard->table[piece->position.first][1] = NULL;
     }
+    if(piece->getName().compare("P") == 0 && abs(move.second - piece->position.second) == 1 
+    && abs(move.first - piece->position.first) == 1 && gameBoard->table[move.first][move.second - 'a' + 1] == NULL){
+        captured = gameBoard->table[piece->position.first][move.second - 'a' + 1];
+        gameBoard->table[piece->position.first][move.second - 'a' + 1] = NULL;
+    }
+    else
+        captured = gameBoard->table[move.first][move.second - 'a' + 1];
+    
     gameBoard->table[piece->position.first][piece->position.second - 'a' + 1] = NULL;
-    captured = gameBoard->table[move.first][move.second - 'a' + 1];
     gameBoard->table[move.first][move.second - 'a' + 1] = piece;
     //cout << piece->getName() << ' ' << move.second << ' ' << move.first << ' ' << piece->position.second << ' ' << piece->position.first << endl; 
     if(captured != NULL)
@@ -157,7 +164,6 @@ void updateOpponentPieces(GameBoard* gameBoard, string command, vector<Piece*> p
     }
     // En passant
     if(piece->getName().compare("P") == 0 && abs(command[3] - command[1]) == 2) {
-        cout << "dadadad" << endl;
         pieceEP = piece;
         ((Pawn *)piece)->moved_two = true;
     }
