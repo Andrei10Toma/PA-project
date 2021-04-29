@@ -143,6 +143,7 @@ void updateOpponentPieces(GameBoard* gameBoard, string command, vector<Piece*> p
     // Update table
     Piece *aux =  gameBoard->table[9 - (command[1] - '0')][command[0] - 'a' + 1];
     Piece *piece = aux;
+    Piece *captured = NULL;
     if(piece->getName().compare("K") == 0)
         ((King *)piece)->hasMoved = true;
 
@@ -167,9 +168,17 @@ void updateOpponentPieces(GameBoard* gameBoard, string command, vector<Piece*> p
         pieceEP = piece;
         ((Pawn *)piece)->moved_two = true;
     }
+    // En passant capture
+    if (piece->getName().compare("P") == 0 && abs(command[3] - command[1]) == 1
+    && abs(command[2] - command[0]) == 1) {
+        captured = gameBoard->table[9 - (command[1] - '0')][command[2] - 'a' + 1];
+        gameBoard->table[9 - (command[1] - '0')][command[2] - 'a' + 1] = NULL;
+    } else {
+        captured = gameBoard->table[9 - (command[3] - '0')][command[2] - 'a' + 1];
+    }
     gameBoard->table[9 - (command[1] - '0')][command[0] - 'a' + 1] = NULL;
-    Piece *captured = gameBoard->table[9 - (command[3] - '0')][command[2] - 'a' + 1];
     gameBoard->table[9 - (command[3] - '0')][command[2] - 'a' + 1] = aux;
+    if (captured != NULL) cout << captured->getName() << " " << captured->position.first << " " << captured->position.second << endl;
     aux->position.first = 9 - (command[3] - '0');
     aux->position.second = command[2];
 
@@ -222,6 +231,7 @@ int computeNextMove(GameBoard *gameBoard, vector<Piece*> pieces[], int color) {
         if (availablePos[i].second->getName().compare("P") == 0) {
             if (availablePos[i].second->position.second != availablePos[i].first.second 
             && gameBoard->table[availablePos[i].first.first][availablePos[i].first.second - 'a' + 1] == NULL) {
+                cout << "ONE EN PASSANT" << endl;
                 enPassant = 1;
                 move = i;
             }
@@ -259,7 +269,7 @@ int computeNextMove(GameBoard *gameBoard, vector<Piece*> pieces[], int color) {
     if(captured != NULL)
         remove(pieces[1 - color], captured);
 
-    if(castle == 1){
+    if(castle == 1) {
         Piece *piece = availablePos[i].second;
         Rook *rook = (Rook *)gameBoard->table[piece->position.first][8];
         gameBoard->table[piece->position.first][piece->position.second - 'a' + 2] = rook;
@@ -267,7 +277,7 @@ int computeNextMove(GameBoard *gameBoard, vector<Piece*> pieces[], int color) {
         //Actualiza rook's position
         rook->position.second = piece->position.second + 1;
     }
-    if(castle == 2){
+    if(castle == 2) {
         Piece *piece = availablePos[i].second;
         Rook *rook = (Rook *)gameBoard->table[piece->position.first][1];
         gameBoard->table[piece->position.first][piece->position.second -'a'] = rook;
