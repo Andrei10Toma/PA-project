@@ -41,6 +41,12 @@ void removeMove(Piece *piece, pair<int, char> move, GameBoard *gameBoard, vector
         gameBoard->table[captured->position.first][captured->position.second - 'a' + 1] = captured;
     else
         gameBoard->table[move.first][move.second - 'a' + 1] = captured;
+    // En passant
+    if(captured && (captured->position.first != move.first || captured->position.second != move.second)){
+        cout << "remove enpassant" << endl;
+        gameBoard->table[move.first][move.second - 'a' + 1] = NULL;
+    }
+
     gameBoard->table[piece->position.first][piece->position.second - 'a' + 1] = piece;
     if(captured != NULL)
         pieces[color].push_back(captured);
@@ -64,6 +70,7 @@ int tryMove(Piece *piece, pair<int, char> move, GameBoard *gameBoard, vector<Pie
     }
     if(piece->getName().compare("P") == 0 && abs(move.second - piece->position.second) == 1 
     && abs(move.first - piece->position.first) == 1 && gameBoard->table[move.first][move.second - 'a' + 1] == NULL){
+	    cout << "En passant available" << endl;
         captured = gameBoard->table[piece->position.first][move.second - 'a' + 1];
         gameBoard->table[piece->position.first][move.second - 'a' + 1] = NULL;
     }
@@ -220,9 +227,11 @@ int computeNextMove(GameBoard *gameBoard, vector<Piece*> pieces[], int color) {
             }
         }
         if (availablePos[i].second->getName().compare("P") == 0) {
+	    cout << availablePos[i].second->position.second << ' ' << availablePos[i].first.second << endl;
             if (availablePos[i].second->position.second != availablePos[i].first.second 
             && gameBoard->table[availablePos[i].first.first][availablePos[i].first.second - 'a' + 1] == NULL) {
                 enPassant = 1;
+		cout << "En passant available !!!" << endl;
                 move = i;
             }
         }
