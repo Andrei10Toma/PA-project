@@ -43,7 +43,6 @@ void removeMove(Piece *piece, pair<int, char> move, GameBoard *gameBoard, vector
         gameBoard->table[move.first][move.second - 'a' + 1] = captured;
     // En passant
     if(captured && (captured->position.first != move.first || captured->position.second != move.second)){
-        cout << "remove enpassant" << endl;
         gameBoard->table[move.first][move.second - 'a' + 1] = NULL;
     }
 
@@ -70,7 +69,6 @@ int tryMove(Piece *piece, pair<int, char> move, GameBoard *gameBoard, vector<Pie
     }
     if(piece->getName().compare("P") == 0 && abs(move.second - piece->position.second) == 1 
     && abs(move.first - piece->position.first) == 1 && gameBoard->table[move.first][move.second - 'a' + 1] == NULL){
-	    cout << "En passant available" << endl;
         captured = gameBoard->table[piece->position.first][move.second - 'a' + 1];
         gameBoard->table[piece->position.first][move.second - 'a' + 1] = NULL;
     }
@@ -79,11 +77,9 @@ int tryMove(Piece *piece, pair<int, char> move, GameBoard *gameBoard, vector<Pie
     
     gameBoard->table[piece->position.first][piece->position.second - 'a' + 1] = NULL;
     gameBoard->table[move.first][move.second - 'a' + 1] = piece;
-    //cout << piece->getName() << ' ' << move.second << ' ' << move.first << ' ' << piece->position.second << ' ' << piece->position.first << endl; 
     if(captured != NULL)
         remove(pieces[color], captured);
 
-    //cout << "got here try move" << endl;
     vector<pair<pair<int, char>, Piece*>> moves;
     vector<pair<pair<int, char>, Piece*>> aux;
     int sz = pieces[color].size(), i;
@@ -135,7 +131,6 @@ vector<pair<pair<int, char>, Piece*>> computePositions(GameBoard *gameBoard, vec
     int sz = pieces[color].size(), sz2, i, j;
     for(i = 0; i < sz; i++) {
         moves = pieces[color][i]->findPositions(gameBoard);
-        //cout << "got here comp pos" << endl;
         sz2 = moves.size();
         for(j = 0; j < sz2; j++) {
             if(tryMove(pieces[color][i], moves[j].first, gameBoard, pieces, 1 - color, captured))
@@ -150,6 +145,7 @@ void updateOpponentPieces(GameBoard* gameBoard, string command, vector<Piece*> p
     // Update table
     Piece *aux =  gameBoard->table[9 - (command[1] - '0')][command[0] - 'a' + 1];
     Piece *piece = aux;
+    Piece *captured = NULL;
     if(piece->getName().compare("K") == 0)
         ((King *)piece)->hasMoved = true;
 
@@ -174,8 +170,15 @@ void updateOpponentPieces(GameBoard* gameBoard, string command, vector<Piece*> p
         pieceEP = piece;
         ((Pawn *)piece)->moved_two = true;
     }
+    // En passant capture
+    if (piece->getName().compare("P") == 0 && abs(command[3] - command[1]) == 1
+    && abs(command[2] - command[0]) == 1) {
+        captured = gameBoard->table[9 - (command[1] - '0')][command[2] - 'a' + 1];
+        gameBoard->table[9 - (command[1] - '0')][command[2] - 'a' + 1] = NULL;
+    } else {
+        captured = gameBoard->table[9 - (command[3] - '0')][command[2] - 'a' + 1];
+    }
     gameBoard->table[9 - (command[1] - '0')][command[0] - 'a' + 1] = NULL;
-    Piece *captured = gameBoard->table[9 - (command[3] - '0')][command[2] - 'a' + 1];
     gameBoard->table[9 - (command[3] - '0')][command[2] - 'a' + 1] = aux;
     aux->position.first = 9 - (command[3] - '0');
     aux->position.second = command[2];
@@ -227,11 +230,9 @@ int computeNextMove(GameBoard *gameBoard, vector<Piece*> pieces[], int color) {
             }
         }
         if (availablePos[i].second->getName().compare("P") == 0) {
-	    cout << availablePos[i].second->position.second << ' ' << availablePos[i].first.second << endl;
             if (availablePos[i].second->position.second != availablePos[i].first.second 
             && gameBoard->table[availablePos[i].first.first][availablePos[i].first.second - 'a' + 1] == NULL) {
                 enPassant = 1;
-		cout << "En passant available !!!" << endl;
                 move = i;
             }
         }
@@ -318,9 +319,7 @@ int main() {
     srand(time(NULL));
     
     while (true) {
-        //sleep(1);
         cin >> command;
-	// cout << "Comanda : " << command << endl;
         if (strncmp(command, "xboard", 6) == 0) {
             cin >> protover >> N;
             cout << "feature sigint=0" << endl;

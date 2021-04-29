@@ -91,7 +91,6 @@ vector<pair<pair<int, char>, Piece*>> Pawn::findPositions(GameBoard* gameBoard) 
                         Piece *opponent = gameBoard->table[position.first][position.second - 'a'];
                         if(opponent->getName().compare("P") == 0 && opponent->color != this->color) {
                             if ( ((Pawn *)opponent)->moved_two == true) {
-                                cout << "EN PASSANT" << endl;
                                 possiblePositions.push_back(make_pair(make_pair(position.first + 1, position.second - 1), this));
                             }
                         }
@@ -102,7 +101,6 @@ vector<pair<pair<int, char>, Piece*>> Pawn::findPositions(GameBoard* gameBoard) 
                         Piece *opponent = gameBoard->table[position.first][position.second - 'a' + 2];
                         if(opponent->getName().compare("P") == 0 && opponent->color != this->color) {
                             if ( ((Pawn *)opponent)->moved_two == true) {
-                                cout << "EN PASSANT" << endl;
                                 possiblePositions.push_back(make_pair(make_pair(position.first + 1, position.second + 1), this));
                             }
                         }
