@@ -13,6 +13,10 @@ To compile, we give the command 'make build' in terminal, then we used "xboard
 								Project structure:
 -------------------------------------------------------------------------------
 
+-------------------------------------------------------------------------------
+								First stage:
+-------------------------------------------------------------------------------
+
 Class Piece:
 	We have implemented the class Piece. The attributes of a piece are: color(
 	black/white) and position(a pair for int, char, ex: e4).
@@ -91,3 +95,65 @@ updateOpponentPieces
 - Members responsibilities:
 Each team member implemented 2 of the piece-extending classes. We colaborated 
 on the main method and implementing the commands.
+
+
+-------------------------------------------------------------------------------
+								Second stage:
+-------------------------------------------------------------------------------
+
+	Additions made to stage 1:
+
+	In the second stage all the pieces will be available to be moved, not
+only one black and white pawn. The moves will be chosen randomly and they will
+be available moves. Also, we implemented the special moves: king side castle,
+queen side castle, en passant and now the pawn can be promoted to any piece
+(queen, knight, bishop, rook). 
+
+	Computation of the available moves:
+
+	The available moves will be computed with the help of the 
+computePositions function. This function will iterate through the pieces of
+the current color turn and generate all the possible position for every piece
+with the findPositions function from the Piece class. After this, all the
+moves generated for a piece will be checked if they are availble moves and if
+the move is a valid move it will be added to a vector with the available
+positions. After the move is checked, the move that was done in the tryMove
+function will be removed with the removeMove function and the table will be back
+in its initial state. If any of the castles can be done it will be prioritized
+over another moves. Otherwise, if an en passant can be done it will be 
+prioritized. Otherwise, en passant or any castle can't be done a random move
+will be chosen.
+
+	Checking if the move is valid:
+
+	To check if a move is valid we used the tryMove function. In this function
+the move given as parameter will be "fictionally" done to check if it is valid.
+After, the move is done all moves of the pieces from the opponent color will be
+generated. For every move will be checked if the king is in check and also if
+the castles can be done (king not passing through check or king not already in
+check).
+
+	En passant:
+
+	To check if the en passant move can be done we will use one more field in
+the Pawn class (movedTwo). This field will be true when the pawn makes its first
+move moving two position forward. If the opponent has a pawn near our pawn and
+the opponent has the movedTwo field on true the en passant move will be added
+to the vector of possible moves.
+
+	Castles (queen side and king side):
+
+	To check if one of the castles can be done we will use one more field in the
+Rook and in the King class (hasMoved). For every kind of castle we will check
+if the king didn't move, if the rook at its initial position, if the rook didn't
+move until now and if there is no piece between the king and the rook that will
+make the castle.
+
+	Pawn promotion:
+
+	Now a pawn can be upgraded to any other piece, not only the queen. Based on
+the last character of the command the pawn will be upgraded to the following:
+'b' - bishop, 'q' - queen, 'r' - rook, 'n' - knight. The new piece is created,
+put on the gameboard, added to the vector with the pieces and the pawn that
+was upgraded is erased from the vector. The upgrade that will be done is chosen
+randomly.
