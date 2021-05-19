@@ -1,0 +1,243 @@
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.19"]
+[Round "-"]
+[White "Capablanca"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+
+1. Na3 d5 2. d3 h5 3. g4 f6 4. Be3 a5 5. Nb1 b6 6. c4 a4 7. Nd2 c5 8. Rb1
+Bxg4 9. Rc1 e5 10. Bh6 Ra5 11. Nh3 h4 12. Bf4 Bd7 13. Ra1 Rh6 14. cxd5 Bxh3
+15. b4 axb3 16. Qxb3 Qd7 17. Bxe5 Na6 18. Qa3 Qc8 19. Kd1 Bd6 20. Rb1 Kf7
+21. Rc1 Bf5 22. e3 Qe8 23. f4 Bd7 24. Qb4 f5 25. a3 Ne7 26. a4 g6 27. Bxd6
+c4 28. Qxc4
+{Xboard: Forfeit due to invalid move: b6e8 (b6e8 via `0, `0) res=24} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.19"]
+[Round "-"]
+[White "Capablanca"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+
+1. f3 b5 2. Nc3 a5 3. e3 Bb7 4. d4 Bc6 5. d5 g5 6. Kf2 Ra7 7. Nge2 Bh6 8.
+dxc6
+{Xboard: Forfeit due to invalid move: c6a8 (c6a8 via `0, `0) res=24} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.19"]
+[Round "-"]
+[White "Capablanca"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+
+1. b4 b6 2. g3 d5 3. f3 Ba6 4. a3 Nc6 5. c3 Na5 6. h4 c6 7. Kf2 Qd7 8. b5
+O-O-O 9. Nh3 Kc7 10. Qa4 e6 11. Qg4 f5 12. d4 Rc8 13. c4 Nxc4 14. e3 Nxe3
+15. Qe4 Ng4+ 16. Kg1 Ne3 17. bxa6 h6 18. Bb5 Bd6 19. Kh2 Bb4 20. Nf2 Nd1
+21. Nd2 Bxd2 22. Kg2 Nc3 23. Qd3 Ne4 24. Qb3 Nxf2 25. Qa2 Kd6 26. Kh2
+{Xboard: Forfeit due to invalid move: a6b7 (a6b7 via `0, `0) res=24} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.19"]
+[Round "-"]
+[White "Capablanca"]
+[Black "Capablanca"]
+[Result "0-1"]
+[TimeControl "300+2"]
+
+1. g3 c5 2. g4 e5 3. Nc3 Nf6 4. d4 d5 5. a4 Nfd7 6. Kd2 exd4 7. Na2 g5 8.
+c3 Rg8 9. Nf3 Bd6 10. Bh3 Be7 11. a5 dxc3+ 12. Kc2 Rf8 13. b3 h5 14. Bf4
+Nb6 15. Qd3 Qc7 16. Nb4 N8d7 17. Bg3 a6 18. Rac1 c4 19. Rhf1 Qe5 20. Na2
+Qb8 21. Bc7 Bb4 22. Bf4 Qc7 23. Qxc3 hxg4 24. bxc4 f5 25. Kb2 Nc5 26. Qe3+
+Kf7 27. Rfd1 Qb8 28. Rd2 Bd7 29. Bc7 Nba4+ 30. Kb1 Ne4 31. Nd4 Kg7 32. Be5+
+Qxe5 33. Qd3 Kh7 34. cxd5 Rae8 35. Nf3 Re7 36. e3 Ra8 37. Qb3 Ba3 38. Qxa3
+Bc6 39. Kc2 Nac5 40. Qxc5 Ra7 41. Kb1 g3 42. Ne1 Bxd5 43. Qc3 Bf7 44. Qc4
+Kg8 45. Qc8+ Re8 46. Qe6 Qg7 47. Nd3 Nc3+ 48. Ka1 Rd8 49. Qd7 Nb5+ 50. Nc3
+Nc7 51. Qd5 gxf2 52. Qg2 Kh8 53. Rxf2 Rd5 54. Rf4 Bg6 55. Qh1 Rc5 56. Qg2
+Kh7 57. Rf3 b6 58. Qd2 Rd5 59. Bf1 Bf7 60. Qd1 Rd7 61. Rxf5 Be6 62. e4 Qf7
+63. Nb5 Rd4 64. Qh5+ Kg7 65. Kb2 bxa5 66. Nc5 Nxb5 67. Bc4 Rxc4 68. Ka1 Qd7
+69. Qg4 Rb4 70. Qg3 Bg8 71. Qa3 Qd2 72. Rb1 Rb3 73. h4 Be6 74. Rf4 Rd3 75.
+Na4 Rxa3#
+{Xboard adjudication: Checkmate} 0-1
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.19"]
+[Round "-"]
+[White "Capablanca"]
+[Black "Capablanca"]
+[Result "0-1"]
+[TimeControl "300+2"]
+
+1. g3 f6 2. Bg2 g5 3. Nf3 h6 4. O-O g4 5. h3 Rh7 6. Bh1 h5 7. hxg4 Nh6 8.
+b3 b5 9. Re1 h4 10. Na3 Rf7 11. Nb1 Rh7 12. Rf1 Ba6 13. d4 hxg3 14. Ba3 d6
+15. Bc1 gxf2+ 16. Rxf2 Qd7 17. Bb2 b4 18. Kh2 Kd8 19. Qe1 Ke8 20. Qd1 Rf7
+21. Rg2 Qd8 22. Kh3 Nf5 23. Nh4 c5 24. Bc1 Bb7 25. Bh6 Bf3 26. Rh2 Ng7 27.
+c4 bxc3 28. Nxf3 Qc8 29. Qc1 f5 30. Ng5 Qd8 31. Nd2 Qb6 32. Kg3 Kd7 33. Kf4
+Qc7 34. gxf5 d5+ 35. Ke3 Qb7 36. Nde4 e6 37. Nf3 Qc6 38. Nh4 Bd6 39. Nxc3
+Rxf5 40. Nb5 Ne8
+{Xboard: Forfeit due to invalid move: c4d5 (c4d5 via `0, `0) res=24} 0-1
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.19"]
+[Round "-"]
+[White "Capablanca"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+
+1. e3 f6 2. Be2 h6 3. b4 b6 4. g4 g6 5. Bc4 Na6 6. Bxa6 b5 7. Nh3 Bxa6 8.
+O-O Bc8 9. g5 f5 10. Qe2 Rh7 11. Rd1 Rf7 12. d4 h5 13. f3 Bg7 14. Kg2 Bb7
+15. Kh1 Bf6 16. Qe1 e6 17. Rd3 Rg7 18. Qg3 Qc8 19. Nf4 Bd8 20. Ra3 c6 21.
+Nxh5 a6 22. Ra5 Ne7 23. Kg2 Rb8 24. Nc3 Nd5 25. Kf1 Kf8 26. Ke1 Kg8 27. Kf2
+Be7 28. Kg1 e5 29. Qh3 Bf6 30. Ne2 f4 31. Nc3 Nxb4 32. Ra3 Kf8 33. Qf1 Bxg5
+34. Nd5 Bh6 35. Rxa6 Bxa6 36. c4 Rh7 37. Qe1 Bg7 38. Kg2 Rb7 39. Kf1 Qd8
+40. c5 Bh6 41. Ndxf4 Qb8 42. dxe5 Nxa2 43. Qf2 Qd6 44. h4 Rh8 45. Kg2 Ke7
+46. Ng3 Qf6 47. Nh1 Kf8 48. Kf1 Rg8 49. exf6 Bxf4 50. Bb2 Bh6 51. Be5 Rh8
+52. f7 Kxf7 53. Rc1 Bf4 54. Ra1 Kf8 55. exf4 g5 56. Rxa2 Ra7 57. Bxh8 Bc8
+58. Rc2 Rb7 59. Rc1 Ra7 60. Qe2 Kf7 61. Qd3 d6 62. hxg5 Bg4 63. Bg7 dxc5
+64. Qe2 Ra3 65. Qh2 Ke7 66. Rc3 c4 67. Ng3 Kd6 68. Qc2 Ra7 69. g6 b4 70.
+Qd2+ Ke6 71. Re3#
+{Xboard adjudication: Checkmate} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.19"]
+[Round "-"]
+[White "Capablanca"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+
+1. a4 f6 2. f3 d6 3. d4 h6 4. a5 Bg4 5. e4 e6 6. f4 Be7 7. b4 Bh5 8. Qe2
+Bg6 9. Qd1 f5 10. Ra4 Kd7 11. c3 fxe4 12. Qg4 Bf7 13. Bb2 Qf8 14. Ne2 Bf6
+15. Ra1 Ne7 16. Qh4 Rg8 17. Qh3 g6 18. d5 Na6 19. Kd1 Qe8 20. Qxh6 Nxb4 21.
+Ng3 exd5 22. Na3 a6 23. Ra2 Bg5 24. Be2 Rf8 25. Nb1 Kc8 26. Ba1 Bg8 27.
+Qxg6 Qa4+ 28. Kc1 Qd7 29. cxb4 Qe8 30. Bf6 Bh7 31. Bd3 c6 32. Nf5 Rf7 33.
+Bxe7 Bxe7 34. Qxd6 Bh4 35. Bb5 Bd8 36. Bxa6 Rf8 37. Rd2 Qf7 38. Rg1 Re8 39.
+g3 Qd7 40. Nh4 Re7 41. Qxc6+ Qc7 42. Ng2 Rg7 43. Bf1 Rxa5 44. Kb2 Kb8 45.
+Qxd5 Kc8 46. bxa5 Bg6 47. Qc5 Bf6+ 48. Kc1 Rf7 49. Rd5 Bh5 50. Rd1 Bg5 51.
+Rd4 Kb8 52. Na3 Rxf4 53. Be2 b5 54. axb6 Qxb6 55. Nb5 Rf3+ 56. Qxg5 Qa5 57.
+Rxe4 Rf5 58. Qg6 Qa6 59. g4 Qd6 60. gxh5 Qf6 61. Qg8+ Qd8 62. Bc4 Qc8 63.
+h3 Rxb5 64. Rd1 Rb2 65. Qxc8+ Kxc8 66. Kxb2 Kc7 67. Rd7+ Kb6 68. Be2 Kc5
+69. Rc4+ Kb5 70. Rc8+ Kb6 71. Bb5 Ka5 72. Rb8 Kb4 73. Ka1 Kc5 74. Rg8 Kb6
+75. Bc6 Ka6 76. Rd6 Ka5 77. Rd2 Kb6 78. Rf8 Ka7 79. Bb5 Kb7 80. Bc6+ Ka7
+81. Rd7+ Kb6 82. Rf5 Kxc6 83. Rdf7 Kd6 84. Ne1 Kc6 85. Ra7 Kb6 86. Kb1 Kc6
+87. Ra6+ Kc7 88. Raa5 Kd8 89. Rf2 Kc8 90. h6 Kb8 91. Rg5 Ka8 92. Rd5 Kb7
+93. Rb2+ Kc7 94. Re2 Kb8 95. Ra2 Kc7 96. Ra7+ Kc8 97. Rc7+ Kb8 98. Rdd7 Ka8
+99. Rg7 Kb8 100. Rcd7 Ka8 101. Ka1 Kb8 102. Nc2 Ka8 103. Kb1 Kb8 104. Na1
+Kc8 105. Ka2 Kb8 106. Rh7 Kc8 107. Rd1 Kb8 108. Rg1 Kc8 109. Rf7 Kb8 110.
+Rg8#
+{Xboard adjudication: Checkmate} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.19"]
+[Round "-"]
+[White "Capablanca"]
+[Black "Capablanca"]
+[Result "1/2-1/2"]
+[TimeControl "300+2"]
+
+1. d3 a5 2. Qd2 a4 3. Nf3 Na6 4. Qc3 Nb4 5. Na3 d6 6. Bg5 Bf5 7. O-O-O Qd7
+8. Be3 O-O-O 9. Bb6 h6 10. Nh4 Qe6 11. Qc5 Kd7 12. Qxb4 Kc6 13. Qxa4+ Kxb6
+14. Qb4+ Ka7 15. g4 h5 16. Rd2 Qe3 17. Ng6 Qc5 18. Qa4+ Kb6 19. e3 h4 20.
+b4 Bd7 21. Qa7+ Kc6 22. b5+ Qxb5 23. Bg2+ Qd5 24. Be4 h3 25. Qd4 b5 26. Nb1
+Qxe4 27. Qxd6+ exd6 28. d4 Ne7 29. d5+ Kb6 30. Ne5 f5 31. Nf7 g6 32. a3 Bh6
+33. Rd4 Bc6 34. Nxd8 Nxd5 35. Rhd1 Bd7 36. R4d3 Bg7 37. c3 Re8 38. Ne6 Ka5
+39. Ng5 Bd4 40. f4 Bxe3+ 41. Rxe3 Ra8 42. Nd2 Ka4 43. Rh1 Nxe3 44. Ngxe4
+Rb8 45. Nf6 Nd1 46. c4 Rd8 47. Nxd7 Re8 48. Nb6+ Ka5 49. Rg1 cxb6 50. Nb1
+Rh8 51. Rxd1 Rh6 52. Kc2 Ka4 53. Re1 fxg4 54. Kd3 g5 55. Rg1 Rh7 56. Nd2
+bxc4+ 57. Kd4 b5 58. Rg3 Re7 59. Kc3 Ka5 60. Kb2 Rb7 61. Rd3 d5 62. fxg5
+Rd7 63. Ka2 Ka4 64. Rg3 Rf7 65. Ka1 Rf3 66. Nb1 Rf6 67. Rf3 Ra6 68. Rf1 b4
+69. axb4 Kb5+ 70. Kb2 c3+ 71. Kc1 Kc4 72. b5 d4 73. Nxc3 Ra7 74. Rf8 Rb7
+75. Rg8 dxc3 76. Rg7 Kd5 77. Rxb7 Kc4 78. Rf7 c2 79. Rf4+ Kb3 80. g6 g3 81.
+g7 Ka2 82. Rf7 Ka3 83. Kxc2 Ka2 84. Rf4 Ka3 85. Rf5 Ka4 86. Rf2 gxh2 87.
+Kd3 Kb3 88. Kd2 Ka2 89. Rg2 h1=N 90. Kd1+ Ka1 91. Rg3 Kb2 92. Ra3 Kxa3 93.
+Ke2 h2 94. g8=Q Ka4 95. Kf1 Nf2 96. Qg4+ Kxb5 97. Qg2 Kb6 98. Qf3 h1=Q+ 99.
+Ke2 Kb5 100. Qf4 Ka6 101. Kd2 Qh6 102. Kc2 Qh7+ 103. Kc3 Ng4 104. Kb4 Qh5
+105. Qc1 Ne3 106. Qb2 Qh2 107. Qg2 Qe5 108. Ka3 Qe8 109. Qh2 Qe7+ 110. Qd6+
+Kb7 111. Kb2 Nd5 112. Kb3 Qe3+ 113. Ka4 Qe4+ 114. Qb4+ Kc6 115. Ka5 Nc7
+116. Qe1 Qd3 117. Ka4 Qd6 118. Qe4+ Kc5 119. Qe5+ Kb6 120. Qf4 Na6 121.
+Qxd6+ Ka7 122. Qe6 Kb8 123. Qc4 Ka8 124. Qh4 Kb8 125. Qh5 Kc8 126. Qd5 Kc7
+127. Qe5+ Kc6 128. Qh8 Kc5 129. Qb8 Kc6 130. Qd6+ Kxd6
+{Xboard adjudication: Insufficient mating material} 1/2-1/2
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.19"]
+[Round "-"]
+[White "Capablanca"]
+[Black "Capablanca"]
+[Result "1/2-1/2"]
+[TimeControl "300+2"]
+
+1. e4 e5 2. Be2 Qf6 3. d4 Ke7 4. h3 Ke8 5. f3 Qe7 6. b4 Qd6 7. Kd2 Qg6 8.
+Ba6 Bxb4+ 9. c3 Qg4 10. cxb4 c6 11. Bf1 b5 12. Ke1 Ba6 13. Kf2 Kd8 14. Ke3
+Qxh3 15. Bd3 f6 16. a4 Qg3 17. Bxb5 Bc8 18. Na3 Qh2 19. Qc2 Nh6 20. Bd2
+Ng4+ 21. fxg4 Qh4 22. Qb1 Na6 23. Kd3 Re8 24. Bc1 f5 25. Bc4 Qf6 26. exf5
+exd4 27. Nc2 Nc5+ 28. bxc5 Ba6 29. Na3 Rg8 30. Rxh7 Rb8 31. Ke4 Bxc4 32.
+Rh3 Qd6 33. Rc3 Bb3 34. Qxb3 Qf4+ 35. Kxf4 Rb5 36. axb5 Kc7 37. Qb4 Kb8 38.
+Nc2 d5 39. cxd6 Rh8 40. Rh3 Rxh3 41. Qd2 cxb5 42. Rb1 Ka8 43. Ra1 Re3 44.
+Qxd4 Kb8 45. Ra6 Kb7 46. Qd5+ Kxa6 47. Nb4+ Ka5 48. Qf3 a6 49. Ba3 Re4+ 50.
+Kxe4 Ka4 51. Ke3 Kb3 52. d7 Kc3 53. Nh3 Kc4 54. g3 a5 55. Kd2 axb4 56. Ke3
+bxa3 57. Qe4+ Kb3 58. Qc2+ Kxc2 59. Kf2 Kc3 60. Ng1 g6 61. Nh3 gxf5 62. Kf1
+a2 63. d8=Q b4 64. Nf2 a1=R+ 65. Nd1+ Kc4 66. Qh4 Kb5 67. Qh3 fxg4 68. Qh7
+Ka4 69. Qh8 Kb3 70. Qe5 Ra5 71. Nf2 Rc5 72. Qf6 Rc4 73. Qd4 Rc6 74. Qd8 Rg6
+75. Qc7 Rg7 76. Qc6 Rc7 77. Qa4+ Kb2 78. Ke1 Rc3 79. Qc2+ Kxc2 80. Nh3 Rf3
+81. Ng1 Rb3 82. Kf2 Kb2 83. Nf3 gxf3 84. Ke1 Ka1 85. Kf1 Ra3 86. Kg1 Ra5
+87. g4 Rf5 88. g5 Rd5 89. g6 Rc5 90. Kf2 Rc7 91. Kf1 Re7 92. g7 Re4 93. Kg1
+Kb1 94. Kf1 b3 95. Kg1 Ka2 96. Kf1 Rg4 97. Ke1 Ka1 98. Kd2 Kb1 99. Ke3 Ka2
+100. Kd3 Rc4 101. Kd2 Rc6 102. Ke1 Rd6 103. Kf2 Ra6 104. Kf1 Re6 105. Kf2
+Kb2 106. Kf1 Rc6 107. Kg1 Rc5 108. Kh1 Ka3 109. Kh2 Rc8 110. Kh3 Rf8 111.
+Kh2 Rf7 112. Kg1 Rf6 113. g8=R Rf5 114. Kf1 Rb5 115. Kg1 Rb8 116. Kf1 f2
+117. Rg6 Rd8 118. Rg2 Rd5 119. Rxf2 Ra5 120. Rf4 Rf5 121. Kf2 Rf6 122. Rf5
+Kb4 123. Kg2 Re6 124. Rf7 Rf6 125. Re7 Rg6+ 126. Kf3 Kc5 127. Kf4 Rg3 128.
+Rb7 Rf3+ 129. Ke5 Rc3 130. Rb8 Rc1 131. Rxb3 Rg1 132. Rd3 Rg2 133. Rd4 Rb2
+134. Rd6 Kc4 135. Rd5 Rf2 136. Rd3 Rf1 137. Rg3 Ra1 138. Kd6 Kb5 139. Re3
+Ra3 140. Rh3 Ra7 141. Rh1 Rb7 142. Ke5 Ka6 143. Rb1 Rb6 144. Rb3 Rb7 145.
+Rb1 Rc7 146. Rb7 Rc5+ 147. Kd6 Rd5+ 148. Kc7 Rd4 149. Kc6 Rb4 150. Kc7 Rc4+
+151. Kb8 Rc5 152. Ra7+ Kb5 153. Rd7 Rh5 154. Kc8 Rh8+ 155. Rd8 Ka5 156. Rg8
+Kb5 157. Kb7 Rh2 158. Rg4 Kc5 159. Rg1 Rh8 160. Rg4 Rg8 161. Rd4 Kb5 162.
+Rf4 Rg4 163. Rf7 Kb4 164. Rf3 Rc4 165. Rc3 Re4 166. Rf3 Kc5 167. Ra3 Re1
+168. Ka6 Re7 169. Rg3 Rf7 170. Rg5+ Kd6 171. Kb5 Rf8 172. Rg7 Rb8+ 173. Ka5
+Ke5 174. Ka6 Rb1 175. Rg3 Kf6 176. Rg1 Rf1 177. Ka5 Kf7 178. Ka6 Ke7 179.
+Kb5 Rf4 180. Rg2 Rd4 181. Kb6 Rg4 182. Kc5
+{Xboard adjudication: 50-move rule} 1/2-1/2
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.19"]
+[Round "-"]
+[White "Capablanca"]
+[Black "Capablanca"]
+[Result "0-1"]
+[TimeControl "300+2"]
+
+1. e4 f6 2. g3 h6 3. Nf3 g5 4. g4 d6 5. Bd3 b6 6. O-O b5 7. Kh1 Rh7 8. Nd4
+Nd7 9. Kg1 h5 10. Nc6 Ne5 11. Nd4 e6 12. Nc3 Nh6 13. Na4 Nhf7 14. Nf5 Nd7
+15. Qf3 e5 16. Ng3 Nb6 17. Kg2 Kd7 18. b4 a5 19. Kh3 c5 20. bxc5 Kc6 21.
+Bxb5+ Kb7 22. c3 Kb8 23. Re1 Nd5 24. Ba3 Bf5 25. Qg2 Bxg4#
+{Xboard adjudication: Checkmate} 0-1
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.19"]
+[Round "-"]
+[White "Capablanca"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+
+1. a4 Na6 2. Ra3 Rb8 3. Rg3 h5 4. Na3 h4 5. f4 Nf6 6. Nb5 Ra8 7. c3 c5 8.
+a5 Nb8 9. e3 Ne4 10. Nd4 g6 11. Ngf3 c4 12. Ke2 f5 13. Nc6 Na6 14. Rg1 Nb4
+15. Qa4 d6 16. d3 b5 17. axb6 a6 18. Nfd4 a5 19. Nb8+
+{Xboard: Forfeit due to invalid move: b4c2 (b4c2 via `0, `0) res=24} 1-0
+
