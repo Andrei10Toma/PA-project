@@ -77,7 +77,7 @@ void GameBoard::showBoard() {
     for (int i = 0; i < 8; i++) {
         for (int j = 0; j < 8; j++) {
             if (this->table[i + 1][j + 1] != NULL) {
-                cout << this->table[i + 1][j + 1]->getName() << '\t';
+                cout << this->table[i + 1][j + 1]->getName() << this->table[i + 1][j + 1]->color << '\t';
             }
             else {
                 cout << "-\t";
