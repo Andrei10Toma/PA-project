@@ -10,6 +10,5 @@ class Bishop : public Piece {
     public:
         vector<pair<pair<int, char>, Piece*>> findPositions(GameBoard* gameBoard);
         Bishop(pair<int, char> pos, bool color);
-        string getName();
 };
 #endif

@@ -5,6 +5,7 @@
 using namespace std;
 
 Knight::Knight(pair<int, char> pos, bool color) : Piece(pos, color) {
+    name = 'N';
 }
 
 bool inTable(int x, char y, GameBoard * gameBoard, Piece *piece){
@@ -25,8 +26,4 @@ vector<pair<pair<int, char>, Piece*>> Knight::findPositions(GameBoard* gameBoard
             if(inTable(position.first + vx[i], position.second + vy[i], gameBoard, this))
                 possiblePositions.push_back(make_pair(make_pair(position.first + vx[i], position.second + vy[i]), this));
     return possiblePositions;
-}
-
-string Knight::getName() {
-    return "N";
 }

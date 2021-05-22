@@ -11,6 +11,5 @@ class Rook : public Piece {
       bool hasMoved;
       vector<pair<pair<int, char>, Piece*>> findPositions(GameBoard* gameBoard);
       Rook(pair<int, char> pos, bool color);
-      string getName();
 };
 #endif

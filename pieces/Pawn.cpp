@@ -11,6 +11,7 @@ using namespace std;
 Pawn::Pawn(pair<int, char> pos, bool color) : Piece(pos, color) {
     moved_two = false;
     moveNumber = 0;
+    name = 'P';
 }
 
 int Pawn::promote(GameBoard* gameBoard, vector<Piece*>& pieces, char promotionPiece) {
@@ -89,7 +90,7 @@ vector<pair<pair<int, char>, Piece*>> Pawn::findPositions(GameBoard* gameBoard) 
                 if (this->position.second - 'a' > 0) {
                     if (gameBoard->table[position.first][position.second - 'a'] != NULL) {
                         Piece *opponent = gameBoard->table[position.first][position.second - 'a'];
-                        if(opponent->getName().compare("P") == 0 && opponent->color != this->color) {
+                        if(opponent->name == 'P' && opponent->color != this->color) {
                             if ( ((Pawn *)opponent)->moved_two == true) {
                                 possiblePositions.push_back(make_pair(make_pair(position.first + 1, position.second - 1), this));
                             }
@@ -99,7 +100,7 @@ vector<pair<pair<int, char>, Piece*>> Pawn::findPositions(GameBoard* gameBoard) 
                 if (this->position.second - 'a' + 2 > 0) {
                     if (gameBoard->table[position.first][position.second - 'a' + 2] != NULL) {
                         Piece *opponent = gameBoard->table[position.first][position.second - 'a' + 2];
-                        if(opponent->getName().compare("P") == 0 && opponent->color != this->color) {
+                        if(opponent->name == 'P' && opponent->color != this->color) {
                             if ( ((Pawn *)opponent)->moved_two == true) {
                                 possiblePositions.push_back(make_pair(make_pair(position.first + 1, position.second + 1), this));
                             }
@@ -156,7 +157,7 @@ vector<pair<pair<int, char>, Piece*>> Pawn::findPositions(GameBoard* gameBoard) 
                 if (this->position.second - 'a' > 0) {
                         if (gameBoard->table[position.first][position.second - 'a'] != NULL) {
                             Piece *opponent = gameBoard->table[position.first][position.second - 'a'];
-                            if(opponent->getName().compare("P") == 0 && opponent->color != this->color) {
+                            if(opponent->name == 'P' && opponent->color != this->color) {
                                 if ( ((Pawn *)opponent)->moved_two == true) {
                                     possiblePositions.push_back(make_pair(make_pair(position.first - 1, position.second - 1), this));
                                 }
@@ -166,7 +167,7 @@ vector<pair<pair<int, char>, Piece*>> Pawn::findPositions(GameBoard* gameBoard) 
                 if (this->position.second - 'a' + 2 > 0) {
                         if (gameBoard->table[position.first][position.second - 'a' + 2] != NULL) {
                             Piece *opponent = gameBoard->table[position.first][position.second - 'a' + 2];
-                            if(opponent->getName().compare("P") == 0 && opponent->color != this->color) {
+                            if(opponent->name == 'P' && opponent->color != this->color) {
                                 if ( ((Pawn *)opponent)->moved_two == true) {
                                     possiblePositions.push_back(make_pair(make_pair(position.first - 1, position.second + 1), this));
                                 }
@@ -178,8 +179,4 @@ vector<pair<pair<int, char>, Piece*>> Pawn::findPositions(GameBoard* gameBoard) 
         }
     }
     return possiblePositions;
-}
-
-string Pawn::getName() {
-    return "P";
 }

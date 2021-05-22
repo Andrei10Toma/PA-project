@@ -5,6 +5,7 @@
 using namespace std;  
 	
 Queen::Queen(pair<int, char> pos, bool color) : Piece(pos, color){
+    name = 'Q';
 }
 
 bool inTableQueen(int x, char y, GameBoard* gameBoard) {
@@ -136,7 +137,3 @@ vector<pair<pair<int, char>, Piece*>> Queen::findPositions(GameBoard* gameBoard)
     
     return possiblePositions;
 }
-
-string Queen::getName() {
-    return "Q";
-} 

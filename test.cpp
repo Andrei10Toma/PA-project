@@ -23,6 +23,9 @@
 
 using namespace std;
 
+vector<Piece*> pieces[2];
+GameBoard* gameBoard;
+
 int pawn_matrix[9][9] = 
 {
     {0,  0,  0,  0,  0,  0,  0,  0},
@@ -99,20 +102,20 @@ void remove(vector<Piece*> &pieces, Piece* piece){
         pieces.erase(pieces.begin() + i);
 }
 
-void removeMove(Piece *&piece, pair<int, char> move, pair<int, char> old_p, GameBoard *gameBoard, vector<Piece*> pieces[], int color, Piece *&captured, int moved){
+void removeMove(Piece *&piece, pair<int, char> move, pair<int, char> old_p, int color, Piece *&captured, int moved){
     piece->position.first = old_p.first;
     piece->position.second = old_p.second;
     int castle = 0;
-    if(piece->getName().compare("K") == 0){
+    if(piece->name == 'K'){
         if(moved == 1)
             ((King *)piece)->hasMoved = false;
     }
-    if(piece->getName().compare("R") == 0){
+    if(piece->name == 'R'){
         if(moved == 1)
             ((Rook *)piece)->hasMoved = false;
     }
     //Castle king side
-    if(piece->getName().compare("K") == 0 && move.second - piece->position.second == 2){
+    if(piece->name == 'K' && move.second - piece->position.second == 2){
         castle = 1;
         Rook *rook = (Rook *)gameBoard->table[piece->position.first][piece->position.second - 'a' + 2];
         gameBoard->table[piece->position.first][piece->position.second - 'a' + 2] = NULL;
@@ -121,7 +124,7 @@ void removeMove(Piece *&piece, pair<int, char> move, pair<int, char> old_p, Game
         rook->position.second = 'h';
     }
     //Castle queen side
-    if(piece->getName().compare("K") == 0 && move.second - piece->position.second == -2){
+    if(piece->name == 'K' && move.second - piece->position.second == -2){
         castle = 2;
         Rook *rook = (Rook *)gameBoard->table[piece->position.first][piece->position.second - 'a'];
         gameBoard->table[piece->position.first][piece->position.second - 'a'] = NULL;
@@ -139,32 +142,32 @@ void removeMove(Piece *&piece, pair<int, char> move, pair<int, char> old_p, Game
     }
 
     gameBoard->table[piece->position.first][piece->position.second - 'a' + 1] = piece;
-    if(captured && captured->color != color){
+    /*if(captured && captured->color != color){
         cout << castle << " nu e ok " << captured->getName() << captured->color << ' ' << captured->position.first << ' ' << captured->position.second << endl;
         cout << piece->getName() << piece->color << ' ' << move.first << ' ' << move.second << endl;
         gameBoard->showBoard();
-    }
+    }*/
     if(captured != NULL)
         pieces[color].push_back(captured);
 }
 
-int tryMove(Piece *piece, pair<int, char> move, pair<int, char> &old_p, GameBoard *gameBoard, vector<Piece*> pieces[], int color, Piece *&captured){
+int tryMove(Piece *piece, pair<int, char> move, pair<int, char> &old_p, int color, Piece *&captured){
     //Castle king side
     int castle = 0;
-    if(piece->getName().compare("K") == 0 && move.second - piece->position.second == 2){
+    if(piece->name == 'K' && move.second - piece->position.second == 2){
         castle = 1;
         Rook *rook = (Rook *)gameBoard->table[piece->position.first][8];
         gameBoard->table[piece->position.first][piece->position.second - 'a' + 2] = rook;
         gameBoard->table[piece->position.first][8] = NULL;
     }
     //Castle queen side
-    if(piece->getName().compare("K") == 0 && move.second - piece->position.second == -2){
+    if(piece->name == 'K' && move.second - piece->position.second == -2){
         castle = 2;
         Rook *rook = (Rook *)gameBoard->table[piece->position.first][1];
         gameBoard->table[piece->position.first][piece->position.second -'a'] = rook;
         gameBoard->table[piece->position.first][1] = NULL;
     }
-    if(piece->getName().compare("P") == 0 && abs(move.second - piece->position.second) == 1 
+    if(piece->name == 'P' && abs(move.second - piece->position.second) == 1 
     && abs(move.first - piece->position.first) == 1 && gameBoard->table[move.first][move.second - 'a' + 1] == NULL){
         captured = gameBoard->table[piece->position.first][move.second - 'a' + 1];
         gameBoard->table[piece->position.first][move.second - 'a' + 1] = NULL;
@@ -213,7 +216,7 @@ int tryMove(Piece *piece, pair<int, char> move, pair<int, char> &old_p, GameBoar
                 ok = 0;
         }
         // King in check
-        if(p != NULL && p->color == 1 - color && p->getName().compare("K") == 0)
+        if(p != NULL && p->color == 1 - color && p->name == 'K')
             ok = 0;
     }
     old_p.first = piece->position.first;
@@ -223,16 +226,16 @@ int tryMove(Piece *piece, pair<int, char> move, pair<int, char> &old_p, GameBoar
     return ok;
 }
 
-void apply_move(Piece *&piece, pair<int, char> move, pair<int, char> &old_p, GameBoard *&gameBoard, vector<Piece*> pieces[], int color, Piece *&captured, int &moved){
+void apply_move(Piece *&piece, pair<int, char> move, pair<int, char> &old_p, int color, Piece *&captured, int &moved){
     moved = 0;
-    if(piece->getName().compare("K") == 0){
+    if(piece->name == 'K'){
         if(((King *)piece)->hasMoved == true)
             moved = 2;
         else
             moved = 1;
         ((King *)piece)->hasMoved = true;
     }
-    if(piece->getName().compare("R") == 0){
+    if(piece->name == 'R'){
         if(((Rook *)piece)->hasMoved == true)
             moved = 2;
         else
@@ -240,7 +243,7 @@ void apply_move(Piece *&piece, pair<int, char> move, pair<int, char> &old_p, Gam
         ((Rook *)piece)->hasMoved = true;
     }
     //Castle king side
-    if(piece->getName().compare("K") == 0 && move.second - piece->position.second == 2){
+    if(piece->name == 'K' && move.second - piece->position.second == 2){
         Rook *rook = (Rook *)gameBoard->table[piece->position.first][8];
         gameBoard->table[piece->position.first][piece->position.second - 'a' + 2] = rook;
         gameBoard->table[piece->position.first][8] = NULL;
@@ -248,14 +251,14 @@ void apply_move(Piece *&piece, pair<int, char> move, pair<int, char> &old_p, Gam
         rook->position.second = piece->position.second + 1;
     }
     //Castle queen side
-    if(piece->getName().compare("K") == 0 && move.second - piece->position.second == -2){
+    if(piece->name == 'K' && move.second - piece->position.second == -2){
         Rook *rook = (Rook *)gameBoard->table[piece->position.first][1];
         gameBoard->table[piece->position.first][piece->position.second -'a'] = rook;
         gameBoard->table[piece->position.first][1] = NULL;
         rook->position.first = piece->position.first;
         rook->position.second = piece->position.second - 1;
     }
-    if(piece->getName().compare("P") == 0 && abs(move.second - piece->position.second) == 1 
+    if(piece->name == 'P' && abs(move.second - piece->position.second) == 1 
     && abs(move.first - piece->position.first) == 1 && gameBoard->table[move.first][move.second - 'a' + 1] == NULL){
         captured = gameBoard->table[piece->position.first][move.second - 'a' + 1];
         gameBoard->table[piece->position.first][move.second - 'a' + 1] = NULL;
@@ -274,7 +277,7 @@ void apply_move(Piece *&piece, pair<int, char> move, pair<int, char> &old_p, Gam
     piece->position.second = move.second;
 }
 
-vector<pair<pair<int, char>, Piece*>> computePositions(GameBoard *gameBoard, vector<Piece*> pieces[], int color){
+vector<pair<pair<int, char>, Piece*>> computePositions(int color){
     vector<pair<pair<int, char>, Piece*>> moves;
     vector<pair<pair<int, char>, Piece*>> goodMoves;
     Piece *captured;
@@ -284,45 +287,45 @@ vector<pair<pair<int, char>, Piece*>> computePositions(GameBoard *gameBoard, vec
         moves = pieces[color][i]->findPositions(gameBoard);
         sz2 = moves.size();
         for(j = 0; j < sz2; j++) {
-            if(tryMove(pieces[color][i], moves[j].first, old_p, gameBoard, pieces, 1 - color, captured))
+            if(tryMove(pieces[color][i], moves[j].first, old_p, 1 - color, captured))
                 goodMoves.push_back(moves[j]);
-            removeMove(pieces[color][i], moves[j].first, old_p, gameBoard, pieces, 1 - color, captured, 0);
+            removeMove(pieces[color][i], moves[j].first, old_p, 1 - color, captured, 0);
         }
     }
     return goodMoves;
 }
 
-void updateOpponentPieces(GameBoard* gameBoard, string command, vector<Piece*> pieces[], int color, Piece *&pieceEP) {
+void updateOpponentPieces(string command, int color, Piece *&pieceEP) {
     // Update table
     Piece *aux =  gameBoard->table[9 - (command[1] - '0')][command[0] - 'a' + 1];
     Piece *piece = aux;
     Piece *captured = NULL;
-    if(piece->getName().compare("K") == 0)
+    if(piece->name == 'K')
         ((King *)piece)->hasMoved = true;
 
-    if(piece->getName().compare("R") == 0)
+    if(piece->name == 'R')
         ((Rook *)piece)->hasMoved = true;
     // CASTLE
-    if(piece->getName().compare("K") == 0 && command[2] - piece->position.second == 2){
+    if(piece->name == 'K' && command[2] - piece->position.second == 2){
         Rook *rook = (Rook *)gameBoard->table[piece->position.first][8];
         gameBoard->table[piece->position.first][piece->position.second - 'a' + 2] = rook;
         gameBoard->table[piece->position.first][8] = NULL;
         rook->position.second = piece->position.second + 1;
     }
     //Castle queen side
-    if(piece->getName().compare("K") == 0 && command[2] - piece->position.second == -2){
+    if(piece->name == 'K' && command[2] - piece->position.second == -2){
         Rook *rook = (Rook *)gameBoard->table[piece->position.first][1];
         gameBoard->table[piece->position.first][piece->position.second -'a'] = rook;
         gameBoard->table[piece->position.first][1] = NULL;
         rook->position.second = piece->position.second - 1;
     }
     // En passant
-    if(piece->getName().compare("P") == 0 && abs(command[3] - command[1]) == 2) {
+    if(piece->name == 'P' && abs(command[3] - command[1]) == 2) {
         pieceEP = piece;
         ((Pawn *)piece)->moved_two = true;
     }
     // En passant capture
-    if (piece->getName().compare("P") == 0 && abs(command[3] - command[1]) == 1
+    if (piece->name == 'P' && abs(command[3] - command[1]) == 1
     && abs(command[2] - command[0]) == 1 && gameBoard->table[9 - (command[3] - '0')][command[2] - 'a' + 1] == NULL) {
         captured = gameBoard->table[9 - (command[1] - '0')][command[2] - 'a' + 1];
         gameBoard->table[9 - (command[1] - '0')][command[2] - 'a' + 1] = NULL;
@@ -342,41 +345,41 @@ void updateOpponentPieces(GameBoard* gameBoard, string command, vector<Piece*> p
 
     // Promote
     if (temp->position.first == 7 * (1 - color) + 1) {
-        if (temp->getName().compare("P") == 0) {
+        if (temp->name == 'P') {
             ((Pawn *)temp)->promote(gameBoard, pieces[1 - color], command[4]); 
         }
     }
 }
 
 // compute the state score for current player
-int evaluate(GameBoard *&gameBoard, int player, vector<Piece*> pieces[]) {
+int evaluate(int player) {
     int score = 0;
     for(auto piece : pieces[player]){
-        if(piece->getName().compare("P") == 0)
+        if(piece->name == 'P')
             score += 100 + pawn_matrix[9 - piece->position.first - 1][piece->position.second - 'a'];
-        else if(piece->getName().compare("N") == 0)
+        else if(piece->name == 'N')
             score += 320 + knight_matrix[9 - piece->position.first - 1][piece->position.second - 'a'];
-        else if(piece->getName().compare("B") == 0)
+        else if(piece->name == 'B')
             score += 330 + bishop_matrix[9 - piece->position.first - 1][piece->position.second - 'a'];
-        else if(piece->getName().compare("R") == 0)
+        else if(piece->name == 'R')
             score += 500 + rook_matrix[9 - piece->position.first - 1][piece->position.second - 'a'];
-        else if(piece->getName().compare("Q") == 0)
+        else if(piece->name == 'Q')
             score += 900 + queen_matrix[9 - piece->position.first - 1][piece->position.second - 'a'];
-        else if(piece->getName().compare("K") == 0)
+        else if(piece->name == 'K')
             score += 20000 + king_matrix[9 - piece->position.first - 1][piece->position.second - 'a'];
     }
     for(auto piece : pieces[1 - player]){
-        if(piece->getName().compare("P") == 0)
+        if(piece->name == 'P')
             score -= 100 + pawn_matrix[piece->position.first - 1][piece->position.second - 'a'];
-        else if(piece->getName().compare("N") == 0)
+        else if(piece->name == 'N')
             score -= 320 + knight_matrix[piece->position.first - 1][piece->position.second - 'a'];
-        else if(piece->getName().compare("B") == 0)
+        else if(piece->name == 'B')
             score -= 330 + bishop_matrix[piece->position.first - 1][piece->position.second - 'a'];
-        else if(piece->getName().compare("R") == 0)
+        else if(piece->name == 'R')
             score -= 500 + rook_matrix[piece->position.first - 1][piece->position.second - 'a'];
-        else if(piece->getName().compare("Q") == 0)
+        else if(piece->name == 'Q')
             score -= 900 + queen_matrix[piece->position.first - 1][piece->position.second - 'a'];
-        else if(piece->getName().compare("K") == 0)
+        else if(piece->name == 'K')
             score -= 20000 + king_matrix[piece->position.first - 1][piece->position.second - 'a'];
     }
     return score;
@@ -395,17 +398,17 @@ int evaluate(GameBoard *&gameBoard, int player, vector<Piece*> pieces[]) {
 
 
 //TODO -> promote in apply_move + remove_move !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-int negamax(GameBoard *&gameBoard, int depth, int player, vector<Piece*> pieces[], pair<pair<int, char>, Piece*> &best_move) {
+int alphabeta_negamax(int depth, int player, pair<pair<int, char>, Piece*> &best_move, int alpha, int beta) {
     //void applyMove(Piece *piece, pair<int, char> move, pair<int, char> &old_p, GameBoard *gameBoard, vector<Piece*> pieces[], int color, Piece *&captured){
     // STEP 1: game over or maximum recursion depth was reached
     if (depth == 0) {
-       return evaluate(gameBoard, player, pieces);
+       return evaluate(player);
     }
  
     // STEP 2: generate all possible moves for player
     //gameBoard->showBoard();
     //cout << "Before compute moves " << endl;
-    vector<pair<pair<int, char>, Piece*>> all_moves = computePositions(gameBoard, pieces, player);
+    vector<pair<pair<int, char>, Piece*>> all_moves = computePositions(player);
     //cout << "After compute moves " << endl;
     //gameBoard->showBoard();
     if(all_moves.size() == 0)
@@ -428,14 +431,14 @@ int negamax(GameBoard *&gameBoard, int depth, int player, vector<Piece*> pieces[
         //cout << depth << ' ' << player << ' ' << move.first.first << ' ' << move.first.second << ' ' << move.second->getName() << endl;
         //gameBoard->showBoard();
         int moved;
-        apply_move(move.second, move.first, old_p, gameBoard, pieces, 1 - player, captured, moved);
+        apply_move(move.second, move.first, old_p, 1 - player, captured, moved);
         //cout<<endl;
         //gameBoard->showBoard();
         //cout << endl;
         /*if(player != move.second->color)
             cout << "WTF! " << move.second->getName() << "  " << move.first.first << ' ' << move.first.second << endl;*/
         // STEP 3.2: play for the opponent
-        int score = -negamax(gameBoard, depth - 1, 1 - player, pieces, best_move_aux);
+        int score = -alphabeta_negamax(depth - 1, 1 - player, best_move_aux, -beta, -alpha);
         //if(depth == 3)
              
         // opponent allows player to obtain this score if player will do current move.
@@ -449,9 +452,17 @@ int negamax(GameBoard *&gameBoard, int depth, int player, vector<Piece*> pieces[
             /*if(depth == 3)
                 cout << "deadawdwd" << ' ' << best_move.first.first << ' ' << best_move.first.second << ' ' << best_move.second->getName() << endl; 
         */}
+        if (best_score > alpha) {
+            alpha = best_score;
+        }
+
+        if (alpha >= beta) {
+            removeMove(move.second, move.first, old_p, 1 - player, captured, moved);
+            break;
+        }
         // void removeMove(Piece *piece, pair<int, char> move, pair<int, char> old_p, GameBoard *gameBoard, vector<Piece*> pieces[], int color, Piece *&captured){
         // STEP 3.3: undo move
-        removeMove(move.second, move.first, old_p, gameBoard, pieces, 1 - player, captured, moved);
+        removeMove(move.second, move.first, old_p, 1 - player, captured, moved);
         //gameBoard->showBoard();
     }
  
@@ -460,7 +471,7 @@ int negamax(GameBoard *&gameBoard, int depth, int player, vector<Piece*> pieces[
     return best_score;
 }
 
-int computeNextMove(GameBoard *gameBoard, vector<Piece*> pieces[], int color) {
+int computeNextMove(int color) {
     int i, ok = 0;
     vector<pair<pair<int, char>, Piece*>> pos;
     Piece *captured, *temp;
@@ -468,10 +479,10 @@ int computeNextMove(GameBoard *gameBoard, vector<Piece*> pieces[], int color) {
     char chosenPromotion = 'q';
     
     pair<pair<int, char>, Piece*> move;
-    negamax(gameBoard, 4, color, pieces, move);
+    alphabeta_negamax(5, color, move, -oo, oo);
     int castle = 0, enPassant = 0;
     // castle
-    if(move.second->getName().compare("K") == 0){
+    if(move.second->name == 'K'){
         if(move.second->position.second - move.first.second == 2){
             castle = 2;
             enPassant = 0;
@@ -481,14 +492,14 @@ int computeNextMove(GameBoard *gameBoard, vector<Piece*> pieces[], int color) {
             enPassant = 0;
         }
     }
-    if (move.second->getName().compare("P") == 0) {
+    if (move.second->name == 'P') {
         if (move.second->position.second != move.first.second 
         && gameBoard->table[move.first.first][move.first.second - 'a' + 1] == NULL) {
             enPassant = 1;
         }
     }
     // Print the move
-    if (move.first.first == 7 * color + 1 && move.second->getName().compare("P") == 0) {
+    if (move.first.first == 7 * color + 1 && move.second->name == 'P') {
         chosenPromotion = possiblePromotes[rand() % 4];
         cout << "move " << move.second->position.second << 9 - move.second->position.first 
         << move.first.second << 9 - move.first.first << chosenPromotion << endl;
@@ -498,10 +509,10 @@ int computeNextMove(GameBoard *gameBoard, vector<Piece*> pieces[], int color) {
     }
 
     // Actualize position on table
-    if(move.second->getName().compare("K") == 0){
+    if(move.second->name == 'K'){
         ((King *)move.second)->hasMoved = true;
     }
-    if(move.second->getName().compare("R") == 0){
+    if(move.second->name == 'R'){
         ((Rook *)move.second)->hasMoved = true;
     }
     gameBoard->table[move.second->position.first][move.second->position.second - 'a' + 1] = NULL;
@@ -539,7 +550,7 @@ int computeNextMove(GameBoard *gameBoard, vector<Piece*> pieces[], int color) {
     // Promote
     temp = move.second;
     if(move.first.first == 7 * color + 1) {
-        if(temp->getName().compare("P") == 0)
+        if(temp->name == 'P')
             ok = ((Pawn*)temp)->promote(gameBoard, pieces[color], chosenPromotion);
     }
 
@@ -552,9 +563,9 @@ int main() {
     vector<pair<pair<int, char>, Piece*>> availablePos;
     vector<pair<pair<int, char>, Piece*>> pos;
     // pieces[0] -> white's pieces; pieces[1] -> black's pieces
-    vector<Piece*> pieces[2];
+   
     Piece *pieceEP = NULL;
-    GameBoard* gameBoard = new GameBoard();
+    gameBoard = new GameBoard();
     char command[20], protover[20], N;
     // mode: 1 -> bot plays, 0 -> force
     int mode = 1;
@@ -590,7 +601,7 @@ int main() {
             mode = 0;
         }
         else if(strncmp(command, "go", 2) == 0) {
-            if (computeNextMove(gameBoard, pieces, color) == -1) {
+            if (computeNextMove(color) == -1) {
                 cout << "resign" << endl;
             }
             color = 1 - color;
@@ -620,8 +631,8 @@ int main() {
         else {
             if(mode == 1) {
                 color = 1 - color;
-                updateOpponentPieces(gameBoard, command, pieces, color, pieceEP);
-                if (computeNextMove(gameBoard, pieces, color) == -1) {
+                updateOpponentPieces(command, color, pieceEP);
+                if (computeNextMove(color) == -1) {
                     cout << "resign" << endl;
                 }
                 if (pieceEP != NULL) {
@@ -636,7 +647,7 @@ int main() {
                     ((Pawn *)pieceEP)->moved_two = false;
                     pieceEP = NULL;
                 }
-                updateOpponentPieces(gameBoard, command, pieces, 1 - color, pieceEP);
+                updateOpponentPieces(command, 1 - color, pieceEP);
                 color = 1 - color;
                 gameBoard->showBoard();
             }

@@ -6,6 +6,7 @@ using namespace std;
 
 Rook::Rook(pair<int, char> pos, bool color) : Piece(pos, color) {
     hasMoved = false;
+    name = 'R';
 }
 
 vector<pair<pair<int, char>, Piece*>> Rook::findPositions(GameBoard* gameBoard) {
@@ -64,9 +65,4 @@ vector<pair<pair<int, char>, Piece*>> Rook::findPositions(GameBoard* gameBoard) 
             }
         }   
     return possiblePositions;
-}
-
-
-string Rook::getName() {
-    return "R";
 }

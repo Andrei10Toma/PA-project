@@ -13,10 +13,10 @@ class GameBoard;
 class Piece {
 public:
     bool color;
+    char name;
     pair<int, char> position;
     Piece(pair<int, char> pos, bool color);
     virtual vector<pair<pair<int, char>, Piece*>> findPositions(GameBoard* gameBoard) = 0;
-    virtual string getName() = 0;
     // virtual int promoteToQueen(GameBoard* gameBoard) = 0;
 };
 

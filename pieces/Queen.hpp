@@ -11,6 +11,5 @@ class Queen : public Piece
 	public:
 		vector<pair<pair<int, char>, Piece*>> findPositions(GameBoard* gameBoard);
 		Queen(pair<int, char> pos, bool color);
-		string getName();
 };
 #endif

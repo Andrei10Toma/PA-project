@@ -6,6 +6,7 @@
 using namespace std;
 
 King::King(pair<int, char> pos, bool color) : Piece(pos, color) {
+    name = 'K';
     hasMoved = false;
 }
 
@@ -27,7 +28,7 @@ vector<pair<pair<int, char>, Piece*>> King::findPositions(GameBoard* gameBoard) 
             //Castle king-side black
             // The rook is where he should be
             if(gameBoard->table[1][8] != NULL && gameBoard->table[1][8]->color == 1 && 
-            gameBoard->table[1][8]->getName().compare("R") == 0){
+            gameBoard->table[1][8]->name == 'R'){
                 // The rook hasn't moved and there is no piece in between
                 if(((Rook*)gameBoard->table[1][8])->hasMoved == false && 
                 gameBoard->table[1][6] == NULL && gameBoard->table[1][7] == NULL){
@@ -37,7 +38,7 @@ vector<pair<pair<int, char>, Piece*>> King::findPositions(GameBoard* gameBoard) 
             }
             // Castle queen-side black
             if(gameBoard->table[1][1] != NULL && gameBoard->table[1][1]->color == 1 &&
-             gameBoard->table[1][1]->getName().compare("R") == 0){
+             gameBoard->table[1][1]->name == 'R'){
                 // The rook hasn't moved and there is no piece in between
                 if(((Rook*)gameBoard->table[1][1])->hasMoved == false && 
                 gameBoard->table[1][2] == NULL && gameBoard->table[1][3] == NULL 
@@ -51,7 +52,7 @@ vector<pair<pair<int, char>, Piece*>> King::findPositions(GameBoard* gameBoard) 
             //Castle king-side black
             // The rook is where he should be
             if(gameBoard->table[8][8] != NULL && gameBoard->table[8][8]->color == 0 && 
-            gameBoard->table[8][8]->getName().compare("R") == 0){
+            gameBoard->table[8][8]->name == 'R'){
                 // The rook hasn't moved and there is no piece in between
                 if(((Rook*)gameBoard->table[8][8])->hasMoved == false && 
                 gameBoard->table[8][6] == NULL && gameBoard->table[8][7] == NULL){
@@ -61,7 +62,7 @@ vector<pair<pair<int, char>, Piece*>> King::findPositions(GameBoard* gameBoard) 
             }
             // Castle queen-side black
             if(gameBoard->table[8][1] != NULL && gameBoard->table[8][1]->color == 0 &&
-             gameBoard->table[8][1]->getName().compare("R") == 0){
+             gameBoard->table[8][1]->name == 'R'){
                 // The rook hasn't moved and there is no piece in between
                 if(((Rook*)gameBoard->table[8][1])->hasMoved == false && 
                 gameBoard->table[8][2] == NULL && gameBoard->table[8][3] == NULL 
@@ -73,8 +74,4 @@ vector<pair<pair<int, char>, Piece*>> King::findPositions(GameBoard* gameBoard) 
         }
     }
     return possiblePositions;
-}
-
-string King::getName() {
-    return "K";
 }

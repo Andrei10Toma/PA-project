@@ -13,6 +13,5 @@ class King : public Piece
 		bool hasMoved;
 		vector<pair<pair<int, char>, Piece*>> findPositions(GameBoard* gameBoard);
 		King(pair<int, char> pos, bool color);
-		string getName();
 };
 #endif

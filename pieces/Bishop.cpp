@@ -6,6 +6,7 @@
 using namespace std;
 
 Bishop::Bishop(pair<int, char> pos, bool color) : Piece(pos, color) {
+    this->name = 'B';
 }
 
 vector<pair<pair<int, char>, Piece*>>Bishop::findPositions(GameBoard *gameBoard) {
@@ -71,8 +72,4 @@ vector<pair<pair<int, char>, Piece*>>Bishop::findPositions(GameBoard *gameBoard)
         }
     
     return possiblePositions;
-}
-
-string Bishop::getName() {
-    return "B";
 }
