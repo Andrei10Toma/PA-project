@@ -100,7 +100,9 @@ void remove(vector<Piece*> &pieces, Piece* piece){
         pieces.erase(pieces.begin() + i);
 }
 
-void removeMove(Piece *&piece, pair<int, char> move, pair<int, char> old_p, int color, Piece *&captured, int moved){
+void removeMove(Piece *&piece, pair<int, char> move, pair<int, char> old_p, int color, Piece *&captured, int moved, int kingCheck){
+    if (kingCheck == 1)
+        kings[color]->stillAlive--;
     piece->position.first = old_p.first;
     piece->position.second = old_p.second;
     int castle = 0;
@@ -303,6 +305,47 @@ int verify_ok(int x, int y, int color){
         }
     return 1;
 }
+
+bool inCheck3Times(int player, vector<Piece *> pieces[]) {
+    vector<pair<pair<int, char>, Piece*>> aux;
+    vector<pair<pair<int, char>, Piece*>> allMoves;
+
+
+    // for (auto piece : pieces[player]) {
+        // if (piece->name == 'K') {
+            // king = piece;
+            // break;
+        // }
+    // }
+    // int i;
+
+    // for (auto piece : pieces[1 - player]) {
+        // aux = piece->findPositions(gameBoard);
+        // allMoves.insert(allMoves.end(), aux.begin(), aux.end());
+    // }
+
+    // int sizeAllMoves = allMoves.size();
+    // for (i = 0; i < sizeAllMoves; i++) {
+        // attackedPiece = 
+            // gameBoard->table[allMoves[i].first.first][allMoves[i].first.second - 'a' + 1];
+        // if (attackedPiece != NULL) {
+            // if (attackedPiece->getName().compare("K") == 0) {
+                // if (attackedPiece->color == player) {
+                    // cout << "INTRAT IN SAH" << attackedPiece->color << ((King*)attackedPiece)->stillAlive << endl;
+                    // ((King*)attackedPiece)->stillAlive++;
+                    // break;
+                // }
+            // }
+        // }
+    // }
+    // if (attackedPiece != NULL) {
+        // if (((King *)attackedPiece)->stillAlive == 3) {
+            // return {true, attackedPiece};
+        // }
+    // }
+    // return {false, king};
+}
+
 int in_check(int castle, int color){
     int x = kings[color]->position.first;
     int y = kings[color]->position.second;
@@ -404,8 +447,9 @@ int tryMove(Piece *piece, pair<int, char> move, pair<int, char> &old_p, int colo
     return ok;
 }
 
-void apply_move(Piece *&piece, pair<int, char> move, pair<int, char> &old_p, int color, Piece *&captured, int &moved){
+void apply_move(Piece *&piece, pair<int, char> move, pair<int, char> &old_p, int color, Piece *&captured, int &moved, int &checkKing){
     moved = 0;
+    checkKing = 0;
     if(piece->name == 'K'){
         if(((King *)piece)->hasMoved == true)
             moved = 2;
@@ -453,6 +497,9 @@ void apply_move(Piece *&piece, pair<int, char> move, pair<int, char> &old_p, int
     old_p.second = piece->position.second;
     piece->position.first = move.first;
     piece->position.second = move.second;
+    checkKing = in_check(0, color);
+    if (checkKing == 1)
+        kings[color]->stillAlive++;
 }
 
 vector<pair<pair<int, char>, Piece*>> computePositions(int color){
@@ -467,7 +514,7 @@ vector<pair<pair<int, char>, Piece*>> computePositions(int color){
         for(j = 0; j < sz2; j++) {
             if(tryMove(pieces[color][i], moves[j].first, old_p, 1 - color, captured))
                 goodMoves.push_back(moves[j]);
-            removeMove(pieces[color][i], moves[j].first, old_p, 1 - color, captured, 0);
+            removeMove(pieces[color][i], moves[j].first, old_p, 1 - color, captured, 0, 0);
         }
     }
     return goodMoves;
@@ -579,6 +626,9 @@ int evaluate(int player) {
 int alphabeta_negamax(int depth, int player, pair<pair<int, char>, Piece*> &best_move, int alpha, int beta) {
     //void applyMove(Piece *piece, pair<int, char> move, pair<int, char> &old_p, GameBoard *gameBoard, vector<Piece*> pieces[], int color, Piece *&captured){
     // STEP 1: game over or maximum recursion depth was reached
+    // if (kings[player]->stillAlive == 3) {
+        // return -oo;
+    // }
     if (depth == 0) {
        return evaluate(player);
     }
@@ -587,6 +637,14 @@ int alphabeta_negamax(int depth, int player, pair<pair<int, char>, Piece*> &best
     //gameBoard->showBoard();
     //cout << "Before compute moves " << endl;
     vector<pair<pair<int, char>, Piece*>> all_moves = computePositions(player);
+    // PAT
+    // if (all_moves.empty()) {
+        // int ok = in_check(0, player);
+        // if (!ok)
+            // return 0;
+        // else
+            // return -oo;
+    // }
     //cout << "After compute moves " << endl;
     //gameBoard->showBoard();
     if(all_moves.size() == 0)
@@ -608,8 +666,8 @@ int alphabeta_negamax(int depth, int player, pair<pair<int, char>, Piece*> &best
         captured = NULL;
         //cout << depth << ' ' << player << ' ' << move.first.first << ' ' << move.first.second << ' ' << move.second->getName() << endl;
         //gameBoard->showBoard();
-        int moved;
-        apply_move(move.second, move.first, old_p, 1 - player, captured, moved);
+        int moved = 0, kingCheck = 0;
+        apply_move(move.second, move.first, old_p, 1 - player, captured, moved, kingCheck);
         //cout<<endl;
         //gameBoard->showBoard();
         //cout << endl;
@@ -635,12 +693,12 @@ int alphabeta_negamax(int depth, int player, pair<pair<int, char>, Piece*> &best
         }
 
         if (alpha >= beta) {
-            removeMove(move.second, move.first, old_p, 1 - player, captured, moved);
+            removeMove(move.second, move.first, old_p, 1 - player, captured, moved, kingCheck);
             break;
         }
         // void removeMove(Piece *piece, pair<int, char> move, pair<int, char> old_p, GameBoard *gameBoard, vector<Piece*> pieces[], int color, Piece *&captured){
         // STEP 3.3: undo move
-        removeMove(move.second, move.first, old_p, 1 - player, captured, moved);
+        removeMove(move.second, move.first, old_p, 1 - player, captured, moved, kingCheck);
         //gameBoard->showBoard();
     }
  
@@ -760,6 +818,9 @@ int main() {
             cout << "feature sigint=0" << endl;
             cout << "feature san=0" << endl;
             cout << "feature myname=\"Capablanca\"" << endl;
+        }
+        else if (strncmp(command, "variant", 7) == 0) {
+            cin >> command;
         }
         else if (strncmp(command, "quit", 4) == 0) {
             break;
