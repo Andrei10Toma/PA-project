@@ -11,7 +11,6 @@
 #include "pieces/Rook.hpp"
 #include "pieces/Pawn.hpp"
 
-
 using namespace std;
 
 void remove(vector<Piece*> &pieces, Piece* piece){
@@ -172,7 +171,8 @@ void updateOpponentPieces(GameBoard* gameBoard, string command, vector<Piece*> p
     }
     // En passant capture
     if (piece->getName().compare("P") == 0 && abs(command[3] - command[1]) == 1
-    && abs(command[2] - command[0]) == 1) {
+        && abs(command[2] - command[0]) == 1 && 
+        gameBoard->table[9 - (command[3] - '0')][command[2] - 'a' + 1] == NULL) {
         captured = gameBoard->table[9 - (command[1] - '0')][command[2] - 'a' + 1];
         gameBoard->table[9 - (command[1] - '0')][command[2] - 'a' + 1] = NULL;
     } else {
