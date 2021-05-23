@@ -1,10 +1,8 @@
 /* TODO 
     -> verificat pat, sah, 3-check
-    -> alpha beta
-    -> fct de eval mai buna (+sa joace ok si pe white)
+    -> fct de eval mai buna
     -> promote in computeMove
     -> bate pegasus
-    -> pus pieces ca var globala
 */
 
 #include <iostream>
@@ -25,7 +23,7 @@ using namespace std;
 
 vector<Piece*> pieces[2];
 GameBoard* gameBoard;
-
+vector<King *> kings;
 int pawn_matrix[9][9] = 
 {
     {0,  0,  0,  0,  0,  0,  0,  0},
@@ -150,7 +148,186 @@ void removeMove(Piece *&piece, pair<int, char> move, pair<int, char> old_p, int 
     if(captured != NULL)
         pieces[color].push_back(captured);
 }
-
+int verify_ok(int x, int y, int color){
+    for (int i = x - 1; i >= 1; i--) {
+            if (gameBoard->table[i][y - 'a' + 1] == NULL) {
+                continue;
+            }
+            else if(gameBoard->table[i][y - 'a' + 1]->color != color)
+            {
+                Piece *piece = gameBoard->table[i][y - 'a' + 1];
+                if(piece->name == 'Q' || piece->name == 'R')
+                    return 0;
+                if(piece->name == 'K' && x - i == 1)
+                    return 0;
+                break;
+            }
+            else {
+                break;
+            }
+        }
+        // check lower line
+        for (int i = x + 1; i <= 8; i++) {
+            if (gameBoard->table[i][y - 'a' + 1] == NULL) {
+                continue;
+            }
+            else if(gameBoard->table[i][y - 'a' + 1]->color != color)
+            {
+                Piece *piece = gameBoard->table[i][y - 'a' + 1];
+                if(piece->name == 'Q' || piece->name == 'R')
+                    return 0;
+                if(piece->name == 'K' && i - x == 1)
+                    return 0;
+                break;
+            }
+            else {
+                break;
+            }
+        }
+        // check right line
+        for (int i = y + 1; i <= 'h'; i++) {
+            if (gameBoard->table[x][i - 'a' + 1] == NULL) {
+                continue;
+            }
+            else if(gameBoard->table[x][i - 'a' + 1]->color != color)
+            {
+                Piece *piece = gameBoard->table[x][i - 'a' + 1];
+                if(piece->name == 'Q' || piece->name == 'R')
+                    return 0;
+                if(piece->name == 'K' && i - y == 1)
+                    return 0;
+                break;
+            }
+            else {
+                break;
+            }
+        }
+        // check left line
+        for (int i = y - 1; i >= 'a'; i--) {
+            if (gameBoard->table[x][i - 'a' + 1] == NULL) {
+                continue;
+            }
+            else if(gameBoard->table[x][i - 'a' + 1]->color != color)
+            {
+                Piece *piece = gameBoard->table[x][i - 'a' + 1];
+                if(piece->name == 'Q' || piece->name == 'R')
+                    return 0;
+                if(piece->name == 'K' && y - i == 1)
+                    return 0;
+                break;
+            }
+            else {
+                break;
+            }
+        }
+        // check superior main diagonal
+        int i; char j;
+        for (i = x - 1, j = y - 1; i >= 1 && j >= 'a'; i--, j--) {
+            if (gameBoard->table[i][j - 'a' + 1] == NULL) {
+                continue;
+            }
+            else if(gameBoard->table[i][j - 'a' + 1]->color != color)
+            {
+                Piece *piece = gameBoard->table[i][j - 'a' + 1];
+                if(piece->name == 'Q' || piece->name == 'B')
+                    return 0;
+                if(piece->name == 'K' && y - j == 1 && x - i == 1)
+                    return 0;
+                if(piece->name == 'P' && piece->color == 0 && y - j == 1 && x - i == 1)
+                    return 0;
+                break;
+            }
+            else {
+                break;
+            }
+        }
+        // check inferior main diagonal
+        for (i = x + 1, j = y + 1; i <= 8 && j <= 'h'; i++, j++) {
+            if (gameBoard->table[i][j - 'a' + 1] == NULL) {
+                continue;
+            }
+            else if(gameBoard->table[i][j - 'a' + 1]->color != color)
+            {
+                Piece *piece = gameBoard->table[i][j - 'a' + 1];
+                if(piece->name == 'Q' || piece->name == 'B')
+                    return 0;
+                if(piece->name == 'K' && j - y == 1 && i - x == 1)
+                    return 0;
+                if(piece->name == 'P' && piece->color == 1 && j - y == 1 && i - x == 1)
+                    return 0;
+                break;
+            }
+            else {
+                break;
+            }
+        }
+        // check inferior second diagonal
+        for (i = x + 1, j = y - 1; i <=8 && j >= 'a'; i++, j--) {
+            if (gameBoard->table[i][j - 'a' + 1] == NULL) {
+                continue;
+            }
+            else if(gameBoard->table[i][j - 'a' + 1]->color != color)
+            {
+                Piece *piece = gameBoard->table[i][j - 'a' + 1];
+                if(piece->name == 'Q' || piece->name == 'B')
+                    return 0;
+                if(piece->name == 'K' && y - j == 1 && i - x == 1)
+                    return 0;
+                if(piece->name == 'P' && piece->color == 0 && y - j == 1 && i - x == 1)
+                    return 0;
+                break;
+            }
+            else {
+                break;
+            }
+        }
+        // check superior second diagonal
+        for (i = x - 1, j = y + 1; i >= 1 && j <= 'h'; i--, j++) {
+            if (gameBoard->table[i][j - 'a' + 1] == NULL) {
+                continue;
+            }
+            else if(gameBoard->table[i][j - 'a' + 1]->color != color)
+            {
+                Piece *piece = gameBoard->table[i][j - 'a' + 1];
+                if(piece->name == 'Q' || piece->name == 'B')
+                    return 0;
+                if(piece->name == 'K' && j - y == 1 && x - i == 1)
+                    return 0;
+                if(piece->name == 'P' && piece->color == 1 && j - y == 1 && x - i == 1)
+                    return 0;
+                break;
+            }
+            else {
+                break;
+            }
+        }
+    return 1;
+}
+int in_check(int castle, int color){
+    int x = kings[color]->position.first;
+    int y = kings[color]->position.second;
+    if(castle == 0)
+        return verify_ok(x, y, color);
+    if(castle == 1){
+        int ok = verify_ok(x, y, color);
+        if(!ok)
+            return 0;
+        ok = verify_ok(x, y + 1, color);
+        if(!ok)
+            return 0;
+        return verify_ok(x, y + 2, color);
+    }
+    if(castle == 2){
+        int ok = verify_ok(x, y, color);
+        if(!ok)
+            return 0;
+        ok = verify_ok(x, y - 1, color);
+        if(!ok)
+            return 0;
+        return verify_ok(x, y - 2, color);
+    }
+    return 0;
+}
 int tryMove(Piece *piece, pair<int, char> move, pair<int, char> &old_p, int color, Piece *&captured){
     //Castle king side
     int castle = 0;
@@ -182,9 +359,10 @@ int tryMove(Piece *piece, pair<int, char> move, pair<int, char> &old_p, int colo
 
     vector<pair<pair<int, char>, Piece*>> moves;
     vector<pair<pair<int, char>, Piece*>> aux;
-    int sz = pieces[color].size(), i;
-
-    for(i = 0; i < sz; i++){
+    int sz = pieces[1 - color].size(), i;
+    
+    int ok = in_check(castle, 1 - color);
+    /*for(i = 0; i < sz; i++){
         aux = pieces[color][i]->findPositions(gameBoard);
         moves.insert(moves.end(), aux.begin(), aux.end());
     }
@@ -218,7 +396,7 @@ int tryMove(Piece *piece, pair<int, char> move, pair<int, char> &old_p, int colo
         // King in check
         if(p != NULL && p->color == 1 - color && p->name == 'K')
             ok = 0;
-    }
+    }*/
     old_p.first = piece->position.first;
     old_p.second = piece->position.second;
     piece->position.first = move.first;
@@ -471,7 +649,7 @@ int alphabeta_negamax(int depth, int player, pair<pair<int, char>, Piece*> &best
     return best_score;
 }
 
-int computeNextMove(int color) {
+int computeNextMove(int color, int depth) {
     int i, ok = 0;
     vector<pair<pair<int, char>, Piece*>> pos;
     Piece *captured, *temp;
@@ -479,7 +657,7 @@ int computeNextMove(int color) {
     char chosenPromotion = 'q';
     
     pair<pair<int, char>, Piece*> move;
-    alphabeta_negamax(5, color, move, -oo, oo);
+    alphabeta_negamax(depth, color, move, -oo, oo);
     int castle = 0, enPassant = 0;
     // castle
     if(move.second->name == 'K'){
@@ -560,10 +738,11 @@ int computeNextMove(int color) {
 }
 
 int main() {
+    int T;
     vector<pair<pair<int, char>, Piece*>> availablePos;
     vector<pair<pair<int, char>, Piece*>> pos;
+    int depth = 6;
     // pieces[0] -> white's pieces; pieces[1] -> black's pieces
-   
     Piece *pieceEP = NULL;
     gameBoard = new GameBoard();
     char command[20], protover[20], N;
@@ -593,6 +772,8 @@ int main() {
         }
         else if(strncmp(command, "new", 3)==0) {
             gameBoard->init(pieces[0], pieces[1]);
+            kings.push_back((King *)gameBoard->table[8][5]);
+            kings.push_back((King *)gameBoard->table[1][5]);
             mode = 1;
             color = 0;
             gameBoard->showBoard();
@@ -601,7 +782,7 @@ int main() {
             mode = 0;
         }
         else if(strncmp(command, "go", 2) == 0) {
-            if (computeNextMove(color) == -1) {
+            if (computeNextMove(color, depth) == -1) {
                 cout << "resign" << endl;
             }
             color = 1 - color;
@@ -626,13 +807,18 @@ int main() {
             continue;
         }
         else if (strncmp(command, "time", 4) == 0 || strncmp(command, "otim", 4) == 0) {
-            cin >> command;
+            cin >> T;
+            if(strncmp(command, "time", 4) == 0) 
+                if(T < 6000)
+                    depth = 5;
+                else if(T > 9000)
+                    depth = 6;
         }
         else {
             if(mode == 1) {
                 color = 1 - color;
                 updateOpponentPieces(command, color, pieceEP);
-                if (computeNextMove(color) == -1) {
+                if (computeNextMove(color, depth) == -1) {
                     cout << "resign" << endl;
                 }
                 if (pieceEP != NULL) {

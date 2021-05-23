@@ -7,6 +7,7 @@
 
 #include <vector>
 #include "pieces/Piece.hpp"
+#include "pieces/King.hpp"
 
 using namespace std;
 

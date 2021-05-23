@@ -12,6 +12,7 @@
 #include "pieces/King.hpp"
 #include <iostream>
 
+
 void GameBoard::init(vector<Piece*> &white, vector<Piece*> &black) {
     // Clean vectors;
     while(white.size() > 0)

@@ -1576,3 +1576,115 @@ Qh5 14. Bd2 Ba6 15. Qxa6 Nxa6
 8. bxc3 Qxe4+ 9. Qe2 Qg4 10. O-O O-O 11. h3 Qh5 12. g4
 {xboard exit (Clocks: 292, 119)} *
 
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.23"]
+[Round "-"]
+[White "alex"]
+[Black "Capablanca"]
+[Result "0-1"]
+[TimeControl "300+2"]
+
+1. Nc3 Nc6 2. Nf3 Nf6 3. d4 Ng4 4. h3 Nf6 5. Bg5 Ng8 6. e4 Rb8 7. Bb5 f6 8.
+Bh4 g5 9. Bg3 a6 10. Bxc6 bxc6 11. O-O g4 12. hxg4 d6 13. e5 fxe5 14. dxe5
+Bxg4 15. exd6 cxd6 16. Qe2 Rxb2 17. Rfb1 Qb8 18. Rxb2 Qxb2 19. Qxa6 Qxa1+
+20. Kh2 Kf7 21. Qc4+ Be6 22. Qf4+ Nf6 23. Ng5+ Kg6 24. Nxe6 Kf7 25. Nxf8
+Qxc3 26. Nxh7 Rxh7+ 27. Kg1 Qe1#
+{Xboard adjudication: Checkmate} 0-1
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.23"]
+[Round "-"]
+[White "Capablanca"]
+[Black "Capablanca"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. e4 Nc6 2. Nc3 Nf6 3. d4 e5 4. dxe5 Nxe5 5. Bf4 Nc6 6. e5 Nxe5 7. Bxe5
+Qe7
+{xboard exit (Clocks: 308, 309)} *
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.23"]
+[Round "-"]
+[White "Capablanca"]
+[Black "Capablanca"]
+[Result "0-1"]
+[TimeControl "300+2"]
+
+1. Nc3 e6 2. Nb5 Nc6 3. Nf3 Nf6 4. Nfd4 a6 5. Nxc6 dxc6 6. Nc3 e5 7. f3 Be6
+8. e3 Nd5 9. Nxd5 cxd5 10. Qe2 Qh4+ 11. Qf2 Qxf2+ 12. Kxf2 Bc5 13. Bd3 Kf8
+14. Re1 Kg8 15. Kg3 e4 16. Be2 Bd6+ 17. f4 g5 18. Rf1 h5 19. Kf2 gxf4 20.
+d3 fxe3+ 21. Bxe3 exd3 22. Bxd3 Bxh2 23. Rh1 Be5 24. Rae1 Bxb2 25. Rb1 Be5
+26. Rxb7 d4 27. Bd2 h4 28. Kf3 Bd5+ 29. Be4 Bxb7 30. Bxb7 Rb8 31. Bxa6 Rb6
+{Black wins on time} 0-1
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.23"]
+[Round "-"]
+[White "alex"]
+[Black "Capablanca"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. Nf3
+{xboard exit (Clocks: 302, 293)} *
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.23"]
+[Round "-"]
+[White "alex"]
+[Black "Capablanca"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. Nc3
+{xboard exit (Clocks: 302, 292)} *
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.23"]
+[Round "-"]
+[White "alex"]
+[Black "Capablanca"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. Nc3
+{xboard exit (Clocks: 302, 291)} *
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.23"]
+[Round "-"]
+[White "alex"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+
+1. Nc3 Nc6 2. Nf3 Nf6 3. d4 Ng4 4. h3 Nf6 5. e4 Nb4 6. a3 Nc6 7. Bb5 a6 8.
+Bxc6 dxc6 9. O-O Be6 10. Bg5 Bc4 11. Re1 Be6 12. Ne5 Qd6 13. Ng4 Nxg4 14.
+hxg4 Qd7 15. f3 Qd6 16. e5 Qd7 17. Ne2 O-O-O 18. Ng3 Qxd4+ 19. Qxd4 Rxd4
+20. Nf5 Bxf5 21. gxf5 Rd5 22. Rad1 Rb5 23. b3 Rc5 24. Rd2 Rg8 25. Red1 Rd5
+26. Rxd5 cxd5 27. Rxd5 g6 28. e6 gxf5 29. exf7 Rxg5 30. a4 Bh6 31. Re5 Bg7
+32. Rxe7 Bd4+ 33. Kf1 Bf6 34. f8=Q#
+{Xboard adjudication: Checkmate} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.23"]
+[Round "-"]
+[White "alex"]
+[Black "Capablanca"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. Nc3 e6 2. Nf3 Nf6 3. e4 Nc6 4. d4 Bb4 5. a3 Bxc3+ 6. bxc3 Nxe4 7. Bb5
+Nxc3 8. Qd3 Nxb5 9. Qxb5 h6 10. O-O O-O 11. Ne5 Nxd4 12. Qd3 Nc6 13. Bxh6
+Nxe5 14. Qg3 Ng6
+{xboard exit (Clocks: 267, 135)} *
+
