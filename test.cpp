@@ -24,8 +24,8 @@ using namespace std;
 vector<Piece*> pieces[2];
 GameBoard* gameBoard;
 vector<King *> kings;
-int fcheck[2] = {350, 1000}; 
-int scheck[2] = {500, 5000}; 
+int fcheck[2] = {200, 1000}; 
+int scheck[2] = {1000, 5000}; 
 int fchk, schk;
 
 int pawn_matrix[2][9][9] = 
@@ -638,49 +638,61 @@ void updateOpponentPieces(string command, int color, Piece *&pieceEP) {
 // compute the state score for current player
 int evaluate(int player) {
     int score = 0;
+    int x;
+    char y;
     if(in_check(0, player) == 0){
         if(kings[player]->stillAlive == 1)
-            score -= 1000;
+            score -= 200;
         else if(kings[player]->stillAlive == 2)
-            score -= 5000;
+            score -= 1000;
         else
             return -oo + 10; 
     }
     for(auto piece : pieces[player]){
+        y = piece->position.second - 'a';
+        if(player == 0)
+            x = piece->position.first - 1;
+        else
+            x = 9 - piece->position.first - 1;
         if(piece->name == 'P')
-            score += 100 + pawn_matrix[1 - player][piece->position.first - 1][piece->position.second - 'a'];
+            score += 100 + pawn_matrix[1 - player][x][y];
         else if(piece->name == 'N')
-            score += 320 + knight_matrix[1 - player][piece->position.first - 1][piece->position.second - 'a'];
+            score += 320 + knight_matrix[1 - player][x][y];
         else if(piece->name == 'B')
-            score += 330 + bishop_matrix[1- player][piece->position.first - 1][piece->position.second - 'a'];
+            score += 330 + bishop_matrix[1- player][x][y];
         else if(piece->name == 'R')
-            score += 500 + rook_matrix[1 - player][piece->position.first - 1][piece->position.second - 'a'];
+            score += 500 + rook_matrix[1 - player][x][y];
         else if(piece->name == 'Q')
-            score += 900 + queen_matrix[1- player][piece->position.first - 1][piece->position.second - 'a'];
+            score += 900 + queen_matrix[1- player][x][y];
         else if(piece->name == 'K')
-            score += 20000 + king_matrix[1 - player][piece->position.first - 1][piece->position.second - 'a'];
+            score += 20000 + king_matrix[1 - player][x][y];
     }
     if(in_check(0, 1 - player) == 0){
         if(kings[1 - player]->stillAlive == 1)
-            score += 1000;
+            score += 200;
         else if(kings[1 - player]->stillAlive == 2)
-            score += 5000;
+            score += 1000;
         else
             return oo - 10; 
     }
     for(auto piece : pieces[1 - player]){
+        y = piece->position.second - 'a';
+         if(player == 0)
+            x = piece->position.first - 1;
+        else
+            x = 9 - piece->position.first - 1;
         if(piece->name == 'P')
-            score -= 100 + pawn_matrix[player][piece->position.first - 1][piece->position.second - 'a'];
+            score -= 100 + pawn_matrix[player][x][y];
         else if(piece->name == 'N')
-            score -= 320 + knight_matrix[player][piece->position.first - 1][piece->position.second - 'a'];
+            score -= 320 + knight_matrix[player][x][y];
         else if(piece->name == 'B')
-            score -= 330 + bishop_matrix[player][piece->position.first - 1][piece->position.second - 'a'];
+            score -= 330 + bishop_matrix[player][x][y];
         else if(piece->name == 'R')
-            score -= 500 + rook_matrix[player][piece->position.first - 1][piece->position.second - 'a'];
+            score -= 500 + rook_matrix[player][x][y];
         else if(piece->name == 'Q')
-            score -= 900 + queen_matrix[player][piece->position.first - 1][piece->position.second - 'a'];
+            score -= 900 + queen_matrix[player][x][y];
         else if(piece->name == 'K')
-            score -= 20000 + king_matrix[player][piece->position.first - 1][piece->position.second - 'a'];
+            score -= 20000 + king_matrix[player][x][y];
     }
     return score;
 }

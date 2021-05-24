@@ -1110,3 +1110,1349 @@ Bxb2+ 24. Qxb2 {+13,81/3 0,1} e5 25. Qxe5 {+149,99/3 0,1} Kf8 26. Bh6+
 {+149,99/3 0,1}
 {Xboard adjudication: 3rd check} 1-0
 
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "1"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "0-1"]
+[TimeControl "300+2"]
+[Variant "3check"]
+
+1. e3 e5 {-0,14/2 0,1} 2. Qg4 Nf6 {+0,34/2 0,1} 3. Qc4 Nc6 {+0,46/2 0,1} 4.
+b3 d5 {+0,91/2 0,1} 5. Qc3 Bb4 {+1,13/2 0,1} 6. Qd3 O-O {+1,28/2 0,1} 7.
+Ne2 e4 {+1,09/2 0,1} 8. Qb5 a6 {+1,10/2 0,1} 9. Qxc6 bxc6 {+6,76/2 0,1} 10.
+Bb2 Rb8 {+6,84/2 0,1} 11. Bd4 c5 {+6,96/2 0,1} 12. Be5 Re8 {+7,09/2 0,1}
+13. Bb2 Bg4 {+7,05/2 0,1} 14. Nf4 c4 {+7,08/2 0,1} 15. h3 Bd7 {+7,01/2 0,1}
+16. Bxf6 Qxf6 {+7,29/2 0,1} 17. c3 cxb3 {+6,86/2 0,1} 18. Nxd5 Qg5
+{+4,06/2 0,1} 19. Bc4 Qxg2 {+8,28/2 0,1} 20. Rf1 b2 {+9,09/2 0,1} 21. cxb4
+bxa1=Q {+18,82/2 0,1} 22. Nc3 Rxb4 {+19,94/2 0,1} 23. Bxa6 Rxb1+
+{+23,81/2 0,1} 24. Ke2 Qxf1# {+149,99/2 0,1}
+{Xboard adjudication: Checkmate} 0-1
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "1"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+
+1. e3 e5 {-0,14/2 0,1} 2. Qh5 Nc6 {+0,10/2 0,1} 3. Bc4 d5 {+0,52/2 0,1} 4.
+Bb5 Bd6 {-0,71/2 0,1} 5. Bxc6+ bxc6 {-0,99/2 0,1} 6. Nc3 Nf6 {-0,67/2 0,1}
+7. Qg5 O-O {-0,69/2 0,1} 8. Nf3 Re8 {-0,94/2 0,1} 9. Nh4 Rb8 {-0,48/2 0,1}
+10. Qxg7+ Kxg7 {-150,00/2 0,1} 11. Nf5+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "2"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "0-1"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. Nc3 {+0,02/4} e6 2. d4 {+0,10/2 0,1} Nc6 3. e4 {+0,24/2 0,1} Qf6 4. Nf3
+{+0,52/2 0,1} Bb4 5. Qd2 {+0,30/2 0,1} Qg6 6. Ng5 {+0,14/2 0,1} Nge7 7. a3
+{+0,19/2 0,1} Ba5 8. b4 {+0,36/2 0,1} Bb6 9. d5 {+0,16/2 0,1} exd5 10. exd5
+{+0,11/2 0,1} Nd4 11. Bd3 {+0,03/2 0,1} Nxc2+ 12. Bxc2 {+0,03/2 0,1} Bxf2+
+13. Qxf2 {-150,00/2 0,1} Qe6+
+{Xboard adjudication: 3rd check} 0-1
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "3"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+
+1. e3 e5 {-0,14/2 0,1} 2. Qh5 Nc6 {+0,10/2 0,1} 3. Bc4 d5 {+0,52/2 0,1} 4.
+Bb5 Bd6 {-0,71/2 0,1} 5. Bxc6+ bxc6 {-0,99/2 0,1} 6. Nc3 Nf6 {-0,67/2 0,1}
+7. Qg5 O-O {-0,69/2 0,1} 8. Nf3 Re8 {-0,94/2 0,1} 9. Nh4 Rb8 {-0,48/2 0,1}
+10. Qxg7+ Kxg7 {-150,00/2 0,1} 11. Nf5+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "4"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "0-1"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. Nc3 {+0,02/4} e6 2. d4 {+0,10/2 0,1} Nc6 3. e4 {+0,24/2 0,1} Qf6 4. Nf3
+{+0,52/2 0,1} Bb4 5. Qd2 {+0,30/2 0,1} Qg6 6. Ng5 {+0,14/2 0,1} Nge7 7. a3
+{+0,19/2 0,1} Ba5 8. b4 {+0,36/2 0,1} Bb6 9. d5 {+0,16/2 0,1} exd5 10. exd5
+{+0,11/2 0,1} Nd4 11. Bd3 {+0,03/2 0,1} Nxc2+ 12. Bxc2 {+0,03/2 0,1} Bxf2+
+13. Qxf2 {-150,00/2 0,1} Qe6+
+{Xboard adjudication: 3rd check} 0-1
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "1"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "0-1"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1... +0,10"]
+
+1. e3 e5 {+0,10/3 0,1} 2. Qh5 Nc6 {+0,34/3 0,1} 3. Bc4 Nh6 {+0,18/3 0,1} 4.
+Bxf7+ Nxf7 {+1,09/3 0,1} 5. Nh3 g6 {+1,24/3 0,1} 6. Qf3 Ng5 {+0,87/3 0,1}
+7. Nxg5 Qxg5 {+0,75/3 0,1} 8. Kf1 Qf5 {+1,53/3 0,1} 9. Qd5 Nb4
+{+2,60/3 0,1} 10. Qc4 Qxc2 {+2,43/3 0,1} 11. Nc3 Qd3+ {+3,81/3 0,1} 12.
+Qxd3 Nxd3 {+3,70/3 0,1} 13. Rg1 Bc5 {+4,28/3 0,1} 14. Ne4 O-O {+4,34/3 0,1}
+15. Rh1 d5 {+4,71/3 0,1} 16. b4 dxe4 {+8,76/3 0,1} 17. Kg1 Nxf2
+{+10,20/3 0,1} 18. h3 Nxh3+ {+11,80/3 0,1} 19. Kh2 Nf2 {+149,99/3 0,1} 20.
+Kg3 Rf3+ {+149,99/3 0,1}
+{Xboard adjudication: 3rd check} 0-1
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "2"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "0-1"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. Nc3 {+0,02/4} e6 2. e4 {+0,48/3 0,1} Qh4 3. Nf3 {+0,84/3 0,1} Qg4 4. h3
+{+0,85/3 0,1} Qg6 5. Ne5 {+0,97/3 0,1} Qf6 6. d4 {+0,73/3 0,1} Bb4 7. Qd2
+{+0,44/3 0,1} Qh4 8. Bd3 {+0,66/3 0,1} Nf6 9. Nf3 {+0,72/3 0,1} Qh5 10. e5
+{+0,72/3 0,1} Nd5 11. g4 {+0,72/3 0,1} Qh6 12. g5 {+0,46/3 0,1} Qh5 13. Be4
+{+0,43/3 0,1} Nc6 14. Bxd5 {+0,37/3 0,1} exd5 15. Ke2 {-0,10/3 0,1} Kd8 16.
+Qd3 {+0,65/3 0,1} Nxd4+ 17. Qxd4 {+0,92/3 0,1} Re8 18. Be3 {+0,81/3 0,1} d6
+19. e6 {+0,10/3 0,1} Bxe6 20. Qf4 {-1,72/3 0,1} Qxf3+ 21. Qxf3
+{+2,33/3 0,1} Bg4 22. hxg4 {-150,00/3 0,1} Rxe3+
+{Xboard adjudication: 3rd check} 0-1
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "3"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "0-1"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1... +0,10"]
+
+1. e3 e5 {+0,10/3 0,1} 2. Qh5 Nc6 {+0,34/3 0,1} 3. Bc4 Nh6 {+0,18/3 0,1} 4.
+Bxf7+ Nxf7 {+1,09/3 0,1} 5. Nh3 g6 {+1,24/3 0,1} 6. Qf3 Ng5 {+0,87/3 0,1}
+7. Nxg5 Qxg5 {+0,75/3 0,1} 8. Kf1 Qf5 {+1,53/3 0,1} 9. Qd5 Nb4
+{+2,60/3 0,1} 10. Qc4 Qxc2 {+2,43/3 0,1} 11. Nc3 Qd3+ {+3,81/3 0,1} 12.
+Qxd3 Nxd3 {+3,70/3 0,1} 13. Rg1 Bc5 {+4,28/3 0,1} 14. Ne4 O-O {+4,34/3 0,1}
+15. Rh1 d5 {+4,71/3 0,1} 16. b4 dxe4 {+8,76/3 0,1} 17. Kg1 Nxf2
+{+10,20/3 0,1} 18. h3 Nxh3+ {+11,80/3 0,1} 19. Kh2 Nf2 {+149,99/3 0,1} 20.
+Kg3 Rf3+ {+149,99/3 0,1}
+{Xboard adjudication: 3rd check} 0-1
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "4"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "0-1"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. e4 {+0,02/4} e6 2. Nc3 {+0,48/3 0,1} Qh4 3. Nf3 {+0,84/3 0,1} Qg4 4. h3
+{+0,85/3 0,1} Qg6 5. Ne5 {+0,97/3 0,1} Qf6 6. d4 {+0,73/3 0,1} Bb4 7. Qd2
+{+0,44/3 0,1} Qh4 8. Bd3 {+0,66/3 0,1} Nf6 9. Nf3 {+0,72/3 0,1} Qh5 10. e5
+{+0,72/3 0,1} Nd5 11. g4 {+0,72/3 0,1} Qh6 12. g5 {+0,46/3 0,1} Qh5 13. Be4
+{+0,43/3 0,1} Nc6 14. Bxd5 {+0,37/3 0,1} exd5 15. Ke2 {-0,10/3 0,1} Kd8 16.
+Qd3 {+0,65/3 0,1} Nxd4+ 17. Qxd4 {+0,92/3 0,1} Re8 18. Be3 {+0,81/3 0,1} d6
+19. e6 {+0,10/3 0,1} Bxe6 20. Qf4 {-1,72/3 0,1} Qxf3+ 21. Qxf3
+{+2,33/3 0,1} Bg4 22. hxg4 {-150,00/3 0,1} Rxe3+
+{Xboard adjudication: 3rd check} 0-1
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "1"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1... -0,14"]
+
+1. e3 e5 {-0,14/4 0,1} 2. Qh5 Nc6 {+0,34/4 0,1} 3. Bc4 Nh6 {+0,01/4 0,1} 4.
+Bxf7+ Nxf7 {+0,85/4 0,1} 5. Nh3 g6 {+1,05/4 0,1} 6. Qf3 Qe7 {+0,66/4 0,1}
+7. O-O d5 {+1,34/4 0,1} 8. Nc3 e4 {+1,27/4 0,1} 9. Qf4 Bh6 {+1,35/4 0,1}
+10. Nxd5 Bxf4 {+2,78/4 0,1} 11. Nhxf4 Qd6 {+4,98/4 0,1} 12. Nxc7+ Qxc7
+{-1,05/4 0,1} 13. Nd5 Kd8 {-1,27/4 0,1} 14. Nxc7 Kxc7 {-1,23/4 0,1} 15. f3
+exf3 {-1,04/4 0,1} 16. Rxf3 Bf5 {-0,96/4 0,1} 17. e4 Ng5 {-1,52/4 0,1} 18.
+Rd3 Nh3+ {-149,99/4 0,1} 19. Kf1 Bxe4 {-150,00/3 0,1} 20. Rd7+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "2"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. c3 {+0,02/4} e5 2. d4 {-0,03/4 0,1} exd4 3. Qxd4 {+0,16/4 0,1} Nc6 4.
+Qe4+ {+1,08/4 0,1} Nge7 5. Qh4 {+1,14/4 0,1} d5 6. e4 {+1,34/4 0,1} Be6 7.
+Bb5 {+1,43/4 0,1} Qd7 8. Nd2 {+1,17/4 0,1} dxe4 9. Bxc6 {+0,94/4 0,1} Nxc6
+10. Nxe4 {+5,08/4 0,2} g5 11. Qxg5 {+6,09/4 0,1} Qd1+ 12. Kxd1
+{+9,97/4 0,1} Bb3+ 13. Ke1 {+149,98/4 0,1} Kd7 14. Nf6+ {+149,99/4 0,1} Ke7
+15. Qe3+ {+149,99/4 0,1}
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "3"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1... -0,14"]
+
+1. e3 e5 {-0,14/4 0,1} 2. Qh5 Nc6 {+0,34/4 0,1} 3. Bc4 Nh6 {+0,01/4 0,1} 4.
+Bxf7+ Nxf7 {+0,85/4 0,1} 5. Nh3 g6 {+1,05/4 0,1} 6. Qf3 Qe7 {+0,66/4 0,1}
+7. O-O d5 {+1,34/4 0,1} 8. Nc3 e4 {+1,27/4 0,1} 9. Qf4 Bh6 {+1,35/4 0,1}
+10. Nxd5 Bxf4 {+2,78/4 0,1} 11. Nhxf4 Qd6 {+4,98/4 0,1} 12. Nxc7+ Qxc7
+{-1,05/4 0,1} 13. Nd5 Kd8 {-1,27/4 0,1} 14. Nxc7 Kxc7 {-1,23/4 0,1} 15. f3
+exf3 {-1,04/4 0,1} 16. Rxf3 Bf5 {-0,96/4 0,1} 17. e4 Ng5 {-1,52/4 0,1} 18.
+Rd3 Nh3+ {-149,99/4 0,1} 19. Kf1 Bxe4 {-150,00/3 0,1} 20. Rd7+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "4"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. e4 {+0,02/4} e6 2. Nc3 {+0,22/4 0,1} Qh4 3. Nf3 {+0,72/4 0,1} Qg4 4. h3
+{+0,73/4 0,1} Qg6 5. Ne5 {+0,81/4 0,1} Qf6 6. d4 {+0,68/4 0,1} Bb4 7. Ke2
+{+0,08/4 0,1} b6 8. Nb5 {+0,29/4 0,1} Ba6 9. Qd3 {+0,23/4 0,1} Kf8 10. Bd2
+{+0,37/4 0,1} Bxd2 11. Nxd7+ {+149,98/4 0,1} Ke8 12. Nxc7+ {+149,99/4 0,1}
+Kd8 13. Nxe6+ {+149,99/4 0,1}
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "1"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "0-1"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1... +0,10"]
+
+1. e3 e5 {+0,10/3 0,1} 2. Qh5 Nc6 {+0,34/3 0,1} 3. Bc4 Nh6 {+0,18/3 0,1} 4.
+Bxf7+ Nxf7 {+1,09/3 0,1} 5. Nh3 g6 {+1,24/3 0,1} 6. Qf3 Ng5 {+0,87/3 0,1}
+7. Nxg5 Qxg5 {+0,75/3 0,1} 8. Kf1 Qf5 {+1,53/3 0,1} 9. Qd5 Nb4
+{+2,60/3 0,1} 10. Qc4 Qxc2 {+2,43/3 0,1} 11. Nc3 Qd3+ {+3,81/3 0,1} 12.
+Qxd3 Nxd3 {+3,70/3 0,1} 13. Rg1 Bc5 {+4,28/3 0,1} 14. Ne4 O-O {+4,34/3 0,1}
+15. Rh1 d5 {+4,71/3 0,1} 16. b4 dxe4 {+8,76/3 0,1} 17. Kg1 Nxf2
+{+10,20/3 0,1} 18. h3 Nxh3+ {+11,80/3 0,1} 19. Kh2 Nf2 {+149,99/3 0,1} 20.
+Kg3 Rf3+ {+149,99/3 0,1}
+{Xboard adjudication: 3rd check} 0-1
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "2"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. e3 {+0,02/4} e5 2. Nc3 {+0,14/3 0,1} Qe7 3. Nf3 {+0,56/3 0,1} Nh6 4. Bd3
+{+0,81/3 0,1} Qe6 5. Ng5 {+0,83/3 0,1} Qc6 6. Be4 {+1,19/3 0,1} Qc5 7. Nxh7
+{+1,40/3 0,1} Be7 8. d4 {+1,56/3 0,1} Qa5 9. dxe5 {+1,85/3 0,1} Bh4 10. g3
+{+2,46/3 0,1} Be7 11. Qd5 {+2,47/3 0,1} Qb6 12. O-O {+2,92/3 0,1} Ng4 13.
+h3 {+2,37/3 0,1} c6 14. Qd4 {+1,15/3 0,1} Bc5 15. Na4 {+2,25/3 0,1} Bxd4
+16. Nxb6 {+2,25/3 0,1} Bxb6 17. hxg4 {+2,28/3 0,1} d5 18. exd6
+{+3,03/3 0,1} Bxg4 19. Bxc6+ {+2,99/3 0,1} Nxc6 20. Nf6+ {+8,05/3 0,1} gxf6
+21. d7+ {+149,99/3 0,1}
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "3"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "*"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1... +0,10"]
+
+1. e3 e5 {+0,10/3 0,1} 2. Qh5 Nc6 {+0,34/3 0,1} 3. Bc4 Nh6 {+0,18/3 0,1} 4.
+Bxf7+ Nxf7 {+1,09/3 0,1} 5. Nh3 g6 {+1,24/3 0,1} 6. Qf3 Ng5 {+0,87/3 0,1}
+7. Nxg5 Qxg5 {+0,75/3 0,1} 8. Kf1 Qf5 {+1,53/3 0,1} 9. Qd5 Nb4
+{+2,60/3 0,1} 10. Qc4 Qxc2 {+2,43/3 0,1} 11. Nc3 Qd3+ {+3,81/3 0,1}
+{xboard exit (Clocks: 299, 320)} *
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "1"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "2... -0,10"]
+
+1. Nc3 e5 {-0,24/2 0,1} 2. Nf3 Nc6 {-0,10/3 0,1} 3. e4 Bc5 {-0,11/3 0,1} 4.
+Na4 Bxf2+ {+0,59/3 0,1} 5. Kxf2 Nf6 {+1,38/3 0,1} 6. Kg1 Nxe4 {+1,13/3 0,1}
+7. d3 Nd6 {+1,18/3 0,1} 8. Bg5 f6 {+1,46/3 0,1} 9. Be3 Nf5 {+1,41/3 0,1}
+10. Bf2 d5 {+1,28/3 0,1} 11. a3 b5 {+1,57/3 0,1} 12. Nc3 a6 {+1,12/3 0,1}
+13. Nd2 O-O {+1,49/3 0,1} 14. Qh5 d4 {+1,70/3 0,1} 15. Nce4 Ne3
+{+1,61/3 0,1} 16. Bxe3 dxe3 {+1,81/3 0,1} 17. Nf3 Be6 {+1,65/3 0,1} 18.
+Nxf6+ Qxf6 {-149,99/3 0,1} 19. Qxh7+ Kxh7 {-150,00/3 0,1} 20. Ng5+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "2"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. d4 {+0,02/4} e6 2. Nc3 {+0,33/3 0,1} Bb4 3. Bd2 {+0,29/3 0,1} Bxc3 4.
+bxc3 {+0,37/3 0,1} Nc6 5. Rb1 {+0,37/3 0,1} Nf6 6. Nf3 {+0,23/3 0,1} Ne4 7.
+e3 {+0,31/3 0,1} Kf8 8. Bd3 {+0,83/3 0,1} d5 9. O-O {+0,76/3 0,1} Qf6 10.
+c4 {+0,67/3 0,1} Nxd2 11. Qxd2 {+0,87/3 0,1} dxc4 12. Bxc4 {+1,01/3 0,1}
+Kg8 13. Rb3 {+1,04/3 0,1} h6 14. Rfb1 {+1,22/3 0,1} h5 15. e4 {+1,29/3 0,1}
+Qh6 16. Qc3 {+1,30/3 0,1} Qf6 17. e5 {+1,32/3 0,1} Qg6 18. Ba6
+{+1,43/3 0,1} Qg4 19. Bxb7 {+2,23/3 0,1} Bxb7 20. Rxb7 {+3,02/3 0,1} Nd8
+21. Rxc7 {+3,30/3 0,1} Qe4 22. Qd3 {+3,38/3 0,1} Qg4 23. Qb5 {+4,99/3 0,1}
+a6 24. Qe8+ {+5,07/3 0,1} Kh7 25. Ng5+ {+149,99/3 0,1} Qxg5 26. Qg8+
+{+149,99/3 0,1}
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "3"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "*"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "2... -0,10"]
+
+1. Nc3 e5 {-0,24/2 0,1} 2. Nf3 Nc6 {-0,10/3 0,1} 3. e4 Bc5 {-0,11/3 0,1} 4.
+Na4 Bxf2+ {+0,59/3 0,1} 5. Kxf2 Nf6 {+1,38/3 0,1} 6. Kg1 Nxe4 {+1,13/3 0,1}
+7. d3 Nd6 {+1,18/3 0,1} 8. Bg5 f6 {+1,46/3 0,1} 9. Be3 Nf5 {+1,41/3 0,1}
+{xboard exit (Clocks: 185, 317)} *
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "1"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1... +0,10"]
+
+1. e3 e5 {+0,10/3 0,1} 2. Qh5 Nc6 {+0,34/3 0,1} 3. Bc4 Nh6 {+0,18/3 0,1} 4.
+Bxf7+ Nxf7 {+1,09/3 0,1} 5. Nh3 g6 {+1,24/3 0,1} 6. Qf3 Ng5 {+0,87/3 0,1}
+7. Nxg5 Qxg5 {+0,75/3 0,1} 8. Kf1 Qf5 {+1,53/3 0,1} 9. Qd5 Nb4
+{+2,60/3 0,1} 10. Qb5 a6 {+2,65/3 0,1} 11. Qc4 Qxc2 {+2,44/3 0,1} 12. Nc3
+Qd3+ {+3,82/3 0,1} 13. Qxd3 Nxd3 {+3,71/3 0,1} 14. Nd5 Kd8 {+3,69/3 0,1}
+15. Ke2 Nxc1+ {+5,88/3 0,1} 16. Rhxc1 Bd6 {+6,06/3 0,1} 17. Rxc7 Bxc7
+{+7,12/3 0,1} 18. Nxc7 d6 {+7,41/3 0,1} 19. Kf1 Rf8 {+7,74/3 0,1} 20. Kg1
+Rb8 {+7,76/3 0,1} 21. Rc1 Kd7 {+7,16/3 0,1} 22. Nd5 Kd8 {+6,96/3 0,1} 23.
+Ne7 Kd7 {+3,80/3 0,1} 24. Rc7+ Ke6 {+3,81/3 0,1} 25. Nc6 bxc6
+{-150,00/3 0,1} 26. Re7+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "2"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. e4 {+0,02/4} e6 2. Nc3 {+0,48/3 0,1} Qh4 3. Nf3 {+0,84/3 0,1} Qg4 4. h3
+{+0,85/3 0,1} Qg6 5. Ne5 {+0,97/3 0,1} Qf6 6. d4 {+0,73/3 0,1} Bb4 7. Qd2
+{+0,44/3 0,1} Qh4 8. Bd3 {+0,66/3 0,1} Nf6 9. Nf3 {+0,72/3 0,1} Qh5 10. e5
+{+0,72/3 0,1} Nd5 11. g4 {+0,72/3 0,1} Qh6 12. g5 {+0,46/3 0,1} Qh5 13. Be4
+{+0,43/3 0,1} Nc6 14. Bxd5 {+0,37/3 0,1} exd5 15. Ke2 {-0,10/3 0,1} Nxd4+
+16. Qxd4 {+0,78/3 0,1} Bxc3 17. bxc3 {+0,87/3 0,1} O-O 18. Ba3
+{+1,60/3 0,1} Re8 19. Qe3 {+0,31/3 0,1} Qg6 20. Kd2 {+0,32/3 0,1} Qa6 21.
+Bb4 {+0,28/3 0,1} Qc4 22. Bc5 {+0,60/3 0,1} f5 23. gxf6 {+3,46/3 0,1} gxf6
+24. Rhg1+ {+3,46/3 0,1} Kh8 25. Rg4 {+2,91/3 0,1} Qb5 26. Bxa7
+{+3,44/3 0,1} Rxa7 27. Rg8+ {+3,15/3 0,1} Rxg8 28. Qh6 {+3,69/3 0,1} Qd3+
+29. Kxd3 {+149,99/3 0,1} b6 30. Qg7+ {+149,99/3 0,1}
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "3"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1... +0,10"]
+
+1. e3 e5 {+0,10/3 0,1} 2. Qh5 Nc6 {+0,34/3 0,1} 3. Bc4 Nh6 {+0,18/3 0,1} 4.
+Bxf7+ Nxf7 {+1,09/3 0,1} 5. Nh3 g6 {+1,24/3 0,1} 6. Qf3 Ng5 {+0,87/3 0,1}
+7. Nxg5 Qxg5 {+0,75/3 0,1} 8. Kf1 Qf5 {+1,53/3 0,1} 9. Qd5 Nb4
+{+2,60/3 0,1} 10. Qb5 a6 {+2,65/3 0,1} 11. Qc4 Qxc2 {+2,44/3 0,1} 12. Nc3
+Qd3+ {+3,82/3 0,1} 13. Qxd3 Nxd3 {+3,71/3 0,1} 14. Nd5 Kd8 {+3,69/3 0,1}
+15. Ke2 Nxc1+ {+5,88/3 0,1} 16. Rhxc1 Bd6 {+6,06/3 0,1} 17. Rxc7 Bxc7
+{+7,12/3 0,1} 18. Nxc7 d6 {+7,41/3 0,1} 19. Kf1 Rf8 {+7,74/3 0,1} 20. Kg1
+Rb8 {+7,76/3 0,1} 21. Rc1 Kd7 {+7,16/3 0,1} 22. Nd5 Kd8 {+6,96/3 0,1} 23.
+Ne7 Kd7 {+3,80/3 0,1} 24. Rc7+ Ke6 {+3,81/3 0,1} 25. Nc6 bxc6
+{-150,00/3 0,1} 26. Re7+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "4"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. e4 {+0,02/4} e6 2. Nc3 {+0,48/3 0,1} Qh4 3. Nf3 {+0,84/3 0,1} Qg4 4. h3
+{+0,85/3 0,1} Qg6 5. Ne5 {+0,97/3 0,1} Qf6 6. d4 {+0,73/3 0,1} Bb4 7. Qd2
+{+0,44/3 0,1} Qh4 8. Bd3 {+0,66/3 0,1} Nf6 9. Nf3 {+0,72/3 0,1} Qh5 10. e5
+{+0,72/3 0,1} Nd5 11. g4 {+0,72/3 0,1} Qh6 12. g5 {+0,46/3 0,1} Qh5 13. Be4
+{+0,43/3 0,1} Nc6 14. Bxd5 {+0,37/3 0,1} exd5 15. Ke2 {-0,10/3 0,1} Nxd4+
+16. Qxd4 {+0,78/3 0,1} Bxc3 17. bxc3 {+0,87/3 0,1} O-O 18. Ba3
+{+1,60/3 0,1} Re8 19. Qe3 {+0,31/3 0,1} Qg6 20. Kd2 {+0,32/3 0,1} Qa6 21.
+Bb4 {+0,28/3 0,1} Qc4 22. Bc5 {+0,60/3 0,1} f5 23. gxf6 {+3,46/3 0,1} gxf6
+24. Rhg1+ {+3,46/3 0,1} Kh8 25. Rg4 {+2,91/3 0,1} Qb5 26. Bxa7
+{+3,44/3 0,1} Rxa7 27. Rg8+ {+3,15/3 0,1} Rxg8 28. Qh6 {+3,69/3 0,1} Qd3+
+29. Kxd3 {+149,99/3 0,1} b6 30. Qg7+ {+149,99/3 0,1}
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "1"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1... +0,10"]
+
+1. e3 e5 {+0,10/3 0,1} 2. Qh5 Nc6 {+0,34/3 0,1} 3. Bc4 Nh6 {+0,18/3 0,1} 4.
+Bxf7+ Nxf7 {+1,09/3 0,1} 5. Nh3 g6 {+1,24/3 0,1} 6. Qf3 Ng5 {+0,87/3 0,1}
+7. Nxg5 Qxg5 {+0,75/3 0,1} 8. Kf1 Qf5 {+1,53/3 0,1} 9. Qd5 Nb4
+{+2,60/3 0,1} 10. Qb5 a6 {+2,65/3 0,1} 11. Qc4 Qxc2 {+2,44/3 0,1} 12. Nc3
+Qd3+ {+3,82/3 0,1} 13. Qxd3 Nxd3 {+3,71/3 0,1} 14. Nd5 Kd8 {+3,69/3 0,1}
+15. Ke2 Nxc1+ {+5,88/3 0,1} 16. Rhxc1 Bd6 {+6,06/3 0,1} 17. Rxc7 Bxc7
+{+7,12/3 0,1} 18. Nxc7 d6 {+7,41/3 0,1} 19. Kf1 Rf8 {+7,74/3 0,1} 20. Kg1
+Rb8 {+7,76/3 0,1} 21. Rc1 Kd7 {+7,16/3 0,1} 22. Nd5 Kd8 {+6,96/3 0,1} 23.
+Ne7 Kd7 {+3,80/3 0,1} 24. Rc7+ Ke6 {+3,81/3 0,1} 25. Nc6 bxc6
+{-150,00/3 0,1} 26. Re7+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "2"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. e4 {+0,02/4} e6 2. Nc3 {+0,48/3 0,1} Qh4 3. Nf3 {+0,84/3 0,1} Qf4 4. d4
+{+1,16/3 0,1} Qd6 5. Be2 {+1,29/3 0,1} Qe7 6. O-O {+1,55/3 0,1} Qf6 7. Bg5
+{+1,52/3 0,1} Qg6 8. Qd2 {+1,36/3 0,1} Bb4 9. a3 {+1,33/3 0,1} Bxc3 10.
+Qxc3 {+1,20/3 0,1} Qxe4 11. Qxc7 {+1,09/3 0,1} Nc6 12. Bd3 {+1,47/3 0,1}
+Qg4 13. d5 {+1,41/3 0,1} exd5 14. Rfe1+ {+2,56/3 0,1} Kf8 15. Qd6+
+{+149,99/3 0,1} Nge7 16. Bxe7+ {+149,99/3 0,1}
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "3"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1... +0,10"]
+
+1. e3 e5 {+0,10/3 0,1} 2. Qh5 Nc6 {+0,34/3 0,1} 3. Bc4 Nh6 {+0,18/3 0,1} 4.
+Bxf7+ Nxf7 {+1,09/3 0,1} 5. Nh3 g6 {+1,24/3 0,1} 6. Qf3 Ng5 {+0,87/3 0,1}
+7. Nxg5 Qxg5 {+0,75/3 0,1} 8. Kf1 Qf5 {+1,53/3 0,1} 9. Qd5 Nb4
+{+2,60/3 0,1} 10. Qb5 a6 {+2,65/3 0,1} 11. Qc4 Qxc2 {+2,44/3 0,1} 12. Nc3
+Qd3+ {+3,82/3 0,1} 13. Qxd3 Nxd3 {+3,71/3 0,1} 14. Nd5 Kd8 {+3,69/3 0,1}
+15. Ke2 Nxc1+ {+5,88/3 0,1} 16. Rhxc1 Bd6 {+6,06/3 0,1} 17. Rxc7 Bxc7
+{+7,12/3 0,1} 18. Nxc7 d6 {+7,41/3 0,1} 19. Kf1 Rf8 {+7,74/3 0,1} 20. Kg1
+Rb8 {+7,76/3 0,1} 21. Rc1 Kd7 {+7,16/3 0,1} 22. Nd5 Kd8 {+6,96/3 0,1} 23.
+Ne7 Kd7 {+3,80/3 0,1} 24. Rc7+ Ke6 {+3,81/3 0,1} 25. Nc6 bxc6
+{-150,00/3 0,1} 26. Re7+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "4"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. Nc3 {+0,02/4} e6 2. e4 {+0,48/3 0,1} Qh4 3. Nf3 {+0,84/3 0,1} Qf4 4. d4
+{+1,16/3 0,1} Qd6 5. Be2 {+1,29/3 0,1} Qe7 6. O-O {+1,55/3 0,1} Qf6 7. Bg5
+{+1,52/3 0,1} Qg6 8. Qd2 {+1,36/3 0,1} Bb4 9. a3 {+1,33/3 0,1} Bxc3 10.
+Qxc3 {+1,20/3 0,1} Qxe4 11. Qxc7 {+1,09/3 0,1} Nc6 12. Bd3 {+1,47/3 0,1}
+Qg4 13. d5 {+1,41/3 0,1} exd5 14. Rfe1+ {+2,56/3 0,1} Kf8 15. Qd6+
+{+149,99/3 0,1} Nge7 16. Bxe7+ {+149,99/3 0,1}
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "1"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1... +0,10"]
+
+1. e3 e5 {+0,10/3 0,1} 2. Qh5 Nc6 {+0,34/3 0,1} 3. Bc4 Nh6 {+0,18/3 0,1} 4.
+Bxf7+ Nxf7 {+1,09/3 0,1} 5. Nh3 g6 {+1,24/3 0,1} 6. Qf3 Ng5 {+0,87/3 0,1}
+7. Nxg5 Qxg5 {+0,75/3 0,1} 8. Nc3 Nb4 {+0,85/3 0,1} 9. O-O Be7
+{+1,04/3 0,1} 10. Ne4 Qf5 {+1,04/3 0,1} 11. a3 Nxc2 {+2,12/3 0,1} 12. Nf6+
+Bxf6 {+2,16/3 0,1} 13. Qd5 Qxf2+ {-3,15/3 0,1} 14. Rxf2 Nxa1
+{-150,00/3 0,1} 15. Qxd7+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "2"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. d4 {+0,02/4} e5 2. Nc3 {+0,03/3 0,1} Qf6 3. Nd5 {+0,81/3 0,1} Qd6 4. e4
+{+0,73/3 0,1} exd4 5. Bf4 {+0,87/3 0,1} Qg6 6. Nxc7+ {+5,00/3 0,1} Kd8 7.
+Bg5+ {+149,99/3 0,1} Kxc7 8. Bd8+ {+149,99/3 0,1}
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "3"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1... +0,10"]
+
+1. e3 e5 {+0,10/3 0,1} 2. Qh5 Nc6 {+0,34/3 0,1} 3. Bc4 Nh6 {+0,18/3 0,1} 4.
+Bxf7+ Nxf7 {+1,09/3 0,1} 5. Nh3 g6 {+1,24/3 0,1} 6. Qf3 Ng5 {+0,87/3 0,1}
+7. Nxg5 Qxg5 {+0,75/3 0,1} 8. Nc3 Nb4 {+0,85/3 0,1} 9. O-O Be7
+{+1,04/3 0,1} 10. Ne4 Qf5 {+1,04/3 0,1} 11. a3 Nxc2 {+2,12/3 0,1} 12. Nf6+
+Bxf6 {+2,16/3 0,1} 13. Qd5 Qxf2+ {-3,15/3 0,1} 14. Rxf2 Nxa1
+{-150,00/3 0,1} 15. Qxd7+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "4"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. d4 {+0,02/4} e5 2. Nc3 {+0,03/3 0,1} Qf6 3. Nd5 {+0,81/3 0,1} Qd6 4. e4
+{+0,73/3 0,1} exd4 5. Bf4 {+0,87/3 0,1} Qg6 6. Nxc7+ {+5,00/3 0,1} Kd8 7.
+Bg5+ {+149,99/3 0,1} Kxc7 8. Bd8+ {+149,99/3 0,1}
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "1"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1... +0,10"]
+
+1. e3 e5 {+0,10/3 0,1} 2. Qh5 Nc6 {+0,34/3 0,1} 3. Bc4 Nh6 {+0,18/3 0,1} 4.
+Bxf7+ Nxf7 {+1,09/3 0,1} 5. Nh3 g6 {+1,24/3 0,1} 6. Qf3 Ng5 {+0,87/3 0,1}
+7. Nxg5 Qxg5 {+0,75/3 0,1} 8. Nc3 Nb4 {+0,85/3 0,1} 9. O-O Be7
+{+1,04/3 0,1} 10. Ne4 Qf5 {+1,04/3 0,1} 11. a3 Nxc2 {+2,12/3 0,1} 12. Nf6+
+Bxf6 {+2,16/3 0,1} 13. Qd5 Qxf2+ {-3,15/3 0,1} 14. Rxf2 Nxa1
+{-150,00/3 0,1} 15. Qxd7+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "2"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. d4 {+0,02/4} e5 2. Nc3 {+0,03/3 0,1} Qf6 3. Nd5 {+0,81/3 0,1} Qd6 4. e4
+{+0,73/3 0,1} exd4 5. Bf4 {+0,87/3 0,1} Qg6 6. Nxc7+ {+5,00/3 0,1} Kd8 7.
+Bg5+ {+149,99/3 0,1} Qxg5 8. Ne6+ {+149,99/3 0,1}
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "3"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1... +0,10"]
+
+1. e3 e5 {+0,10/3 0,1} 2. Qh5 Nc6 {+0,34/3 0,1} 3. Bc4 Nh6 {+0,18/3 0,1} 4.
+Bxf7+ Nxf7 {+1,09/3 0,1} 5. Nh3 g6 {+1,24/3 0,1} 6. Qf3 Ng5 {+0,87/3 0,1}
+7. Nxg5 Qxg5 {+0,75/3 0,1} 8. Nc3 Nb4 {+0,85/3 0,1} 9. O-O Be7
+{+1,04/3 0,1} 10. Ne4 Qf5 {+1,04/3 0,1} 11. a3 Nxc2 {+2,12/3 0,1} 12. Nf6+
+Bxf6 {+2,16/3 0,1} 13. Qd5 Qxf2+ {-3,15/3 0,1} 14. Rxf2 Nxa1
+{-150,00/3 0,1} 15. Qxd7+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "4"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. Nc3 {+0,02/4} e6 2. e4 {+0,48/3 0,1} Bc5 3. d4 {+0,71/3 0,1} Bf8 4. Nf3
+{+0,95/3 0,1} Qe7 5. Bd3 {+1,35/3 0,1} h5 6. O-O {+1,48/3 0,1} Qd6 7. e5
+{+1,37/3 0,1} Qb6 8. Na4 {+1,23/3 0,1} Qc6 9. Nc3 {+1,19/3 0,1} Bb4 10. Bb5
+{+1,15/3 0,1} Qb6 11. Bc4 {+0,99/3 0,1} Qc6 12. Qe2 {+1,07/3 0,1} Bxc3 13.
+bxc3 {+0,98/3 0,1} b5 14. Bxb5 {+1,34/3 0,1} Qxc3 15. Rb1 {+1,23/3 0,1} Nc6
+16. Bxc6 {+1,39/3 0,1} Qxc6 17. Rb4 {+1,14/3 0,1} a5 18. Rc4 {+0,63/3 0,1}
+Qa6 19. Re1 {+1,10/3 0,1} Bb7 20. Rxc7 {+1,67/3 0,1} Qb6 21. Rc5
+{+1,71/3 0,1} Ne7 22. Rb5 {+1,82/3 0,1} Qc6 23. c4 {+1,85/3 0,1} d5 24.
+exd6 {+3,82/3 0,1} Ba6 25. dxe7 {+4,45/3 0,1} Bxb5 26. cxb5 {+4,61/3 0,1}
+Qc3 27. Qe5 {+4,98/3 0,1} Rg8 28. Qxh5 {+5,70/3 0,1} Rc8 29. Qh7
+{+5,63/3 0,1} Kd7 30. Bd2 {+8,87/3 0,1} Qb2 31. e8=Q+ {+8,71/3 0,1} Kc7 32.
+Qxf7+ {+149,99/3 0,1} Kb8 33. Bf4+ {+149,99/3 0,1}
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "1"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1... -0,14"]
+
+1. e3 e5 {-0,14/4 0,1} 2. Qh5 Nc6 {+0,34/4 0,1} 3. Bc4 Nh6 {+0,01/4 0,1} 4.
+Bxf7+ Nxf7 {+0,85/4 0,1} 5. Nh3 g6 {+1,05/4 0,1} 6. Qf3 Qe7 {+0,66/4 0,1}
+7. O-O d5 {+1,34/4 0,1} 8. Nc3 e4 {+1,27/4 0,1} 9. Qf4 Bh6 {+1,35/4 0,1}
+10. Nxd5 Bxf4 {+2,78/4 0,1} 11. Nhxf4 Qd6 {+4,98/4 0,1} 12. Nxc7+ Qxc7
+{-1,05/4 0,1} 13. Nd5 Kd8 {-1,27/4 0,1} 14. Nxc7 Kxc7 {-1,23/4 0,1} 15. f3
+exf3 {-1,04/4 0,1} 16. Rxf3 Bf5 {-0,96/4 0,1} 17. e4 Ng5 {-1,52/4 0,1} 18.
+Rd3 Nh3+ {-149,99/4 0,1} 19. Kf1 Bxe4 {-150,00/3 0,1} 20. Rd7+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "2"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. e4 {+0,02/4} e5 2. Bc4 {+0,16/4 0,1} Qg5 3. Bxf7+ {+2,78/4 0,1} Ke7 4.
+g3 {+3,17/4 0,1} Qf6 5. Qf3 {+3,21/4 0,1} Qd6 6. Bxg8 {+4,14/4 0,1} Rxg8 7.
+Qh5 {+7,39/4 0,1} Qf6 8. Qxh7 {+8,00/4 0,1} d5 9. exd5 {+9,65/4 0,1} Kd8
+10. Qxg8 {+9,79/4 0,1} Na6 11. d3 {+10,12/4 0,1} Ke8 12. Be3 {+10,20/4 0,1}
+Nb4 13. Kd2 {+9,70/4 0,1} Nxd5 14. Ne2 {+8,67/4 0,1} Nxe3 15. fxe3
+{+8,81/4 0,1} Be6 16. Qh8 {+9,06/4 0,1} Bg4 17. Nbc3 {+9,34/4 0,1} Qd6 18.
+Rhf1 {+19,66/4 0,1} Qxd3+ 19. cxd3 {+149,98/4 0,1} Kd8 20. Qxf8+
+{+149,99/4 0,1} Kd7 21. Rf7+ {+149,99/4 0,1}
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "3"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1... -0,14"]
+
+1. e3 e5 {-0,14/4 0,1} 2. Qh5 Nc6 {+0,34/4 0,1} 3. Bc4 Nh6 {+0,01/4 0,1} 4.
+Bxf7+ Nxf7 {+0,85/4 0,1} 5. Nh3 g6 {+1,05/4 0,1} 6. Qf3 Qe7 {+0,66/4 0,1}
+7. O-O d5 {+1,34/4 0,1} 8. Nc3 e4 {+1,27/4 0,1} 9. Qf4 Bh6 {+1,35/4 0,1}
+10. Nxd5 Bxf4 {+2,78/4 0,1} 11. Nhxf4 Qd6 {+4,98/4 0,1} 12. Nxc7+ Qxc7
+{-1,05/4 0,1} 13. Nd5 Kd8 {-1,27/4 0,1} 14. Nxc7 Kxc7 {-1,23/4 0,1} 15. f3
+exf3 {-1,04/4 0,1} 16. Rxf3 Bf5 {-0,96/4 0,1} 17. e4 Ng5 {-1,52/4 0,1} 18.
+Rd3 Nh3+ {-149,99/4 0,1} 19. Kf1 Bxe4 {-150,00/3 0,1} 20. Rd7+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "4"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. d4 {+0,02/4} e5 2. Nc3 {+0,03/4 0,1} Qf6 3. Nd5 {+0,62/4 0,1} Qd6 4. e4
+{+0,66/4 0,1} exd4 5. Bf4 {+0,90/4 0,1} Qg6 6. Nxc7+ {+149,98/4 0,1} Kd8 7.
+Bg5+ {+149,99/4 0,1} Qxg5 8. Ne6+ {+149,99/4 0,1}
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "1"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "2... -0,10"]
+
+1. Nc3 e5 {-0,24/2 0,1} 2. Nf3 Nc6 {-0,10/3 0,1} 3. e4 Bc5 {-0,11/3 0,1} 4.
+Bc4 Nh6 {+0,16/3 0,1} 5. d4 exd4 {+0,46/3 0,1} 6. Bd5 dxc3 {+1,75/3 0,1} 7.
+Bxh6 Bxf2+ {+1,51/3 0,1} 8. Kxf2 Qe7 {+1,42/3 0,1} 9. Bxf7+ Qxf7
+{+1,42/3 0,1} 10. Bxg7 Qxg7 {+3,27/3 0,1} 11. Rg1 cxb2 {+5,54/3 0,1} 12.
+Qd5 Qxg2+ {+9,57/3 0,1} 13. Rxg2 bxa1=Q {-149,99/3 0,1} 14. Qxd7+ Bxd7
+{-150,00/3 0,1} 15. Rg8+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "2"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. c3 {+0,02/4} d5 2. Qa4+ {+0,95/3 0,1} Nc6 3. d4 {+1,23/3 0,1} Qd7 4. Nf3
+{+1,59/3 0,1} Qe6 5. Bf4 {+2,07/3 0,1} b5 6. Qb3 {+2,62/3 0,1} Qe4 7. Qxb5
+{+3,71/3 0,1} Bd7 8. Qb7 {+3,02/3 0,1} Rc8 9. Bxc7 {+3,63/3 0,1} Nd8 10.
+Bxd8 {+4,60/3 0,1} Rxd8 11. Ne5 {+4,48/3 0,1} Qc2 12. Na3 {+6,96/3 0,1} Qf5
+13. Nb5 {+8,33/3 0,1} Qxf2+ 14. Kxf2 {+14,76/3 0,1} e6 15. Nc7+
+{+149,99/3 0,1} Ke7 16. Nc6+ {+149,99/3 0,1}
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "3"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "2... -0,10"]
+
+1. Nc3 e5 {-0,24/2 0,1} 2. Nf3 Nc6 {-0,10/3 0,1} 3. e4 Bc5 {-0,11/3 0,1} 4.
+Bc4 Nh6 {+0,16/3 0,1} 5. d4 exd4 {+0,46/3 0,1} 6. Bd5 dxc3 {+1,75/3 0,1} 7.
+Bxh6 Bxf2+ {+1,51/3 0,1} 8. Kxf2 Qe7 {+1,42/3 0,1} 9. Bxf7+ Qxf7
+{+1,42/3 0,1} 10. Bxg7 Qxg7 {+3,27/3 0,1} 11. Rg1 cxb2 {+5,54/3 0,1} 12.
+Qd5 Qxg2+ {+9,57/3 0,1} 13. Rxg2 bxa1=Q {-149,99/3 0,1} 14. Qxd7+ Bxd7
+{-150,00/3 0,1} 15. Rg8+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "4"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. Nc3 {+0,02/4} e5 2. Nf3 {+0,24/3 0,1} Bc5 3. d4 {+0,49/3 0,1} exd4 4.
+Nxd4 {+0,30/3 0,1} Qf6 5. Be3 {+0,40/3 0,1} Bb4 6. Qd2 {+0,63/3 0,1} Qa6 7.
+Bf4 {+0,90/3 0,1} Ne7 8. Bxc7 {+1,37/3 0,1} Qc4 9. Bxb8 {+1,36/3 0,1} Rxb8
+10. e4 {+1,62/3 0,1} Qc5 11. Be2 {+1,94/3 0,1} Nc6 12. Nf5 {+1,86/3 0,1}
+O-O 13. O-O {+1,83/3 0,1} Qe5 14. a3 {+1,87/3 0,1} Nd4 15. Qxd4
+{+5,15/3 0,1} Qxd4 16. Nxd4 {+5,19/3 0,1} Bc5 17. Rfd1 {+5,12/3 0,1} d5 18.
+Nxd5 {+5,95/3 0,1} Be6 19. Nb3 {+5,98/3 0,1} Bd6 20. Nf6+ {+7,61/3 0,1}
+gxf6 21. Rxd6 {+7,42/3 0,1} Rbd8 22. Rad1 {+7,42/3 0,1} Rxd6 23. Rxd6
+{+7,24/3 0,1} Kh8 24. Nc5 {+8,16/3 0,1} Bh3 25. gxh3 {+8,90/3 0,1} Rg8+ 26.
+Kh1 {+8,89/3 0,1} b6 27. Nd3 {+9,13/3 0,1} b5 28. Bh5 {+10,05/3 0,1} Rf8
+29. Rxf6 {+11,03/3 0,1} Rg8 30. Ne5 {+12,40/3 0,1} Rg7 31. Nxf7+
+{+15,29/3 0,1} Kg8 32. Nh6+ {+149,99/3 0,1}
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "1"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "2... -0,10"]
+
+1. Nc3 e5 {-0,24/2 0,1} 2. Nf3 Nc6 {-0,10/3 0,1} 3. e4 Bc5 {-0,11/3 0,1} 4.
+Bc4 Nh6 {+0,16/3 0,1} 5. d4 exd4 {+0,46/3 0,1} 6. Bd5 dxc3 {+1,75/3 0,1} 7.
+Bxh6 Bxf2+ {+1,51/3 0,1} 8. Kxf2 Qe7 {+1,42/3 0,1} 9. Bxf7+ Qxf7
+{+1,42/3 0,1} 10. Bxg7 Qxg7 {+3,27/3 0,1} 11. Rg1 cxb2 {+5,54/3 0,1} 12.
+Qd5 Qxg2+ {+9,57/3 0,1} 13. Rxg2 bxa1=Q {-149,99/3 0,1} 14. Qxd7+ Bxd7
+{-150,00/3 0,1} 15. Rg8+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "2"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. e3 {+0,02/4} e5 2. Nc3 {+0,14/3 0,1} Qe7 3. Nf3 {+0,56/3 0,1} Nh6 4. Bd3
+{+0,81/3 0,1} Ng4 5. O-O {+0,77/3 0,1} Qf6 6. Nd5 {+0,57/3 0,1} Qc6 7. c4
+{+0,46/3 0,1} Bd6 8. b3 {+0,62/3 0,1} e4 9. Bxe4 {-0,84/3 0,1} Nxh2 10.
+Nf6+ {+6,10/3 0,1} gxf6 11. Bxc6 {+6,01/3 0,1} dxc6 12. Nxh2 {+5,79/3 0,1}
+Rg8 13. f4 {+7,31/3 0,1} Bxf4 14. Rxf4 {+10,22/3 0,1} Be6 15. Rxf6
+{+10,95/3 0,1} Bh3 16. Rf2 {+11,00/3 0,1} Nd7 17. Qh5 {+11,07/3 0,1} Be6
+18. Qxh7 {+11,61/3 0,1} Nf6 19. Rxf6 {+14,53/3 0,1} Rxg2+ 20. Kxg2
+{+17,32/3 0,1} O-O-O 21. Kg3 {+17,53/3 0,1} b5 22. Bb2 {+17,62/3 0,1} Kb7
+23. cxb5 {+20,25/3 0,1} Rxd2 24. bxc6+ {+149,99/3 0,1}
+{Xboard: Forfeit due to invalid move: d2g2 (d2g2 via `0, `0) res=24} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "3"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "2... -0,10"]
+
+1. Nc3 e5 {-0,24/2 0,1} 2. Nf3 Nc6 {-0,10/3 0,1} 3. e4 Bc5 {-0,11/3 0,1} 4.
+Bc4 Nh6 {+0,16/3 0,1} 5. d4 exd4 {+0,46/3 0,1} 6. Bd5 dxc3 {+1,75/3 0,1} 7.
+Bxh6 Bxf2+ {+1,51/3 0,1} 8. Kxf2 Qe7 {+1,42/3 0,1} 9. Bxf7+ Qxf7
+{+1,42/3 0,1} 10. Bxg7 Qxg7 {+3,27/3 0,1} 11. Rg1 cxb2 {+5,54/3 0,1} 12.
+Qd5 Qxg2+ {+9,57/3 0,1} 13. Rxg2 bxa1=Q {-149,99/3 0,1} 14. Qxd7+ Bxd7
+{-150,00/3 0,1} 15. Rg8+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "4"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. Nc3 {+0,02/4} e5 2. Nf3 {+0,24/3 0,1} Bc5 3. d4 {+0,49/3 0,1} exd4 4.
+Nxd4 {+0,30/3 0,1} Qf6 5. Be3 {+0,40/3 0,1} Bb4 6. Qd2 {+0,63/3 0,1} Qa6 7.
+Bf4 {+0,90/3 0,1} Ne7 8. Bxc7 {+1,37/3 0,1} Qc4 9. Bxb8 {+1,36/3 0,1} Rxb8
+10. e4 {+1,62/3 0,1} Qc5 11. Be2 {+1,94/3 0,1} Nc6 12. Nf5 {+1,86/3 0,1}
+Kf8 13. O-O {+2,11/3 0,1} Qe5 14. a3 {+2,15/3 0,1} Nd4 15. Nxd4
+{+5,48/3 0,1} Bc5 16. Rfd1 {+5,40/3 0,1} Kg8 17. b4 {+5,30/3 0,1} Bb6 18.
+Nf3 {+5,33/3 0,1} Qh5 19. Nd4 {+5,45/3 0,1} Qh4 20. g3 {+5,37/3 0,1} Qf6
+21. Nd5 {+5,39/3 0,1} Qe5 22. Nf5 {+5,80/3 0,1} Bxf2+ 23. Kxf2
+{+5,87/3 0,1} d6 24. Nde7+ {+10,05/3 0,1} Kf8 25. Ng6+ {+149,99/3 0,1} Ke8
+26. Bb5+ {+149,99/3 0,1}
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "1"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "0-1"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1... -0,24"]
+
+1. Nc3 e5 {-0,24/4 0,1} 2. Nf3 Nc6 {-0,11/4 0,1} 3. e4 Bc5 {+0,01/4 0,1} 4.
+Bc4 Nh6 {+0,05/4 0,1} 5. d4 exd4 {+0,27/4 0,1} 6. Bd5 dxc3 {+1,59/4 0,1} 7.
+Bxh6 Qe7 {+2,66/4 0,1} 8. Bxg7 Bxf2+ {+3,02/4 0,1} 9. Kf1 cxb2
+{+2,74/4 0,1} 10. Bxh8 bxa1=Q {+2,70/4 0,1} 11. Bxa1 Bb6 {+2,66/4 0,1} 12.
+Bf6 Qxf6 {+5,92/4 0,1} 13. Qc1 Bc5 {+6,27/4 0,1} 14. Bc4 d5 {+7,90/4 0,1}
+15. Be2 dxe4 {+9,81/4 0,1} 16. Qe1 Be6 {+20,70/4 0,1} 17. Qc3 Qxc3
+{+149,98/4 0,1} 18. h3 Qa1+ {+149,99/4 0,1} 19. Bd1 Bc4+ {+149,99/4 0,1}
+{Xboard adjudication: 3rd check} 0-1
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "1"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1... -0,14"]
+
+1. e3 e5 {-0,14/4 0,1} 2. Qh5 Nc6 {+0,34/4 0,1} 3. Bc4 Nh6 {+0,01/4 0,1} 4.
+Bxf7+ Nxf7 {+0,85/4 0,1} 5. Nh3 g6 {+1,05/4 0,1} 6. Qf3 Qe7 {+0,66/4 0,1}
+7. O-O d5 {+1,34/4 0,1} 8. Nc3 e4 {+1,27/4 0,1} 9. Qf4 Bh6 {+1,35/4 0,1}
+10. Nxd5 Bxf4 {+2,78/4 0,1} 11. Nhxf4 Qd6 {+4,98/4 0,1} 12. Nxc7+ Qxc7
+{-1,05/4 0,1} 13. Nd5 Kd8 {-1,27/4 0,1} 14. Nxc7 Kxc7 {-1,23/4 0,1} 15. f3
+exf3 {-1,04/4 0,1} 16. Rxf3 Bf5 {-0,96/4 0,1} 17. e4 Ng5 {-1,52/4 0,1} 18.
+Rd3 Nh3+ {-149,99/4 0,1} 19. Kf1 Bxe4 {-150,00/3 0,1} 20. Rd7+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "2"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. e4 {+0,02/4} e5 2. Bc4 {+0,16/4 0,1} Qg5 3. Bxf7+ {+2,78/4 0,1} Ke7 4.
+g3 {+3,17/4 0,1} Qf6 5. Qf3 {+3,21/4 0,1} Qd6 6. Bxg8 {+4,14/4 0,1} Rxg8 7.
+Qh5 {+7,39/4 0,1} Qf6 8. Qxh7 {+8,00/4 0,1} d5 9. exd5 {+9,65/4 0,1} Kd8
+10. Qxg8 {+9,79/4 0,1} Na6 11. d3 {+10,12/4 0,1} Ke8 12. Be3 {+10,20/4 0,1}
+Nb4 13. Kd2 {+9,70/4 0,1} Nxd5 14. Ne2 {+8,67/4 0,1} Nxe3 15. fxe3
+{+8,81/4 0,1} Be6 16. Qh8 {+9,06/4 0,1} Bg4 17. Nbc3 {+9,34/4 0,1} Qd6 18.
+Rhf1 {+19,66/4 0,1} Qxd3+ 19. cxd3 {+149,98/4 0,1} Kd8 20. Qxf8+
+{+149,99/4 0,1} Kd7 21. Rf7+ {+149,99/4 0,1}
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "3"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1... -0,14"]
+
+1. e3 e5 {-0,14/4 0,1} 2. Qh5 Nc6 {+0,34/4 0,1} 3. Bc4 Nh6 {+0,01/4 0,1} 4.
+Bxf7+ Nxf7 {+0,85/4 0,1} 5. Nh3 g6 {+1,05/4 0,1} 6. Qf3 Qe7 {+0,66/4 0,1}
+7. O-O d5 {+1,34/4 0,1} 8. Nc3 e4 {+1,27/4 0,1} 9. Qf4 Bh6 {+1,35/4 0,1}
+10. Nxd5 Bxf4 {+2,78/4 0,1} 11. Nhxf4 Qd6 {+4,98/4 0,1} 12. Nxc7+ Qxc7
+{-1,05/4 0,1} 13. Nd5 Kd8 {-1,27/4 0,1} 14. Nxc7 Kxc7 {-1,23/4 0,1} 15. f3
+exf3 {-1,04/4 0,1} 16. Rxf3 Bf5 {-0,96/4 0,1} 17. e4 Ng5 {-1,52/4 0,1} 18.
+Rd3 Nh3+ {-149,99/4 0,1} 19. Kf1 Bxe4 {-150,00/3 0,1} 20. Rd7+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "4"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "0-1"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. Nc3 {+0,02/4} e6 2. e4 {+0,22/4 0,1} Bc5 3. Nf3 {+0,48/4 0,1} Bxf2+ 4.
+Kxf2 {+0,36/4 0,1} Qf6 5. d4 {+0,97/4 0,1} Nh6 6. Kg1 {+1,06/4 0,1} Nc6 7.
+Bg5 {+1,83/4 0,1} Qg6 8. Nb5 {+1,83/4 0,1} O-O 9. Nxc7 {+2,06/4 0,1} Qxe4
+10. Bd3 {+6,03/4 0,1} Qg4 11. Bxh7+ {+8,48/4 0,1} Kh8 12. h3 {+8,64/4 0,1}
+Qg3 13. Bxh6 {+5,26/4 0,1} gxh6 14. Qd2 {+5,18/4 0,1} Rb8 15. Na6
+{+4,67/4 0,2} bxa6 16. Re1 {+0,23/4 0,2} Rxb2 17. d5 {+0,53/4 0,1} e5 18.
+dxc6 {+2,43/4 0,1} Kg7 19. cxd7 {+4,76/4 0,1} Bxd7 20. Nxe5 {+3,65/4 0,2}
+Qxe5 21. Qxh6+ {+0,87/4 0,1} Kxh6 22. Rxe5 {-149,99/4 0,1} Rb1+ 23. Kh2
+{-150,00/3 0,1} Rxh1+
+{Xboard adjudication: 3rd check} 0-1
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "1"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1... -0,14"]
+
+1. e3 e5 {-0,14/4 0,1} 2. Qh5 Nc6 {+0,34/4 0,1} 3. Bc4 Nh6 {+0,01/4 0,1} 4.
+Bxf7+ Nxf7 {+0,85/4 0,1} 5. Nh3 g6 {+1,05/4 0,1} 6. Qf3 Qe7 {+0,66/4 0,1}
+7. O-O d5 {+1,34/4 0,1} 8. Nc3 e4 {+1,27/4 0,1} 9. Qf4 Bh6 {+1,35/4 0,1}
+10. Nxd5 Bxf4 {+2,78/4 0,1} 11. Nhxf4 Qd6 {+4,98/4 0,1} 12. Nxc7+ Qxc7
+{-1,05/4 0,1} 13. Nd5 Kd8 {-1,27/4 0,1} 14. Nxc7 Kxc7 {-1,23/4 0,1} 15. f3
+exf3 {-1,04/4 0,1} 16. Rxf3 Bf5 {-0,96/4 0,1} 17. e4 Ng5 {-1,52/4 0,1} 18.
+Rd3 Nh3+ {-149,99/4 0,1} 19. Kf1 Bxe4 {-150,00/3 0,1} 20. Rd7+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "2"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. d4 {+0,02/4} e5 2. Nc3 {+0,03/4 0,1} Qf6 3. Nd5 {+0,62/4 0,1} Qd6 4. e4
+{+0,66/4 0,1} exd4 5. Bf4 {+0,90/4 0,1} Qg6 6. Nxc7+ {+149,98/4 0,1} Kd8 7.
+Bg5+ {+149,99/4 0,1} Qxg5 8. Ne6+ {+149,99/4 0,1}
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "3"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1... -0,14"]
+
+1. e3 e5 {-0,14/4 0,1} 2. Qh5 Nc6 {+0,34/4 0,1} 3. Bc4 Nh6 {+0,01/4 0,1} 4.
+Bxf7+ Nxf7 {+0,85/4 0,1} 5. Nh3 g6 {+1,05/4 0,1} 6. Qf3 Qe7 {+0,66/4 0,1}
+7. O-O d5 {+1,34/4 0,1} 8. Nc3 e4 {+1,27/4 0,1} 9. Qf4 Bh6 {+1,35/4 0,1}
+10. Nxd5 Bxf4 {+2,78/4 0,1} 11. Nhxf4 Qd6 {+4,98/4 0,1} 12. Nxc7+ Qxc7
+{-1,05/4 0,1} 13. Nd5 Kd8 {-1,27/4 0,1} 14. Nxc7 Kxc7 {-1,23/4 0,1} 15. f3
+exf3 {-1,04/4 0,1} 16. Rxf3 Bf5 {-0,96/4 0,1} 17. e4 Ng5 {-1,52/4 0,1} 18.
+Rd3 Nh3+ {-149,99/4 0,1} 19. Kf1 Bxe4 {-150,00/3 0,1} 20. Rd7+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "4"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "0-1"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. Nc3 {+0,02/4} e6 2. e4 {+0,22/4 0,1} Bc5 3. Nf3 {+0,48/4 0,1} Bxf2+ 4.
+Kxf2 {+0,36/4 0,1} Qf6 5. d4 {+0,97/4 0,1} Nh6 6. Kg1 {+1,06/4 0,1} Nc6 7.
+Bg5 {+1,83/4 0,1} Qg6 8. Nb5 {+1,83/4 0,1} O-O 9. Nxc7 {+2,06/4 0,1} Qxe4
+10. Bd3 {+6,03/4 0,1} Qg4 11. Bxh7+ {+8,48/4 0,1} Kh8 12. h3 {+8,64/4 0,1}
+Qg3 13. Bxh6 {+5,26/4 0,1} gxh6 14. Qd2 {+5,18/4 0,1} Rb8 15. Na6
+{+4,67/4 0,2} bxa6 16. Re1 {+0,23/4 0,2} Rxb2 17. d5 {+0,53/4 0,1} e5 18.
+dxc6 {+2,43/4 0,1} Kg7 19. cxd7 {+4,76/4 0,1} Bxd7 20. Nxe5 {+3,65/4 0,3}
+Qxe5 21. Qxh6+ {+0,87/4 0,1} Kxh6 22. Rxe5 {-149,99/4 0,1} Rb1+ 23. Kh2
+{-150,00/3 0,1} Rxh1+
+{Xboard adjudication: 3rd check} 0-1
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "1"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+
+1. e3 e5 {-0,14/2 0,1} 2. Qh5 Nc6 {+0,10/2 0,1} 3. Bc4 d5 {+0,52/2 0,1} 4.
+Bb5 Bd6 {-0,71/2 0,1} 5. Bxc6+ bxc6 {-0,99/2 0,1} 6. Nc3 Nf6 {-0,67/2 0,1}
+7. Qg5 O-O {-0,69/2 0,1} 8. Nxd5 Nxd5 {+1,27/2 0,1} 9. Qh5 Rb8
+{+1,56/2 0,1} 10. Nf3 Re8 {+1,58/2 0,1} 11. Qxh7+ Kxh7 {-150,00/2 0,1} 12.
+Ng5+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "2"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. d4 {+0,02/4} e5 2. Nc3 {+0,24/1 0,1} Qf6 3. Nd5 {+0,48/2 0,1} Qd6 4. e4
+{+0,62/2 0,1} exd4 5. Bf4 {+0,87/2 0,1} Qg6 6. Nxc7+ {+5,00/2 0,1} Kd8 7.
+Qxd4 {+3,71/2 0,1} Bb4+ 8. Qxb4 {+8,78/2 0,1} Qxe4+ 9. Qxe4 {+10,26/2 0,1}
+Ne7 10. Nxa8 {+16,47/2 0,1} Ke8 11. Bxb8 {+18,88/2 0,1} Kd8 12. Bxa7
+{+22,34/2 0,1} Ke8 13. Nc7+ {+22,29/2 0,1} Kd8 14. Qxe7+ {+149,99/2 0,1}
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "3"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+
+1. e3 e5 {-0,14/2 0,1} 2. Qh5 Nc6 {+0,10/2 0,1} 3. Bc4 d5 {+0,52/2 0,1} 4.
+Bb5 Bd6 {-0,71/2 0,1} 5. Bxc6+ bxc6 {-0,99/2 0,1} 6. Nc3 Nf6 {-0,67/2 0,1}
+7. Qg5 O-O {-0,69/2 0,1} 8. Nxd5 Nxd5 {+1,27/2 0,1} 9. Qh5 Rb8
+{+1,56/2 0,1} 10. Nf3 Re8 {+1,58/2 0,1} 11. Qxh7+ Kxh7 {-150,00/2 0,1} 12.
+Ng5+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "4"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. d4 {+0,02/4} e5 2. Nc3 {+0,24/1 0,1} Qf6 3. Nd5 {+0,48/2 0,1} Qd6 4. e4
+{+0,62/2 0,1} exd4 5. Bf4 {+0,87/2 0,1} Qg6 6. Nxc7+ {+5,00/2 0,1} Kd8 7.
+Qxd4 {+3,71/2 0,1} Bb4+ 8. Qxb4 {+8,78/2 0,1} Qxe4+ 9. Qxe4 {+10,26/2 0,1}
+Ne7 10. Nxa8 {+16,47/2 0,1} Ke8 11. Bxb8 {+18,88/2 0,1} Kd8 12. Bxa7
+{+22,34/2 0,1} Ke8 13. Nc7+ {+22,29/2 0,1} Kd8 14. Qxe7+ {+149,99/2 0,1}
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "1"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1... +0,10"]
+
+1. e3 e5 {+0,10/3 0,1} 2. Qh5 Nc6 {+0,34/3 0,1} 3. Bc4 Nh6 {+0,18/3 0,1} 4.
+Bxf7+ Nxf7 {+1,09/3 0,1} 5. Nh3 g6 {+1,24/3 0,1} 6. Qf3 Ng5 {+0,87/3 0,1}
+7. Nxg5 Qxg5 {+0,75/3 0,1} 8. Nc3 Nb4 {+0,85/3 0,1} 9. O-O Be7
+{+1,04/3 0,1} 10. Ne4 Qf5 {+1,04/3 0,1} 11. a3 Nxc2 {+2,12/3 0,1} 12. Nf6+
+Bxf6 {+2,16/3 0,1} 13. Qd5 Qxf2+ {-3,15/3 0,1} 14. Rxf2 Nxa1
+{-150,00/3 0,1} 15. Qxd7+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "2"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "0-1"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. e4 {+0,02/4} e5 2. Nc3 {+0,24/3 0,1} Qh4 3. Nf3 {+0,74/3 0,1} Qf6 4. Nd5
+{+1,10/3 0,1} Qd6 5. d4 {+1,08/3 0,1} exd4 6. Nxd4 {+1,21/3 0,1} Nf6 7.
+Nxf6+ {+2,39/3 0,1} gxf6 8. Bb5 {+1,10/3 0,1} a6 9. Bxd7+ {+3,81/3 0,1}
+Bxd7 10. O-O {+3,53/3 0,1} Rg8 11. Re1 {+3,00/3 0,1} Rxg2+ 12. Kxg2
+{-149,99/3 0,1} Bh3+ 13. Kxh3 {-150,00/3 0,1} Qd7+
+{Xboard adjudication: 3rd check} 0-1
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "3"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1... +0,10"]
+
+1. e3 e5 {+0,10/3 0,1} 2. Qh5 Nc6 {+0,34/3 0,1} 3. Bc4 Nh6 {+0,18/3 0,1} 4.
+Bxf7+ Nxf7 {+1,09/3 0,1} 5. Nh3 g6 {+1,24/3 0,1} 6. Qf3 Ng5 {+0,87/3 0,1}
+7. Nxg5 Qxg5 {+0,75/3 0,1} 8. Nc3 Nb4 {+0,85/3 0,1} 9. O-O Be7
+{+1,04/3 0,1} 10. Ne4 Qf5 {+1,04/3 0,1} 11. a3 Nxc2 {+2,12/3 0,1} 12. Nf6+
+Bxf6 {+2,16/3 0,1} 13. Qd5 Qxf2+ {-3,15/3 0,1} 14. Rxf2 Nxa1
+{-150,00/3 0,1} 15. Qxd7+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "4"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. e3 {+0,02/4} e5 2. Nc3 {+0,14/3 0,1} Qe7 3. Nf3 {+0,56/3 0,1} e4 4. Nd4
+{+0,57/3 0,1} Nf6 5. Bc4 {+0,59/3 0,1} Qc5 6. Bxf7+ {+1,28/3 0,1} Kxf7 7.
+Nxe4 {+1,30/3 0,1} g6 8. Nxc5 {+7,41/3 0,1} Bxc5 9. Nf3 {+7,21/3 0,1} Nc6
+10. Ng5+ {+10,18/3 0,1} Ke8 11. Qf3 {+10,43/3 0,1} Ne5 12. Qxf6
+{+14,75/3 0,1} Nd3+ 13. cxd3 {+149,99/3 0,1} Rb8 14. Qxh8+ {+149,99/3 0,1}
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "1"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1... -0,14"]
+
+1. e3 e5 {-0,14/4 0,1} 2. Qh5 Nc6 {+0,34/4 0,1} 3. Bc4 Nh6 {+0,01/4 0,1} 4.
+Bxf7+ Nxf7 {+0,85/4 0,1} 5. Nh3 g6 {+1,05/4 0,1} 6. Qf3 Qe7 {+0,66/4 0,1}
+7. O-O d5 {+1,34/4 0,1} 8. Nc3 e4 {+1,27/4 0,1} 9. Qf4 Bh6 {+1,35/4 0,1}
+10. Nxd5 Bxf4 {+2,78/4 0,1} 11. Nhxf4 Qd6 {+4,98/4 0,1} 12. Nxc7+ Qxc7
+{-1,05/4 0,1} 13. Nd5 Kd8 {-1,27/4 0,1} 14. Nxc7 Kxc7 {-1,23/4 0,1} 15. f3
+exf3 {-1,04/4 0,1} 16. Rxf3 Bf5 {-0,96/4 0,1} 17. e4 Ng5 {-1,52/4 0,1} 18.
+Rd3 Nh3+ {-149,99/4 0,1} 19. Kf1 Bxe4 {-150,00/3 0,1} 20. Rd7+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "2"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "0-1"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. Nc3 {+0,02/4} e6 2. e4 {+0,22/4 0,1} Bc5 3. Nf3 {+0,48/4 0,1} Bxf2+ 4.
+Kxf2 {+0,36/4 0,1} Qf6 5. d4 {+0,97/4 0,1} Nh6 6. Kg1 {+1,06/4 0,1} Nc6 7.
+Bg5 {+1,83/4 0,1} Qg6 8. Nb5 {+1,83/4 0,1} O-O 9. Nxc7 {+2,06/4 0,1} Qxe4
+10. Bd3 {+6,03/4 0,1} Qg4 11. Bxh7+ {+8,48/4 0,1} Kh8 12. h3 {+8,64/4 0,1}
+Qg3 13. Bxh6 {+5,26/4 0,1} gxh6 14. Qd2 {+5,18/4 0,1} Rb8 15. Na6
+{+4,67/4 0,2} bxa6 16. Re1 {+0,23/4 0,3} Rxb2 17. d5 {+0,53/4 0,1} e5 18.
+dxc6 {+2,43/4 0,1} Kg7 19. cxd7 {+4,76/4 0,1} Bxd7 20. Nxe5 {+3,65/4 0,3}
+Qxe5 21. Qxh6+ {+0,87/4 0,1} Kxh6 22. Rxe5 {-149,99/4 0,1} Rb1+ 23. Kh2
+{-150,00/3 0,1} Rxh1+
+{Xboard adjudication: 3rd check} 0-1
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "3"]
+[White "Capablanca"]
+[Black "pulsar2009-9b-64"]
+[Result "1-0"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1... -0,14"]
+
+1. e3 e5 {-0,14/4 0,1} 2. Qh5 Nc6 {+0,34/4 0,1} 3. Bc4 Nh6 {+0,01/4 0,1} 4.
+Bxf7+ Nxf7 {+0,85/4 0,1} 5. Nh3 g6 {+1,05/4 0,1} 6. Qf3 Qe7 {+0,66/4 0,1}
+7. O-O d5 {+1,34/4 0,1} 8. Nc3 e4 {+1,27/4 0,1} 9. Qf4 Bh6 {+1,35/4 0,1}
+10. Nxd5 Bxf4 {+2,78/4 0,1} 11. Nhxf4 Qd6 {+4,98/4 0,1} 12. Nxc7+ Qxc7
+{-1,05/4 0,1} 13. Nd5 Kd8 {-1,27/4 0,1} 14. Nxc7 Kxc7 {-1,23/4 0,1} 15. f3
+exf3 {-1,04/4 0,1} 16. Rxf3 Bf5 {-0,96/4 0,1} 17. e4 Ng5 {-1,52/4 0,1} 18.
+Rd3 Nh3+ {-149,99/4 0,1} 19. Kf1 Bxe4 {-150,00/3 0,1} 20. Rd7+
+{Xboard adjudication: 3rd check} 1-0
+
+[Event "Computer Chess Game"]
+[Site "alex-IdeaPad-L340-15IRH-Gaming"]
+[Date "2021.05.24"]
+[Round "4"]
+[White "pulsar2009-9b-64"]
+[Black "Capablanca"]
+[Result "0-1"]
+[TimeControl "300+2"]
+[Variant "3check"]
+[Annotator "1. +0,02"]
+
+1. Nc3 {+0,02/4} e6 2. e4 {+0,22/4 0,1} Bc5 3. Nf3 {+0,48/4 0,1} Bxf2+ 4.
+Kxf2 {+0,36/4 0,1} Qf6 5. d4 {+0,97/4 0,1} Nh6 6. Kg1 {+1,06/4 0,1} Nc6 7.
+Bg5 {+1,83/4 0,1} Qg6 8. Nb5 {+1,83/4 0,1} O-O 9. Nxc7 {+2,06/4 0,1} Qxe4
+10. Bd3 {+6,03/4 0,1} Qg4 11. Bxh7+ {+8,48/4 0,1} Kh8 12. h3 {+8,64/4 0,1}
+Qg3 13. Bxh6 {+5,26/4 0,1} gxh6 14. Qd2 {+5,18/4 0,1} Rb8 15. Na6
+{+4,67/4 0,2} bxa6 16. Re1 {+0,23/4 0,3} Rxb2 17. d5 {+0,53/4 0,1} e5 18.
+dxc6 {+2,43/4 0,1} Kg7 19. cxd7 {+4,76/4 0,1} Bxd7 20. Nxe5 {+3,65/4 0,3}
+Qxe5 21. Qxh6+ {+0,87/4 0,1} Kxh6 22. Rxe5 {-149,99/4 0,1} Rb1+ 23. Kh2
+{-150,00/3 0,1} Rxh1+
+{Xboard adjudication: 3rd check} 0-1
+
