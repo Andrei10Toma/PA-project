@@ -7,6 +7,7 @@ using namespace std;
 
 King::King(pair<int, char> pos, bool color) : Piece(pos, color) {
     name = 'K';
+    stillAlive = 0;
     hasMoved = false;
 }
 
