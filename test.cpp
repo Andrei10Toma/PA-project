@@ -17,24 +17,24 @@
 #include "pieces/King.hpp"
 #include "pieces/Rook.hpp"
 #include "pieces/Pawn.hpp"
+#include <algorithm>
 #define oo 2e9
 
 using namespace std;
 
 vector<Piece*> pieces[2];
+int count_moves;
 GameBoard* gameBoard;
 vector<King *> kings;
-int fcheck[2] = {200, 1000}; 
-int scheck[2] = {1000, 5000}; 
-int fchk, schk;
+int playing_color;
 
 int pawn_matrix[2][9][9] = 
 {
     {
     {0,  0,  0,  0,  0,  0,  0,  0},
     {5, 10, 10,-20,-20, 10, 10,  5},
-    {5, -5,-10,  0,  0,-10, -5,  5},
-    {0,  0,  0, 20, 20,  0,  0,  0},
+    {5, -5, 10,  -1005,  0,-1005, -5,  5},
+    {0,  0,  0, -1005, 5000,  -1005,  0,  0},
     {5,  5, 10, 25, 25, 10,  5,  5},
     {10, 10, 20, 30, 30, 20, 10, 10},
     {50, 50, 50, 50, 50, 50, 50, 50},
@@ -46,8 +46,8 @@ int pawn_matrix[2][9][9] =
     {50, 50, 50, 50, 50, 50, 50, 50},
     {10, 10, 20, 30, 30, 20, 10, 10},
     {5,  5, 10, 25, 25, 10,  5,  5},
-    {0,  0,  0, 20, 20,  0,  0,  0},
-    {5, -5,-10,  0,  0,-10, -5,  5},
+    {0,  0,  0, -1005, 5000,  0,  -1005,  0},
+    {5, -5,-10,  -1005,  0,-10, -1005,  5},
     {5, 10, 10,-20,-20, 10, 10,  5},
     {0,  0,  0,  0,  0,  0,  0,  0}
     }
@@ -70,7 +70,7 @@ int knight_matrix[2][9][9] =
     {-30,  0, 10, 15, 15, 10,  0,-30},
     {-30,  5, 15, 20, 20, 15,  5,-30},
     {-30,  0, 15, 20, 20, 15,  0,-30},
-    {-30,  5, 10, 15, 15, 10,  5,-30},
+    {-30,  5, 30, 15, 15, 50,  5,-30},
     {-40,-20,  0,  5,  5,  0,-20,-40},
     {-50,-40,-30,-30,-30,-30,-40,-50}
     }
@@ -147,7 +147,7 @@ int queen_matrix[2][9][9] =
 int king_matrix[2][9][9] =
 {
     {
-    {20, 30, 10,  0,  0, 10, 30, 20},
+    {20, 40, 10,  0,  0, 10, 200, 20},
     {20, 20,  0,  0,  0,  0, 20, 20},
     {-10,-20,-20,-20,-20,-20,-20,-10},
     {-20,-30,-30,-40,-40,-30,-30,-20},
@@ -164,7 +164,7 @@ int king_matrix[2][9][9] =
     {-20,-30,-30,-40,-40,-30,-30,-20},
     {-10,-20,-20,-20,-20,-20,-20,-10},
     {20, 20,  0,  0,  0,  0, 20, 20},
-    {20, 30, 10,  0,  0, 10, 30, 20}
+    {20, 40, 10,  0,  0, 10, 200, 20}
     }
 };
 void remove(vector<Piece*> &pieces, Piece* piece){
@@ -642,18 +642,15 @@ int evaluate(int player) {
     char y;
     if(in_check(0, player) == 0){
         if(kings[player]->stillAlive == 1)
-            score -= 200;
+            score -= 550;
         else if(kings[player]->stillAlive == 2)
-            score -= 1000;
+            score -= 3000;
         else
             return -oo + 10; 
     }
     for(auto piece : pieces[player]){
         y = piece->position.second - 'a';
-        if(player == 0)
-            x = piece->position.first - 1;
-        else
-            x = 9 - piece->position.first - 1;
+        x = piece->position.first - 1;
         if(piece->name == 'P')
             score += 100 + pawn_matrix[1 - player][x][y];
         else if(piece->name == 'N')
@@ -669,18 +666,15 @@ int evaluate(int player) {
     }
     if(in_check(0, 1 - player) == 0){
         if(kings[1 - player]->stillAlive == 1)
-            score += 200;
+            score += 550;
         else if(kings[1 - player]->stillAlive == 2)
-            score += 1000;
+            score += 3000;
         else
             return oo - 10; 
     }
     for(auto piece : pieces[1 - player]){
         y = piece->position.second - 'a';
-         if(player == 0)
-            x = piece->position.first - 1;
-        else
-            x = 9 - piece->position.first - 1;
+        x = piece->position.first - 1;
         if(piece->name == 'P')
             score -= 100 + pawn_matrix[player][x][y];
         else if(piece->name == 'N')
@@ -714,7 +708,7 @@ int alphabeta_negamax(int depth, int player, pair<pair<int, char>, Piece*> &best
     //void applyMove(Piece *piece, pair<int, char> move, pair<int, char> &old_p, GameBoard *gameBoard, vector<Piece*> pieces[], int color, Piece *&captured){
     // STEP 1: game over or maximum recursion depth was reached
     if (kings[player]->stillAlive == 3) {
-        return -oo + (6 - depth);
+        return -oo + (10 - depth);
     }
     if (depth == 0) {
        return evaluate(player);
@@ -733,6 +727,32 @@ int alphabeta_negamax(int depth, int player, pair<pair<int, char>, Piece*> &best
         else
             return -oo + 1;
     }
+    
+    if(depth == 5){
+        pair<pair<int, char>, Piece*> m1, m2, maux;
+        Piece *captured;
+        pair <int, char> old_p;
+        int moved, promoted, kingCheck = 0, sc1, sc2;
+        int sz = all_moves.size();
+        for (int i = 0; i < sz; ++i){ 
+            for(int j = i + 1; j < sz; ++j){
+                m1 = all_moves[i];
+                apply_move(m1.second, m1.first, old_p, 1 - playing_color, captured, moved, promoted, kingCheck);
+                sc1 = evaluate(playing_color);
+                removeMove(m1.second, m1.first, old_p, 1 - playing_color, captured, moved, promoted, kingCheck);
+                m2 = all_moves[j];
+                apply_move(m2.second, m2.first, old_p, 1 - playing_color, captured, moved, promoted, kingCheck);
+                sc2 = evaluate(playing_color);
+                removeMove(m2.second, m2.first, old_p, 1 - playing_color, captured, moved, promoted, kingCheck);
+                if(sc1 < sc2){
+                    maux = all_moves[i];
+                    all_moves[i] = all_moves[j];
+                    all_moves[j] = maux;
+                }
+            }
+        }
+    }
+
     /*cout << depth << endl;
     for(auto piece : pieces[player])
         cout << piece->getName() << ' ';
@@ -761,10 +781,8 @@ int alphabeta_negamax(int depth, int player, pair<pair<int, char>, Piece*> &best
             cout << "WTF! " << move.second->getName() << "  " << move.first.first << ' ' << move.first.second << endl;*/
         // STEP 3.2: play for the opponent
         int score = -alphabeta_negamax(depth - 1, 1 - player, best_move_aux, -beta, -alpha);
-        //if(depth == 3)
-        //if(move.second->name == 'K' && depth == 5)
-        //    cout << score << ' ' << move.first.first << ' ' << move.first.second << endl;
-             
+        if(depth == 5)
+            cout << score << ' ' << move.first.first << ' ' << move.first.second << ' ' << move.second->name << endl;
         // opponent allows player to obtain this score if player will do current move.
         // player chooses this move only if it has a better score.
         if (score > best_score) {
@@ -805,11 +823,13 @@ int computeNextMove(int color, int depth) {
     char chosenPromotion = 'q';
     
     pair<pair<int, char>, Piece*> move;
-    cout << "before choosing" << endl;
-    alphabeta_negamax(5, color, move, -oo, oo);
-    cout << "chose a move" << endl;
-    cout << move.first.first << ' ' << move.first.second << ' ' << move.second->name << endl;
-    cout << "cv" << endl;
+    if(count_moves != 0)
+        alphabeta_negamax(5, color, move, -oo, oo);
+    else {
+        move.first.first = 4 + (1 - color);
+        move.first.second = 'e';
+        move.second = gameBoard->table[7 - 5 * color]['e' - 'a' + 1];
+    }
     int castle = 0, enPassant = 0;
     // castle
     if(move.second->name == 'K'){
@@ -895,7 +915,7 @@ int main() {
     int T;
     vector<pair<pair<int, char>, Piece*>> availablePos;
     vector<pair<pair<int, char>, Piece*>> pos;
-    int depth = 6;
+    int depth = 7;
     // pieces[0] -> white's pieces; pieces[1] -> black's pieces
     Piece *pieceEP = NULL;
     gameBoard = new GameBoard();
@@ -949,6 +969,7 @@ int main() {
                 ((Pawn *)pieceEP)->moved_two = false;
                 pieceEP = NULL;
             }
+            count_moves++;
             mode = 1;
             gameBoard->showBoard();
         }
@@ -972,12 +993,13 @@ int main() {
                     depth = 5;
                 else if(T > 12000)
                     depth = 6;
+                else if(T > 20000)
+                    depth = 6;
         }
         else {
             if(mode == 1) {
                 color = 1 - color;
-                fchk = fcheck[color];
-                schk = scheck[color];
+                playing_color = color;
                 updateOpponentPieces(command, color, pieceEP);
                 gameBoard->showBoard();
                 if (computeNextMove(color, depth) == -1) {
@@ -987,6 +1009,7 @@ int main() {
                     ((Pawn *)pieceEP)->moved_two = false;
                     pieceEP = NULL;
                 }
+                count_moves++;
                 color = 1 - color;
                 gameBoard->showBoard();
             }

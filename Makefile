@@ -10,4 +10,5 @@ clean:
 	rm -rf test *.debug
 run:
 	./test
-
+run2:
+	./main

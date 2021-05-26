@@ -1,0 +1,1240 @@
+xboard
+protover
+2
+accepted
+sigint
+accepted
+san
+accepted
+name
+new
+random
+variant
+3check
+level
+0
+5
+2
+post
+hard
+force
+computer
+time
+30000
+otim
+30200
+e2e4
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Pe7 Pf7 Pg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Ee5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Qd1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe7 Pf7 Pg7 Ph7 Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Qd1 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+black
+go
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Pe7 Pf7 Pg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Ee5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Qd1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe7 Pf7 Pg7 Ph7 Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Qd1 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Pe7 Pf7 Pg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Ee5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Qd1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe7 Pf7 Pg7 Ph7 Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Qd1 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+time
+29966
+otim
+30374
+d1h5
+================Board================
+Ra8 Eb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Pe7 Pf7 Pg7 Ph7 
+Ea6 Eb6 Kc6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Ee5 Ef5 Eg5 Qh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe7 Pf7 Pg7 Ph7 Ra8 Kc6 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Qh5 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+================Board================
+Ra8 Eb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Pe7 Pf7 Pg7 Ph7 
+Ea6 Eb6 Kc6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Ee5 Ef5 Eg5 Qh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe7 Pf7 Pg7 Ph7 Ra8 Kc6 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Qh5 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+time
+29867
+otim
+30564
+h5f7
+================Board================
+Ra8 Eb8 Bc8 Qd8 Ke8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Pe7 Qf7 Pg7 Ph7 
+Ea6 Eb6 Kc6 Ed6 Ee6 Kf6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Ee5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe7 Pg7 Ph7 Ra8 Kc6 Bc8 Qd8 Ke8 Bf8 Kf6 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Qf7 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+KING IS IN CHECK!!!!!!!!
+================Board================
+Ra8 Eb8 Bc8 Qd8 Ke8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Pe7 Qf7 Pg7 Ph7 
+Ea6 Eb6 Kc6 Ed6 Ee6 Kf6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Ee5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe7 Pg7 Ph7 Ra8 Kc6 Bc8 Qd8 Ke8 Bf8 Kf6 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Qf7 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+time
+30046
+otim
+30756
+f1c4
+================Board================
+Ra8 Eb8 Bc8 Qd8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Pe7 Kf7 Pg7 Ph7 
+Ea6 Eb6 Kc6 Ed6 Ee6 Kf6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Ee5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Bc4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe7 Pg7 Ph7 Ra8 Kc6 Bc8 Qd8 Kf7 Bf8 Kf6 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Ke1 Bc4 Kg1 Rh1  == white 
+=====================================
+
+KING IS IN CHECK!!!!!!!!
+================Board================
+Ra8 Eb8 Bc8 Qd8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Pe7 Kf7 Pg7 Ph7 
+Ea6 Eb6 Kc6 Ed6 Ee6 Kf6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Ee5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Bc4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe7 Pg7 Ph7 Ra8 Kc6 Bc8 Qd8 Kf7 Bf8 Kf6 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Ke1 Bc4 Kg1 Rh1  == white 
+=====================================
+
+c4f7
+================Board================
+Ra8 Eb8 Bc8 Qd8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Pe7 Bf7 Pg7 Ph7 
+Ea6 Eb6 Kc6 Ed6 Ee6 Kf6 Kg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Ee5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe7 Pg7 Ph7 Ra8 Kc6 Bc8 Qd8 Kg6 Bf8 Kf6 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Ke1 Bf7 Kg1 Rh1  == white 
+=====================================
+
+KING IS IN CHECK!!!!!!!!
+================Board================
+Ra8 Eb8 Bc8 Qd8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Pe7 Bf7 Pg7 Ph7 
+Ea6 Eb6 Kc6 Ed6 Ee6 Kf6 Kg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Ee5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe7 Pg7 Ph7 Ra8 Kc6 Bc8 Qd8 Kg6 Bf8 Kf6 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Ke1 Bf7 Kg1 Rh1  == white 
+=====================================
+
+result
+1-0
+{Xboard
+adjudication:
+3rd
+check}
+force
+undo
+new
+random
+variant
+3check
+level
+0
+5
+2
+post
+hard
+force
+computer
+black
+time
+30000
+otim
+30000
+white
+go
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Pe7 Pf7 Pg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Ee5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Ee4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Pe2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Qd1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe7 Pf7 Pg7 Ph7 Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe2 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Qd1 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Pe7 Pf7 Pg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Ee5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Ee4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Pe2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Qd1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe7 Pf7 Pg7 Ph7 Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe2 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Qd1 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+time
+30092
+otim
+30192
+e7e5
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Pf7 Pg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Pe5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Qd1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe5 Pf7 Pg7 Ph7 Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Qd1 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Pf7 Pg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Pe5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Qd1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe5 Pf7 Pg7 Ph7 Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Qd1 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+time
+29948
+otim
+30311
+g7g5
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Pf7 Eg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Pe5 Ef5 Pg5 Qh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe5 Pf7 Pg5 Ph7 Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Qh5 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Pf7 Eg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Pe5 Ef5 Pg5 Qh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe5 Pf7 Pg5 Ph7 Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Qh5 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+time
+29702
+otim
+30501
+e8f7
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ee8 Bf8 Kg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Kf7 Eg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Pe5 Ef5 Pg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe5 Pg5 Ph7 Ra8 Kb8 Bc8 Qd8 Kf7 Bf8 Kg8 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ee8 Bf8 Kg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Kf7 Eg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Pe5 Ef5 Pg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe5 Pg5 Ph7 Ra8 Kb8 Bc8 Qd8 Kf7 Bf8 Kg8 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+time
+29630
+otim
+30545
+g8f6
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Kf7 Eg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Kf6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Pe5 Ef5 Pg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Pf4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Ef2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe5 Pg5 Ph7 Ra8 Kb8 Bc8 Qd8 Kf7 Bf8 Kf6 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf4 Pg2 Ph2 Ra1 Kb1 Bc1 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Kf7 Eg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Kf6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Pe5 Ef5 Pg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Pf4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Ef2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe5 Pg5 Ph7 Ra8 Kb8 Bc8 Qd8 Kf7 Bf8 Kf6 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf4 Pg2 Ph2 Ra1 Kb1 Bc1 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+time
+29427
+otim
+30710
+f7g7
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Ef7 Kg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Kf6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Pe5 Ef5 Pg5 Eh5 
+Ea4 Eb4 Bc4 Ed4 Pe4 Pf4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Ef2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe5 Pg5 Ph7 Ra8 Kb8 Bc8 Qd8 Kg7 Bf8 Kf6 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf4 Pg2 Ph2 Ra1 Kb1 Bc1 Ke1 Bc4 Kg1 Rh1  == white 
+=====================================
+
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Ef7 Kg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Kf6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Pe5 Ef5 Pg5 Eh5 
+Ea4 Eb4 Bc4 Ed4 Pe4 Pf4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Ef2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe5 Pg5 Ph7 Ra8 Kb8 Bc8 Qd8 Kg7 Bf8 Kf6 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf4 Pg2 Ph2 Ra1 Kb1 Bc1 Ke1 Bc4 Kg1 Rh1  == white 
+=====================================
+
+time
+29140
+otim
+30895
+f6e4
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Ef7 Kg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Pe5 Ef5 Pg5 Eh5 
+Ea4 Eb4 Bc4 Ed4 Ke4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Ef2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pg5 Ph7 Ra8 Kb8 Bc8 Qd8 Kg7 Bf8 Ke4 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe5 Pg2 Ph2 Ra1 Kb1 Bc1 Ke1 Bc4 Kg1 Rh1  == white 
+=====================================
+
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Ef7 Kg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Pe5 Ef5 Pg5 Eh5 
+Ea4 Eb4 Bc4 Ed4 Ke4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Ef2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pg5 Ph7 Ra8 Kb8 Bc8 Qd8 Kg7 Bf8 Ke4 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe5 Pg2 Ph2 Ra1 Kb1 Bc1 Ke1 Bc4 Kg1 Rh1  == white 
+=====================================
+
+time
+28867
+otim
+31021
+g5g4
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Ef7 Kg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Bd5 Pe5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Ke4 Ef4 Pg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Ef2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pg4 Ph7 Ra8 Kb8 Bc8 Qd8 Kg7 Bf8 Ke4 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe5 Pg2 Ph2 Ra1 Kb1 Bc1 Ke1 Bd5 Kg1 Rh1  == white 
+=====================================
+
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Ef7 Kg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Bd5 Pe5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Ke4 Ef4 Pg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Ef2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pg4 Ph7 Ra8 Kb8 Bc8 Qd8 Kg7 Bf8 Ke4 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe5 Pg2 Ph2 Ra1 Kb1 Bc1 Ke1 Bd5 Kg1 Rh1  == white 
+=====================================
+
+time
+28641
+otim
+31160
+d8g5
+================Board================
+Ra8 Kb8 Bc8 Ed8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Ef7 Kg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Bd5 Pe5 Ef5 Qg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Ke4 Ef4 Pg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Pg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Ef2 Eg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pg4 Ph7 Ra8 Kb8 Bc8 Qg5 Kg7 Bf8 Ke4 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe5 Pg3 Ph2 Ra1 Kb1 Bc1 Ke1 Bd5 Kg1 Rh1  == white 
+=====================================
+
+================Board================
+Ra8 Kb8 Bc8 Ed8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Ef7 Kg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Bd5 Pe5 Ef5 Qg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Ke4 Ef4 Pg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Pg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Ef2 Eg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pg4 Ph7 Ra8 Kb8 Bc8 Qg5 Kg7 Bf8 Ke4 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe5 Pg3 Ph2 Ra1 Kb1 Bc1 Ke1 Bd5 Kg1 Rh1  == white 
+=====================================
+
+time
+28377
+otim
+31352
+g5c1
+================Board================
+Ra8 Kb8 Bc8 Ed8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Ef7 Kg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Bd5 Pe5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Ke4 Ef4 Pg4 Eh4 
+Ea3 Eb3 Ec3 Pd3 Ee3 Ef3 Pg3 Eh3 
+Pa2 Pb2 Pc2 Ed2 Ee2 Ef2 Eg2 Ph2 
+Ra1 Kb1 Qc1 Ed1 Ke1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pg4 Ph7 Ra8 Kb8 Bc8 Qc1 Kg7 Bf8 Ke4 Rh8  == black 
+Pa2 Pb2 Pc2 Pd3 Pe5 Pg3 Ph2 Ra1 Kb1 Ke1 Bd5 Kg1 Rh1  == white 
+=====================================
+
+KING IS IN CHECK!!!!!!!!
+================Board================
+Ra8 Kb8 Bc8 Ed8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Ef7 Kg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Bd5 Pe5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Ke4 Ef4 Pg4 Eh4 
+Ea3 Eb3 Ec3 Pd3 Ee3 Ef3 Pg3 Eh3 
+Pa2 Pb2 Pc2 Ed2 Ee2 Ef2 Eg2 Ph2 
+Ra1 Kb1 Qc1 Ed1 Ke1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pg4 Ph7 Ra8 Kb8 Bc8 Qc1 Kg7 Bf8 Ke4 Rh8  == black 
+Pa2 Pb2 Pc2 Pd3 Pe5 Pg3 Ph2 Ra1 Kb1 Ke1 Bd5 Kg1 Rh1  == white 
+=====================================
+
+time
+28558
+otim
+31543
+c1c2
+================Board================
+Ra8 Kb8 Bc8 Ed8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Ef7 Kg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Bd5 Pe5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Ke4 Ef4 Pg4 Eh4 
+Ea3 Eb3 Ec3 Pd3 Ee3 Ef3 Pg3 Eh3 
+Pa2 Pb2 Qc2 Ed2 Ke2 Ef2 Eg2 Ph2 
+Ra1 Kb1 Ec1 Ed1 Ee1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pg4 Ph7 Ra8 Kb8 Bc8 Qc2 Kg7 Bf8 Ke4 Rh8  == black 
+Pa2 Pb2 Pd3 Pe5 Pg3 Ph2 Ra1 Kb1 Ke2 Bd5 Kg1 Rh1  == white 
+=====================================
+
+KING IS IN CHECK!!!!!!!!
+================Board================
+Ra8 Kb8 Bc8 Ed8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Ef7 Kg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Bd5 Pe5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Ke4 Ef4 Pg4 Eh4 
+Ea3 Eb3 Ec3 Pd3 Ee3 Ef3 Pg3 Eh3 
+Pa2 Pb2 Qc2 Ed2 Ke2 Ef2 Eg2 Ph2 
+Ra1 Kb1 Ec1 Ed1 Ee1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pg4 Ph7 Ra8 Kb8 Bc8 Qc2 Kg7 Bf8 Ke4 Rh8  == black 
+Pa2 Pb2 Pd3 Pe5 Pg3 Ph2 Ra1 Kb1 Ke2 Bd5 Kg1 Rh1  == white 
+=====================================
+
+f8c5
+================Board================
+Ra8 Kb8 Bc8 Ed8 Ee8 Ef8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Ef7 Kg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Bc5 Bd5 Pe5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Ke4 Ef4 Pg4 Eh4 
+Ea3 Eb3 Ec3 Pd3 Ke3 Ef3 Pg3 Eh3 
+Pa2 Pb2 Qc2 Ed2 Ee2 Ef2 Eg2 Ph2 
+Ra1 Kb1 Ec1 Ed1 Ee1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pg4 Ph7 Ra8 Kb8 Bc8 Qc2 Kg7 Bc5 Ke4 Rh8  == black 
+Pa2 Pb2 Pd3 Pe5 Pg3 Ph2 Ra1 Kb1 Ke3 Bd5 Kg1 Rh1  == white 
+=====================================
+
+KING IS IN CHECK!!!!!!!!
+================Board================
+Ra8 Kb8 Bc8 Ed8 Ee8 Ef8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Ef7 Kg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Bc5 Bd5 Pe5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Ke4 Ef4 Pg4 Eh4 
+Ea3 Eb3 Ec3 Pd3 Ke3 Ef3 Pg3 Eh3 
+Pa2 Pb2 Qc2 Ed2 Ee2 Ef2 Eg2 Ph2 
+Ra1 Kb1 Ec1 Ed1 Ee1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pg4 Ph7 Ra8 Kb8 Bc8 Qc2 Kg7 Bc5 Ke4 Rh8  == black 
+Pa2 Pb2 Pd3 Pe5 Pg3 Ph2 Ra1 Kb1 Ke3 Bd5 Kg1 Rh1  == white 
+=====================================
+
+result
+0-1
+{Xboard
+adjudication:
+3rd
+check}
+force
+undo
+new
+random
+variant
+3check
+level
+0
+5
+2
+post
+hard
+force
+computer
+time
+30000
+otim
+30200
+e2e4
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Pe7 Pf7 Pg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Ee5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Qd1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe7 Pf7 Pg7 Ph7 Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Qd1 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+black
+go
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Pe7 Pf7 Pg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Ee5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Qd1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe7 Pf7 Pg7 Ph7 Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Qd1 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Pe7 Pf7 Pg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Ee5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Qd1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe7 Pf7 Pg7 Ph7 Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Qd1 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+time
+30031
+otim
+30381
+d1h5
+================Board================
+Ra8 Eb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Pe7 Pf7 Pg7 Ph7 
+Ea6 Eb6 Kc6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Ee5 Ef5 Eg5 Qh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe7 Pf7 Pg7 Ph7 Ra8 Kc6 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Qh5 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+================Board================
+Ra8 Eb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Pe7 Pf7 Pg7 Ph7 
+Ea6 Eb6 Kc6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Ee5 Ef5 Eg5 Qh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe7 Pf7 Pg7 Ph7 Ra8 Kc6 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Qh5 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+time
+29996
+otim
+30570
+h5f7
+================Board================
+Ra8 Eb8 Bc8 Qd8 Ke8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Pe7 Qf7 Pg7 Ph7 
+Ea6 Eb6 Kc6 Ed6 Ee6 Kf6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Ee5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe7 Pg7 Ph7 Ra8 Kc6 Bc8 Qd8 Ke8 Bf8 Kf6 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Qf7 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+KING IS IN CHECK!!!!!!!!
+================Board================
+Ra8 Eb8 Bc8 Qd8 Ke8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Pe7 Qf7 Pg7 Ph7 
+Ea6 Eb6 Kc6 Ed6 Ee6 Kf6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Ee5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe7 Pg7 Ph7 Ra8 Kc6 Bc8 Qd8 Ke8 Bf8 Kf6 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Qf7 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+time
+30181
+otim
+30763
+f1c4
+================Board================
+Ra8 Eb8 Bc8 Qd8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Pe7 Kf7 Pg7 Ph7 
+Ea6 Eb6 Kc6 Ed6 Ee6 Kf6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Ee5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Bc4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe7 Pg7 Ph7 Ra8 Kc6 Bc8 Qd8 Kf7 Bf8 Kf6 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Ke1 Bc4 Kg1 Rh1  == white 
+=====================================
+
+KING IS IN CHECK!!!!!!!!
+================Board================
+Ra8 Eb8 Bc8 Qd8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Pe7 Kf7 Pg7 Ph7 
+Ea6 Eb6 Kc6 Ed6 Ee6 Kf6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Ee5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Bc4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe7 Pg7 Ph7 Ra8 Kc6 Bc8 Qd8 Kf7 Bf8 Kf6 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Ke1 Bc4 Kg1 Rh1  == white 
+=====================================
+
+c4f7
+================Board================
+Ra8 Eb8 Bc8 Qd8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Pe7 Bf7 Pg7 Ph7 
+Ea6 Eb6 Kc6 Ed6 Ee6 Kf6 Kg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Ee5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe7 Pg7 Ph7 Ra8 Kc6 Bc8 Qd8 Kg6 Bf8 Kf6 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Ke1 Bf7 Kg1 Rh1  == white 
+=====================================
+
+KING IS IN CHECK!!!!!!!!
+================Board================
+Ra8 Eb8 Bc8 Qd8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Pe7 Bf7 Pg7 Ph7 
+Ea6 Eb6 Kc6 Ed6 Ee6 Kf6 Kg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Ee5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe7 Pg7 Ph7 Ra8 Kc6 Bc8 Qd8 Kg6 Bf8 Kf6 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Ke1 Bf7 Kg1 Rh1  == white 
+=====================================
+
+result
+1-0
+{Xboard
+adjudication:
+3rd
+check}
+force
+undo
+new
+random
+variant
+3check
+level
+0
+5
+2
+post
+hard
+force
+computer
+black
+time
+30000
+otim
+30000
+white
+go
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Pe7 Pf7 Pg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Ee5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Ee4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Pe2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Qd1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe7 Pf7 Pg7 Ph7 Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe2 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Qd1 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Pe7 Pf7 Pg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Ee5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Ee4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Pe2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Qd1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe7 Pf7 Pg7 Ph7 Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe2 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Qd1 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+time
+30095
+otim
+30192
+e7e5
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Pf7 Pg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Pe5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Qd1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe5 Pf7 Pg7 Ph7 Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Qd1 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Pf7 Pg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Pe5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Qd1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe5 Pf7 Pg7 Ph7 Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Qd1 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+time
+29961
+otim
+30312
+g7g5
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Pf7 Eg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Pe5 Ef5 Pg5 Qh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe5 Pf7 Pg5 Ph7 Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Qh5 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Pf7 Eg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Pe5 Ef5 Pg5 Qh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe5 Pf7 Pg5 Ph7 Ra8 Kb8 Bc8 Qd8 Ke8 Bf8 Kg8 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Qh5 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+time
+29712
+otim
+30502
+e8f7
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ee8 Bf8 Kg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Kf7 Eg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Pe5 Ef5 Pg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe5 Pg5 Ph7 Ra8 Kb8 Bc8 Qd8 Kf7 Bf8 Kg8 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ee8 Bf8 Kg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Kf7 Eg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Pe5 Ef5 Pg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Pf2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe5 Pg5 Ph7 Ra8 Kb8 Bc8 Qd8 Kf7 Bf8 Kg8 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf2 Pg2 Ph2 Ra1 Kb1 Bc1 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+time
+29647
+otim
+30544
+g8f6
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Kf7 Eg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Kf6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Pe5 Ef5 Pg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Pf4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Ef2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe5 Pg5 Ph7 Ra8 Kb8 Bc8 Qd8 Kf7 Bf8 Kf6 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf4 Pg2 Ph2 Ra1 Kb1 Bc1 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Kf7 Eg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Kf6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Pe5 Ef5 Pg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Pe4 Pf4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Ef2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Bf1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe5 Pg5 Ph7 Ra8 Kb8 Bc8 Qd8 Kf7 Bf8 Kf6 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf4 Pg2 Ph2 Ra1 Kb1 Bc1 Ke1 Bf1 Kg1 Rh1  == white 
+=====================================
+
+time
+29435
+otim
+30711
+f7g7
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Ef7 Kg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Kf6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Pe5 Ef5 Pg5 Eh5 
+Ea4 Eb4 Bc4 Ed4 Pe4 Pf4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Ef2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe5 Pg5 Ph7 Ra8 Kb8 Bc8 Qd8 Kg7 Bf8 Kf6 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf4 Pg2 Ph2 Ra1 Kb1 Bc1 Ke1 Bc4 Kg1 Rh1  == white 
+=====================================
+
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Ef7 Kg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Kf6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Pe5 Ef5 Pg5 Eh5 
+Ea4 Eb4 Bc4 Ed4 Pe4 Pf4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Ef2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pe5 Pg5 Ph7 Ra8 Kb8 Bc8 Qd8 Kg7 Bf8 Kf6 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe4 Pf4 Pg2 Ph2 Ra1 Kb1 Bc1 Ke1 Bc4 Kg1 Rh1  == white 
+=====================================
+
+time
+29153
+otim
+30896
+f6e4
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Ef7 Kg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Pe5 Ef5 Pg5 Eh5 
+Ea4 Eb4 Bc4 Ed4 Ke4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Ef2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pg5 Ph7 Ra8 Kb8 Bc8 Qd8 Kg7 Bf8 Ke4 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe5 Pg2 Ph2 Ra1 Kb1 Bc1 Ke1 Bc4 Kg1 Rh1  == white 
+=====================================
+
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Ef7 Kg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Ed5 Pe5 Ef5 Pg5 Eh5 
+Ea4 Eb4 Bc4 Ed4 Ke4 Ef4 Eg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Ef2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pg5 Ph7 Ra8 Kb8 Bc8 Qd8 Kg7 Bf8 Ke4 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe5 Pg2 Ph2 Ra1 Kb1 Bc1 Ke1 Bc4 Kg1 Rh1  == white 
+=====================================
+
+time
+28866
+otim
+31017
+g5g4
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Ef7 Kg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Bd5 Pe5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Ke4 Ef4 Pg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Ef2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pg4 Ph7 Ra8 Kb8 Bc8 Qd8 Kg7 Bf8 Ke4 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe5 Pg2 Ph2 Ra1 Kb1 Bc1 Ke1 Bd5 Kg1 Rh1  == white 
+=====================================
+
+================Board================
+Ra8 Kb8 Bc8 Qd8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Ef7 Kg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Bd5 Pe5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Ke4 Ef4 Pg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Eg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Ef2 Pg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pg4 Ph7 Ra8 Kb8 Bc8 Qd8 Kg7 Bf8 Ke4 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe5 Pg2 Ph2 Ra1 Kb1 Bc1 Ke1 Bd5 Kg1 Rh1  == white 
+=====================================
+
+time
+28641
+otim
+31157
+d8g5
+================Board================
+Ra8 Kb8 Bc8 Ed8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Ef7 Kg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Bd5 Pe5 Ef5 Qg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Ke4 Ef4 Pg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Pg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Ef2 Eg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pg4 Ph7 Ra8 Kb8 Bc8 Qg5 Kg7 Bf8 Ke4 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe5 Pg3 Ph2 Ra1 Kb1 Bc1 Ke1 Bd5 Kg1 Rh1  == white 
+=====================================
+
+================Board================
+Ra8 Kb8 Bc8 Ed8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Ef7 Kg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Bd5 Pe5 Ef5 Qg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Ke4 Ef4 Pg4 Eh4 
+Ea3 Eb3 Ec3 Ed3 Ee3 Ef3 Pg3 Eh3 
+Pa2 Pb2 Pc2 Pd2 Ee2 Ef2 Eg2 Ph2 
+Ra1 Kb1 Bc1 Ed1 Ke1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pg4 Ph7 Ra8 Kb8 Bc8 Qg5 Kg7 Bf8 Ke4 Rh8  == black 
+Pa2 Pb2 Pc2 Pd2 Pe5 Pg3 Ph2 Ra1 Kb1 Bc1 Ke1 Bd5 Kg1 Rh1  == white 
+=====================================
+
+time
+28371
+otim
+31349
+g5c1
+================Board================
+Ra8 Kb8 Bc8 Ed8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Ef7 Kg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Bd5 Pe5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Ke4 Ef4 Pg4 Eh4 
+Ea3 Eb3 Ec3 Pd3 Ee3 Ef3 Pg3 Eh3 
+Pa2 Pb2 Pc2 Ed2 Ee2 Ef2 Eg2 Ph2 
+Ra1 Kb1 Qc1 Ed1 Ke1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pg4 Ph7 Ra8 Kb8 Bc8 Qc1 Kg7 Bf8 Ke4 Rh8  == black 
+Pa2 Pb2 Pc2 Pd3 Pe5 Pg3 Ph2 Ra1 Kb1 Ke1 Bd5 Kg1 Rh1  == white 
+=====================================
+
+KING IS IN CHECK!!!!!!!!
+================Board================
+Ra8 Kb8 Bc8 Ed8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Ef7 Kg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Bd5 Pe5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Ke4 Ef4 Pg4 Eh4 
+Ea3 Eb3 Ec3 Pd3 Ee3 Ef3 Pg3 Eh3 
+Pa2 Pb2 Pc2 Ed2 Ee2 Ef2 Eg2 Ph2 
+Ra1 Kb1 Qc1 Ed1 Ke1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pg4 Ph7 Ra8 Kb8 Bc8 Qc1 Kg7 Bf8 Ke4 Rh8  == black 
+Pa2 Pb2 Pc2 Pd3 Pe5 Pg3 Ph2 Ra1 Kb1 Ke1 Bd5 Kg1 Rh1  == white 
+=====================================
+
+time
+28552
+otim
+31542
+c1c2
+================Board================
+Ra8 Kb8 Bc8 Ed8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Ef7 Kg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Bd5 Pe5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Ke4 Ef4 Pg4 Eh4 
+Ea3 Eb3 Ec3 Pd3 Ee3 Ef3 Pg3 Eh3 
+Pa2 Pb2 Qc2 Ed2 Ke2 Ef2 Eg2 Ph2 
+Ra1 Kb1 Ec1 Ed1 Ee1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pg4 Ph7 Ra8 Kb8 Bc8 Qc2 Kg7 Bf8 Ke4 Rh8  == black 
+Pa2 Pb2 Pd3 Pe5 Pg3 Ph2 Ra1 Kb1 Ke2 Bd5 Kg1 Rh1  == white 
+=====================================
+
+KING IS IN CHECK!!!!!!!!
+================Board================
+Ra8 Kb8 Bc8 Ed8 Ee8 Bf8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Ef7 Kg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Ec5 Bd5 Pe5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Ke4 Ef4 Pg4 Eh4 
+Ea3 Eb3 Ec3 Pd3 Ee3 Ef3 Pg3 Eh3 
+Pa2 Pb2 Qc2 Ed2 Ke2 Ef2 Eg2 Ph2 
+Ra1 Kb1 Ec1 Ed1 Ee1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pg4 Ph7 Ra8 Kb8 Bc8 Qc2 Kg7 Bf8 Ke4 Rh8  == black 
+Pa2 Pb2 Pd3 Pe5 Pg3 Ph2 Ra1 Kb1 Ke2 Bd5 Kg1 Rh1  == white 
+=====================================
+
+f8c5
+================Board================
+Ra8 Kb8 Bc8 Ed8 Ee8 Ef8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Ef7 Kg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Bc5 Bd5 Pe5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Ke4 Ef4 Pg4 Eh4 
+Ea3 Eb3 Ec3 Pd3 Ke3 Ef3 Pg3 Eh3 
+Pa2 Pb2 Qc2 Ed2 Ee2 Ef2 Eg2 Ph2 
+Ra1 Kb1 Ec1 Ed1 Ee1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pg4 Ph7 Ra8 Kb8 Bc8 Qc2 Kg7 Bc5 Ke4 Rh8  == black 
+Pa2 Pb2 Pd3 Pe5 Pg3 Ph2 Ra1 Kb1 Ke3 Bd5 Kg1 Rh1  == white 
+=====================================
+
+KING IS IN CHECK!!!!!!!!
+================Board================
+Ra8 Kb8 Bc8 Ed8 Ee8 Ef8 Eg8 Rh8 
+Pa7 Pb7 Pc7 Pd7 Ee7 Ef7 Kg7 Ph7 
+Ea6 Eb6 Ec6 Ed6 Ee6 Ef6 Eg6 Eh6 
+Ea5 Eb5 Bc5 Bd5 Pe5 Ef5 Eg5 Eh5 
+Ea4 Eb4 Ec4 Ed4 Ke4 Ef4 Pg4 Eh4 
+Ea3 Eb3 Ec3 Pd3 Ke3 Ef3 Pg3 Eh3 
+Pa2 Pb2 Qc2 Ed2 Ee2 Ef2 Eg2 Ph2 
+Ra1 Kb1 Ec1 Ed1 Ee1 Ef1 Kg1 Rh1 
+===============PieceList=============
+Pa7 Pb7 Pc7 Pd7 Pg4 Ph7 Ra8 Kb8 Bc8 Qc2 Kg7 Bc5 Ke4 Rh8  == black 
+Pa2 Pb2 Pd3 Pe5 Pg3 Ph2 Ra1 Kb1 Ke3 Bd5 Kg1 Rh1  == white 
+=====================================
+
+result
+0-1
+{Xboard
+adjudication:
+3rd
+check}
+force
+undo
+quit
